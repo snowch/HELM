@@ -122,7 +122,7 @@ class FixedEpubBuilder:
         # Fix image src for EPUB: prepend chapter directory for local images
         if chapter_dir_name:
             content = re.sub(
-                r'src=[\'"]((figures|images)[^\'"]+)[\'"]',
+                r'src\s*=\s*[\'"]\.?/?((figures|images)[^\'"]+)[\'"]',
                 rf'src="{chapter_dir_name}/\1"',
                 content
             )
