@@ -74,7 +74,7 @@ Addresses common EPUB validation issues and improves compatibility:
 python3 fixed_epub_builder.py
 ```
 
-This creates `HELM_Fixed.epub` with improved EPUB 3.0 compliance and better reader compatibility.
+This creates `HELM.epub` with improved EPUB 3.0 compliance and better reader compatibility.
 
 ### Advanced Usage
 

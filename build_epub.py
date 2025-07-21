@@ -15,7 +15,7 @@ import html
 import mimetypes
 
 class FixedEpubBuilder:
-    def __init__(self, source_dir='.', output_file='HELM_Fixed.epub'):
+    def __init__(self, source_dir='.', output_file='HELM.epub'):
         self.source_dir = Path(source_dir)
         self.output_file = output_file
         self.chapters = []
@@ -66,7 +66,14 @@ class FixedEpubBuilder:
         for img in image_files:
             ext = os.path.splitext(img)[1].lower()
             mime = mimetypes.guess_type(img)[0] or "application/octet-stream"
-            img_id = img.replace("/", "_").replace(".", "_")
+            # Create a valid XML ID by replacing invalid characters with underscores
+            # XML IDs must start with a letter or underscore, and can contain letters, digits, hyphens, underscores, and periods.
+            # The error specifically mentions "without colons", so ensure no colons are present.
+            # Also, ensure it doesn't start with a digit or hyphen.
+            img_id = re.sub(r'[^a-zA-Z0-9_]', '_', img) # Replace all non-alphanumeric and non-underscore characters with underscores
+            # Ensure the ID starts with a valid XML name start character (letter or underscore)
+            if not re.match(r'^[a-zA-Z_]', img_id):
+                img_id = '_' + img_id
             manifest_items.append(
                 f'    <item id="{img_id}" href="{img}" media-type="{mime}"/>'
             )
@@ -141,6 +148,12 @@ class FixedEpubBuilder:
                 content
             )
         # Clean up extra whitespace
+        # Remove ODF-specific prefixes and attributes
+        content = re.sub(r'<(/?)(table|text):', r'<\1', content) # Remove table: and text: prefixes from tags
+        content = re.sub(r'table:style-name="[^"]*"', '', content) # Remove table:style-name attribute
+        content = re.sub(r'table:value-type="[^"]*"', '', content) # Remove table:value-type attribute
+        content = re.sub(r'text:style-name="[^"]*"', '', content) # Remove text:style-name attribute
+        
         content = re.sub(r'\s+', ' ', content)
         content = re.sub(r'>\s+<', '><', content)
         return content.strip()
