@@ -41,4 +41,4 @@ echo "Java version: $("$JAVA_HOME/bin/java" -version 2>&1 | head -n 1)"
 echo "Maven version: $(mvn -version 2>&1 | head -n 1)"
 
 # Run epubcheck via Maven
-mvn compile exec:java -Dexec.args="$EPUBFILE"
+mvn compile exec:java -Dexec.args="--mode opf20 $EPUBFILE"

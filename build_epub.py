@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Fixed EPUB Builder for HELM content
-This version addresses common EPUB validation issues
+Fixed EPUB 2.0 Builder for HELM content
+This version creates EPUB 2.0 format to avoid validation issues
 Also merges all HTML files in a chapter and includes images with correct paths.
 """
 
@@ -52,12 +52,16 @@ class FixedEpubBuilder:
         timestamp = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
         manifest_items = []
         spine_items = []
-        manifest_items.append('    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>')
+        
+        # EPUB 2.0 doesn't use nav - use NCX instead
+        manifest_items.append('    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>')
+        
         # Add chapters
         for i, (chapter_num, section_num, title, _) in enumerate(chapters):
             chapter_id = f"chapter_{chapter_num}_{section_num}"
             manifest_items.append(f'    <item id="{chapter_id}" href="{chapter_id}.xhtml" media-type="application/xhtml+xml"/>')
             spine_items.append(f'    <itemref idref="{chapter_id}"/>')
+        
         # Add images
         for img in image_files:
             ext = os.path.splitext(img)[1].lower()
@@ -66,48 +70,58 @@ class FixedEpubBuilder:
             manifest_items.append(
                 f'    <item id="{img_id}" href="{img}" media-type="{mime}"/>'
             )
+        
+        # EPUB 2.0 OPF format
         return f'''<?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="3.0">
-    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-        <dc:identifier id="BookId">{book_id}</dc:identifier>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier id="BookId" opf:scheme="UUID">{book_id}</dc:identifier>
         <dc:title>HELM: Helping Engineers Learn Mathematics</dc:title>
-        <dc:creator>HELM Consortium</dc:creator>
+        <dc:creator opf:role="aut">HELM Consortium</dc:creator>
         <dc:language>en</dc:language>
-        <dc:date>{timestamp}</dc:date>
+        <dc:date opf:event="publication">{timestamp}</dc:date>
         <dc:rights>Creative Commons Attribution-NonCommercial 4.0 International License</dc:rights>
-        <meta property="dcterms:modified">{timestamp}</meta>
     </metadata>
     <manifest>
 {chr(10).join(manifest_items)}
     </manifest>
-    <spine>
-        <itemref idref="nav"/>
+    <spine toc="ncx">
 {chr(10).join(spine_items)}
     </spine>
 </package>'''
 
-    def create_nav_xhtml(self, chapters):
-        nav_items = []
-        for chapter_num, section_num, title, _ in chapters:
+    def create_toc_ncx(self, chapters):
+        """Create NCX table of contents for EPUB 2.0"""
+        book_id = str(uuid.uuid4())
+        nav_points = []
+        
+        for i, (chapter_num, section_num, title, _) in enumerate(chapters):
             chapter_id = f"chapter_{chapter_num}_{section_num}"
             safe_title = html.escape(f"{chapter_num}.{section_num} {title}")
-            nav_items.append(f'        <li><a href="{chapter_id}.xhtml">{safe_title}</a></li>')
-        return f'''<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
-<head>
-    <title>Table of Contents</title>
-    <meta charset="utf-8"/>
-</head>
-<body>
-    <nav epub:type="toc" id="toc">
-        <h1>Table of Contents</h1>
-        <ol>
-{chr(10).join(nav_items)}
-        </ol>
-    </nav>
-</body>
-</html>'''
+            play_order = i + 1
+            nav_points.append(f'''    <navPoint id="navpoint-{play_order}" playOrder="{play_order}">
+      <navLabel>
+        <text>{safe_title}</text>
+      </navLabel>
+      <content src="{chapter_id}.xhtml"/>
+    </navPoint>''')
+        
+        return f'''<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="{book_id}"/>
+    <meta name="dtb:depth" content="1"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>HELM: Helping Engineers Learn Mathematics</text>
+  </docTitle>
+  <navMap>
+{chr(10).join(nav_points)}
+  </navMap>
+</ncx>'''
 
     def clean_html_content(self, content, chapter_dir_name=None):
         # Remove script tags
@@ -159,23 +173,13 @@ class FixedEpubBuilder:
                                 content += f"<p>Could not extract content from {html_file.name}</p>"
                 except Exception as e:
                     content += f"<p>Error reading {html_file.name}: {html.escape(str(e))}</p>"
+        
         return f'''<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
-      xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
-      xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
-      xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
-      xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"
-      xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      xmlns:dc="http://purl.org/dc/elements/1.1/"
-      xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0"
-      xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"
-      xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>{safe_title}</title>
-    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <style type="text/css">
         body {{
             font-family: Georgia, "Times New Roman", serif;
@@ -244,30 +248,38 @@ class FixedEpubBuilder:
         return image_files
 
     def build_epub(self):
-        print("Starting fixed EPUB build...")
+        print("Starting EPUB 2.0 build...")
         chapter_dirs = self.get_chapter_directories()
         print(f"Found {len(chapter_dirs)} chapters")
+        
         if not chapter_dirs:
             print("No HELM chapters found!")
             return False
+        
         with zipfile.ZipFile(self.output_file, 'w', zipfile.ZIP_DEFLATED) as epub_zip:
             # Add mimetype (uncompressed, must be first)
             epub_zip.writestr('mimetype', self.create_mimetype(), compress_type=zipfile.ZIP_STORED)
+            
             # Add META-INF/container.xml
             epub_zip.writestr('META-INF/container.xml', self.create_container_xml())
-            # Add chapters (needed before images to fix manifest)
+            
+            # Add chapters
             for i, (chapter_num, section_num, title, chapter_dir) in enumerate(chapter_dirs):
                 print(f"Processing {chapter_num}.{section_num}: {title}")
                 chapter_id = f"chapter_{chapter_num}_{section_num}"
                 chapter_content = self.create_chapter_xhtml(chapter_num, section_num, title, chapter_dir)
                 epub_zip.writestr(f'OEBPS/{chapter_id}.xhtml', chapter_content)
+            
             # Add images
             image_files = self.find_and_add_images(epub_zip, chapter_dirs)
-            # Add content.opf (needs image file list)
+            
+            # Add content.opf (EPUB 2.0 format)
             epub_zip.writestr('OEBPS/content.opf', self.create_content_opf(chapter_dirs, image_files))
-            # Add navigation document
-            epub_zip.writestr('OEBPS/nav.xhtml', self.create_nav_xhtml(chapter_dirs))
-        print(f"Fixed EPUB created: {self.output_file}")
+            
+            # Add NCX table of contents (EPUB 2.0 format)
+            epub_zip.writestr('OEBPS/toc.ncx', self.create_toc_ncx(chapter_dirs))
+        
+        print(f"EPUB 2.0 created: {self.output_file}")
         print(f"Total chapters: {len(chapter_dirs)}")
         return True
 
@@ -275,8 +287,8 @@ def main():
     builder = FixedEpubBuilder()
     success = builder.build_epub()
     if success:
-        print("Fixed EPUB build completed successfully!")
-        print("This version should be compatible with most EPUB readers.")
+        print("EPUB 2.0 build completed successfully!")
+        print("This version should validate against EPUB 2.0 rules.")
     else:
         print("EPUB build failed!")
         return 1
