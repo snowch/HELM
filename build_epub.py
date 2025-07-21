@@ -13,13 +13,17 @@ from pathlib import Path
 from datetime import datetime
 import html
 import mimetypes
+from mathml_to_svg import MathMLToSVGConverter
 
 class FixedEpubBuilder:
-    def __init__(self, source_dir='.', output_file='HELM.epub'):
+    def __init__(self, source_dir='.', output_file='HELM.epub', single_chapter_mode=False):
         self.source_dir = Path(source_dir)
         self.output_file = output_file
         self.chapters = []
         self.image_files = []
+        self.single_chapter_mode = single_chapter_mode
+        # Initialize MathML to SVG converter
+        self.mathml_converter = MathMLToSVGConverter(output_dir="math_images")
 
     def get_chapter_directories(self):
         """Get all chapter directories in order"""
@@ -34,6 +38,10 @@ class FixedEpubBuilder:
                     title = match.group(3).replace('_', ' ').title()
                     chapter_dirs.append((chapter_num, section_num, title, item))
         chapter_dirs.sort(key=lambda x: (x[0], x[1]))
+        
+        if self.single_chapter_mode and chapter_dirs:
+            return [chapter_dirs[0]] # Return only the first chapter
+        
         return chapter_dirs
 
     def create_mimetype(self):
@@ -137,9 +145,47 @@ class FixedEpubBuilder:
         content = re.sub(r'<nav[^>]*>.*?</nav>', '', content, flags=re.DOTALL | re.IGNORECASE)
         # Remove div with navigation IDs
         content = re.sub(r'<div[^>]*id="[^"]*nav[^"]*"[^>]*>.*?</div>', '', content, flags=re.DOTALL | re.IGNORECASE)
+        # Replace <main> tags with <div> tags for EPUB 2.0 compatibility
+        content = re.sub(r'<main([^>]*)>', r'<div\1>', content, flags=re.IGNORECASE)
+        content = re.sub(r'</main>', r'</div>', content, flags=re.IGNORECASE)
+        
+        # Replace <footer> tags with <div> tags for EPUB 2.0 compatibility
+        # content = re.sub(r'<footer([^>]*)>', r'<div\1>', content, flags=re.IGNORECASE)
+        # content = re.sub(r'</footer>', r'</div>', content, flags=re.IGNORECASE)
+        # Remove HELM consortium attribution footer completely
+        content = re.sub(r'<footer[^>]*>.*?</footer>', '<hr/>', content, flags=re.DOTALL | re.IGNORECASE)
+        
+        # Replace <button> tags with <span> tags for EPUB 2.0 compatibility
+        content = re.sub(r'<button([^>]*)>', r'<span\1>', content, flags=re.IGNORECASE)
+        content = re.sub(r'</button>', r'</span>', content, flags=re.IGNORECASE)
+        # Remove 'start' attribute from <ol> tags
+        content = re.sub(r'<ol([^>]*) start="[^"]*"', r'<ol\1', content, flags=re.IGNORECASE)
+        # Remove ARIA and data attributes for EPUB 2.0 compatibility
+        content = re.sub(r' (aria-[^=]*|data-[^=]*|role)="[^"]*"', '', content, flags=re.IGNORECASE)
+        # Remove all id attributes to prevent duplicates after merging
+        content = re.sub(r' id="[^"]*"', '', content, flags=re.IGNORECASE)
         # Remove external links and scripts
         content = re.sub(r'<link[^>]*href="http[^"]*"[^>]*>', '', content, flags=re.IGNORECASE)
         content = re.sub(r'<script[^>]*src="http[^"]*"[^>]*></script>', '', content, flags=re.IGNORECASE)
+        # Remove href attributes pointing to .html files, as these are merged into single xhtml
+        content = re.sub(r'href="[^"]*\.html"', '', content, flags=re.IGNORECASE)
+        
+        # CRITICAL: Convert MathML to SVG images for EPUB compatibility
+        content = self.mathml_converter.convert_html_with_mathml(content)
+        
+        # Fix XML escaping issues in math-unicode spans
+        def fix_math_unicode_content(match):
+            span_content = match.group(1)
+            # Escape XML characters in the span content
+            span_content = span_content.replace('&', '&amp;')
+            span_content = span_content.replace('<', '&lt;')
+            span_content = span_content.replace('>', '&gt;')
+            span_content = span_content.replace('"', '&quot;')
+            span_content = span_content.replace("'", '&apos;')
+            return f'<span class="math-unicode">{span_content}</span>'
+        
+        content = re.sub(r'<span class="math-unicode">(.*?)</span>', fix_math_unicode_content, content, flags=re.DOTALL)
+        
         # Fix image src for EPUB: prepend chapter directory for local images
         if chapter_dir_name:
             content = re.sub(
@@ -148,15 +194,46 @@ class FixedEpubBuilder:
                 content
             )
         # Clean up extra whitespace
-        # Remove ODF-specific prefixes and attributes
-        content = re.sub(r'<(/?)(table|text):', r'<\1', content) # Remove table: and text: prefixes from tags
-        content = re.sub(r'table:style-name="[^"]*"', '', content) # Remove table:style-name attribute
-        content = re.sub(r'table:value-type="[^"]*"', '', content) # Remove table:value-type attribute
-        content = re.sub(r'text:style-name="[^"]*"', '', content) # Remove text:style-name attribute
+        # Replace specific ODF table elements with XHTML equivalents FIRST
+        content = re.sub(r'<table:table([^>]*)>', r'<table\1>', content, flags=re.IGNORECASE)
+        content = re.sub(r'</table:table>', r'</table>', content, flags=re.IGNORECASE)
+        content = re.sub(r'<table:table-row([^>]*)>', r'<tr\1>', content, flags=re.IGNORECASE)
+        content = re.sub(r'</table:table-row>', r'</tr>', content, flags=re.IGNORECASE)
+        content = re.sub(r'<table:table-cell([^>]*)>', r'<td\1>', content, flags=re.IGNORECASE)
+        content = re.sub(r'</table:table-cell>', r'</td>', content, flags=re.IGNORECASE)
+        
+        # Handle remaining table elements without namespace prefix
+        content = re.sub(r'<table-row([^>]*)>', r'<tr\1>', content, flags=re.IGNORECASE)
+        content = re.sub(r'</table-row>', r'</tr>', content, flags=re.IGNORECASE)
+        content = re.sub(r'<table-cell([^>]*)>', r'<td\1>', content, flags=re.IGNORECASE)
+        content = re.sub(r'</table-cell>', r'</td>', content, flags=re.IGNORECASE)
+        
+        # Handle any remaining ODF prefixed tags more comprehensively
+        content = re.sub(r'<(/?)table:([^>\s]+)([^>]*)>', r'<\1\2\3>', content, flags=re.IGNORECASE)
+        content = re.sub(r'<(/?)text:([^>\s]+)([^>]*)>', r'<\1p\3>', content, flags=re.IGNORECASE)  # Convert text: tags to p tags
+        content = re.sub(r'<(/?)draw:([^>\s]+)([^>]*)>', r'<\1div\3>', content, flags=re.IGNORECASE)  # Convert draw: tags to div tags
+        content = re.sub(r'<(/?)office:([^>\s]+)([^>]*)>', r'<\1div\3>', content, flags=re.IGNORECASE)  # Convert office: tags to div tags
+        
+        # Remove any remaining ODF-specific prefixes and attributes
+        content = re.sub(r'table:[^=]*="[^"]*"', '', content) # Remove table: attributes
+        content = re.sub(r'text:[^=]*="[^"]*"', '', content) # Remove text: attributes
+        content = re.sub(r'draw:[^=]*="[^"]*"', '', content) # Remove draw: attributes
+        content = re.sub(r'office:[^=]*="[^"]*"', '', content) # Remove office: attributes
+        content = re.sub(r'fo:[^=]*="[^"]*"', '', content) # Remove fo: attributes
+        content = re.sub(r'style:[^=]*="[^"]*"', '', content) # Remove style: attributes
+        # Replace <p> tags containing heading elements with <div> tags for valid nesting
+        content = re.sub(r'<p([^>]*)>\s*(<h[1-6][^>]*>.*?<\/h[1-6]>)\s*<\/p>', r'<div\1>\2</div>', content, flags=re.DOTALL | re.IGNORECASE)
+        # Replace all heading tags with div tags to ensure valid nesting in all cases
+        content = re.sub(r'<(h[1-6])([^>]*)>(.*?)<\/\1>', r'<div\2>\3</div>', content, flags=re.DOTALL | re.IGNORECASE)
         
         content = re.sub(r'\s+', ' ', content)
         content = re.sub(r'>\s+<', '><', content)
         return content.strip()
+
+    def clean_svg_content(self, content):
+        # Remove rdf:RDF blocks from SVG files
+        content = re.sub(r'<rdf:RDF>.*?</rdf:RDF>', '', content, flags=re.DOTALL | re.IGNORECASE)
+        return content
 
     def create_chapter_xhtml(self, chapter_num, section_num, title, chapter_dir):
         # Merge all HTML files in the chapter directory in sorted order
@@ -189,7 +266,7 @@ class FixedEpubBuilder:
         
         return f'''<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mml="http://www.w3.org/1998/Math/MathML">
 <head>
     <title>{safe_title}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -230,6 +307,22 @@ class FixedEpubBuilder:
             display: block;
             margin: 1em auto;
         }}
+        img.math-svg {{
+            display: inline;
+            vertical-align: middle;
+            height: 1.2em;
+            margin: 0 0.1em;
+            width: auto;
+        }}
+        .math-unicode {{
+            font-family: "STIX Two Math", "STIX", "Cambria Math", "Times New Roman", serif;
+            font-size: 1em;
+        }}
+        .math-fallback {{
+            font-family: "STIX Two Math", "STIX", "Cambria Math", "Times New Roman", serif;
+            font-style: italic;
+            color: #666;
+        }}
         ul, ol {{
             margin: 1em 0;
             padding-left: 2em;
@@ -247,6 +340,8 @@ class FixedEpubBuilder:
     def find_and_add_images(self, epub_zip, chapter_dirs):
         image_exts = {'.svg', '.png', '.jpg', '.jpeg', '.gif'}
         image_files = []
+        
+        # Add existing images from chapter directories
         for _, _, _, chapter_dir in chapter_dirs:
             for root, dirs, files in os.walk(chapter_dir):
                 for fname in files:
@@ -255,13 +350,38 @@ class FixedEpubBuilder:
                         abs_img_path = os.path.join(root, fname)
                         rel_img_path = os.path.relpath(abs_img_path, self.source_dir)
                         epub_img_path = f'OEBPS/{rel_img_path}'
-                        with open(abs_img_path, 'rb') as imgf:
-                            epub_zip.writestr(epub_img_path, imgf.read())
+                        with open(abs_img_path, 'r', encoding='utf-8') as imgf:
+                            img_content = imgf.read()
+                            if ext == '.svg':
+                                img_content = self.clean_svg_content(img_content)
+                            epub_zip.writestr(epub_img_path, img_content.encode('utf-8'))
                         image_files.append(rel_img_path)
+        
+        # Add generated math SVG images
+        math_images_dir = Path("math_images")
+        if math_images_dir.exists():
+            for svg_file in math_images_dir.glob("*.svg"):
+                rel_img_path = f"math_images/{svg_file.name}"
+                epub_img_path = f'OEBPS/{rel_img_path}'
+                with open(svg_file, 'r', encoding='utf-8') as imgf:
+                    img_content = imgf.read()
+                    img_content = self.clean_svg_content(img_content)
+                    epub_zip.writestr(epub_img_path, img_content.encode('utf-8'))
+                image_files.append(rel_img_path)
+                print(f"Added math SVG: {svg_file.name}")
+        
         return image_files
 
     def build_epub(self):
         print("Starting EPUB 2.0 build...")
+        
+        # Clean up math_images directory before build
+        import shutil
+        math_images_dir = Path("math_images")
+        if math_images_dir.exists():
+            shutil.rmtree(math_images_dir)
+            print("Cleaned up existing math_images directory")
+        
         chapter_dirs = self.get_chapter_directories()
         print(f"Found {len(chapter_dirs)} chapters")
         
@@ -297,7 +417,8 @@ class FixedEpubBuilder:
         return True
 
 def main():
-    builder = FixedEpubBuilder()
+    # Set single_chapter_mode to True for debugging the first chapter only
+    builder = FixedEpubBuilder(single_chapter_mode=True)
     success = builder.build_epub()
     if success:
         print("EPUB 2.0 build completed successfully!")

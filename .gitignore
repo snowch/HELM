@@ -1,3 +1,5 @@
 tmp/
 *.epub
 .DS_Store
+__pycache__/
+math_images/
