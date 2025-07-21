@@ -16,13 +16,14 @@ import mimetypes
 from mathml_to_svg import MathMLToSVGConverter
 
 class FixedEpubBuilder:
-    def __init__(self, source_dir='.', output_file='HELM.epub', single_chapter_mode=False):
+    def __init__(self, source_dir='.', output_file='HELM.epub', single_chapter_mode=False, max_chapters=None):
         self.source_dir = Path(source_dir)
         self.output_file = output_file
         self.chapters = []
         self.html_files = []  # Store individual HTML files instead of merged chapters
         self.image_files = []
         self.single_chapter_mode = single_chapter_mode
+        self.max_chapters = max_chapters
         # Initialize MathML to SVG converter
         self.mathml_converter = MathMLToSVGConverter(output_dir="math_images")
 
@@ -40,8 +41,11 @@ class FixedEpubBuilder:
                     chapter_dirs.append((chapter_num, section_num, title, item))
         chapter_dirs.sort(key=lambda x: (x[0], x[1]))
         
+        # Handle chapter limiting
         if self.single_chapter_mode and chapter_dirs:
-            return [chapter_dirs[0]] # Return only the first chapter
+            return [chapter_dirs[0]]  # Return only the first chapter
+        elif self.max_chapters is not None and self.max_chapters > 0:
+            return chapter_dirs[:self.max_chapters]  # Return specified number of chapters
         
         return chapter_dirs
 
@@ -142,9 +146,11 @@ class FixedEpubBuilder:
             chapter_key = (html_file['chapter_num'], html_file['section_num'])
             play_order = i + 1
             
-            # If this is a new chapter, add the previous chapter's nav points
+            # If this is a new chapter, close the previous chapter and add its nav points
             if current_chapter != chapter_key:
                 if chapter_nav_points:
+                    # Close the previous chapter
+                    chapter_nav_points.append('    </navPoint>')
                     nav_points.extend(chapter_nav_points)
                 
                 # Start new chapter
@@ -192,6 +198,12 @@ class FixedEpubBuilder:
 </ncx>'''
 
     def clean_html_content(self, content, chapter_dir_name=None, html_files_map=None):
+        # FIRST: Remove all problematic ODF structures before any other processing
+        # This must be done first to prevent XML parsing issues
+        content = re.sub(r'<table:table-row[^>]*>.*?</table:table-row>', '', content, flags=re.DOTALL | re.IGNORECASE)
+        content = re.sub(r'<table:table-cell[^>]*>.*?</table:table-cell>', '', content, flags=re.DOTALL | re.IGNORECASE)
+        content = re.sub(r'<text:p[^>]*>.*?</text:p>', '', content, flags=re.DOTALL | re.IGNORECASE)
+        
         # Remove script tags
         content = re.sub(r'<script[^>]*>.*?</script>', '', content, flags=re.DOTALL | re.IGNORECASE)
         # Remove navigation elements
@@ -293,9 +305,19 @@ class FixedEpubBuilder:
         content = re.sub(r'<table-cell([^>]*)>', r'<td\1>', content, flags=re.IGNORECASE)
         content = re.sub(r'</table-cell>', r'</td>', content, flags=re.IGNORECASE)
         
+        # CRITICAL FIX: Remove all ODF table structures completely before they cause XML issues
+        # Remove entire ODF table rows that contain problematic text:p tags
+        content = re.sub(r'<table:table-row[^>]*>.*?</table:table-row>', '', content, flags=re.DOTALL | re.IGNORECASE)
+        
+        # Remove any remaining ODF table cells that might be orphaned
+        content = re.sub(r'<table:table-cell[^>]*>.*?</table:table-cell>', '', content, flags=re.DOTALL | re.IGNORECASE)
+        
+        # Remove any remaining text:p tags completely (don't convert them)
+        content = re.sub(r'<text:p[^>]*>.*?</text:p>', '', content, flags=re.DOTALL | re.IGNORECASE)
+        
         # Handle any remaining ODF prefixed tags more comprehensively
-        content = re.sub(r'<(/?)table:([^>\s]+)([^>]*)>', r'<\1\2\3>', content, flags=re.IGNORECASE)
-        content = re.sub(r'<(/?)text:([^>\s]+)([^>]*)>', r'<\1p\3>', content, flags=re.IGNORECASE)  # Convert text: tags to p tags
+        content = re.sub(r'<(/?)table:([^>\s]+)([^>]*)>', '', content, flags=re.IGNORECASE)  # Remove completely
+        content = re.sub(r'<(/?)text:([^>\s]+)([^>]*)>', '', content, flags=re.IGNORECASE)  # Remove completely
         content = re.sub(r'<(/?)draw:([^>\s]+)([^>]*)>', r'<\1div\3>', content, flags=re.IGNORECASE)  # Convert draw: tags to div tags
         content = re.sub(r'<(/?)office:([^>\s]+)([^>]*)>', r'<\1div\3>', content, flags=re.IGNORECASE)  # Convert office: tags to div tags
         
@@ -306,6 +328,13 @@ class FixedEpubBuilder:
         content = re.sub(r'office:[^=]*="[^"]*"', '', content) # Remove office: attributes
         content = re.sub(r'fo:[^=]*="[^"]*"', '', content) # Remove fo: attributes
         content = re.sub(r'style:[^=]*="[^"]*"', '', content) # Remove style: attributes
+        
+        # Fix malformed class attributes (e.g., class="td 11" should be class="td11")
+        content = re.sub(r'class="td\s+(\d+)"', r'class="td\1"', content, flags=re.IGNORECASE)
+        
+        # Clean up any empty or malformed tags that might have been left behind
+        content = re.sub(r'<(span|div|p)\s*>\s*</\1>', '', content, flags=re.IGNORECASE)  # Remove empty tags
+        content = re.sub(r'<(span|div|p)\s+[^>]*>\s*</\1>', '', content, flags=re.IGNORECASE)  # Remove empty tags with attributes
         # Replace <p> tags containing heading elements with <div> tags for valid nesting
         content = re.sub(r'<p([^>]*)>\s*(<h[1-6][^>]*>.*?<\/h[1-6]>)\s*<\/p>', r'<div\1>\2</div>', content, flags=re.DOTALL | re.IGNORECASE)
 
@@ -586,11 +615,23 @@ class FixedEpubBuilder:
         return True
 
 def main():
-    # Set single_chapter_mode to True for debugging the first chapter only
-    builder = FixedEpubBuilder(single_chapter_mode=True)
+    # Developer options - modify these variables as needed:
+    max_chapters = 6  # Set to a number to limit chapters (e.g., 5 for first 5 chapters)
+    single_chapter_mode = False  # Set to True for debugging the first chapter only
+    
+    # Create builder with specified options
+    builder = FixedEpubBuilder(
+        single_chapter_mode=single_chapter_mode,
+        max_chapters=max_chapters
+    )
+    
     success = builder.build_epub()
     if success:
         print("EPUB 2.0 build completed successfully!")
+        if max_chapters is not None:
+            print(f"Limited to first {max_chapters} chapters")
+        elif single_chapter_mode:
+            print("Single chapter mode - processed only the first chapter")
         print("This version should validate against EPUB 2.0 rules.")
     else:
         print("EPUB build failed!")
