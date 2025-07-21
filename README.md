@@ -54,15 +54,27 @@ This will:
 - Build the EPUB from all content in the current directory
 - Create `HELM_Complete.epub` in the current directory
 
-### Alternative: Simple EPUB Builder
+### Alternative EPUB Builders
 
-If you encounter dependency issues, you can use the simple EPUB builder that only uses Python standard library:
+If you encounter dependency issues or EPUB compatibility problems, you have two alternative builders:
+
+#### Simple EPUB Builder
+Uses only Python standard library (no external dependencies):
 
 ```bash
 python3 simple_epub_builder.py
 ```
 
-This creates `HELM_Simple.epub` with basic formatting but no external dependencies required.
+This creates `HELM_Simple.epub` with basic formatting.
+
+#### Fixed EPUB Builder
+Addresses common EPUB validation issues and improves compatibility:
+
+```bash
+python3 fixed_epub_builder.py
+```
+
+This creates `HELM_Fixed.epub` with improved EPUB 3.0 compliance and better reader compatibility.
 
 ### Advanced Usage
 
