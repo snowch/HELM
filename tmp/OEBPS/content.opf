@@ -1,0 +1,1314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="3.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="BookId">b61b4a9d-2569-4721-85b1-cb53fd79eb6c</dc:identifier>
+        <dc:title>HELM: Helping Engineers Learn Mathematics</dc:title>
+        <dc:creator>HELM Consortium</dc:creator>
+        <dc:language>en</dc:language>
+        <dc:date>2025-07-21T10:14:51Z</dc:date>
+        <dc:rights>Creative Commons Attribution-NonCommercial 4.0 International License</dc:rights>
+        <meta property="dcterms:modified">2025-07-21T10:14:51Z</meta>
+    </metadata>
+    <manifest>
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="chapter_1_1" href="chapter_1_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_1_2" href="chapter_1_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_1_3" href="chapter_1_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_1_4" href="chapter_1_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_1_5" href="chapter_1_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_2_1" href="chapter_2_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_2_2" href="chapter_2_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_2_3" href="chapter_2_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_2_4" href="chapter_2_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_2_5" href="chapter_2_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_2_6" href="chapter_2_6.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_2_7" href="chapter_2_7.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_3_1" href="chapter_3_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_3_2" href="chapter_3_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_3_3" href="chapter_3_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_3_4" href="chapter_3_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_3_5" href="chapter_3_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_3_6" href="chapter_3_6.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_4_1" href="chapter_4_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_4_2" href="chapter_4_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_4_3" href="chapter_4_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_4_4" href="chapter_4_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_4_5" href="chapter_4_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_5_1" href="chapter_5_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_5_2" href="chapter_5_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_5_3" href="chapter_5_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_5_4" href="chapter_5_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_6_1" href="chapter_6_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_6_2" href="chapter_6_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_6_3" href="chapter_6_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_6_4" href="chapter_6_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_6_5" href="chapter_6_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_6_6" href="chapter_6_6.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_7_1" href="chapter_7_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_7_2" href="chapter_7_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_7_3" href="chapter_7_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_7_4" href="chapter_7_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_8_1" href="chapter_8_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_8_2" href="chapter_8_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_8_3" href="chapter_8_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_9_1" href="chapter_9_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_9_2" href="chapter_9_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_9_3" href="chapter_9_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_9_4" href="chapter_9_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_9_5" href="chapter_9_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_10_2" href="chapter_10_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_10_3" href="chapter_10_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_10_4" href="chapter_10_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_11_1" href="chapter_11_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_11_2" href="chapter_11_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_11_3" href="chapter_11_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_11_4" href="chapter_11_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_11_5" href="chapter_11_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_11_6" href="chapter_11_6.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_11_7" href="chapter_11_7.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_12_1" href="chapter_12_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_12_2" href="chapter_12_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_12_3" href="chapter_12_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_12_4" href="chapter_12_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_12_5" href="chapter_12_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_12_6" href="chapter_12_6.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_13_1" href="chapter_13_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_13_2" href="chapter_13_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_13_3" href="chapter_13_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_13_4" href="chapter_13_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_13_5" href="chapter_13_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_13_6" href="chapter_13_6.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_14_1" href="chapter_14_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_14_2" href="chapter_14_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_14_3" href="chapter_14_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_14_4" href="chapter_14_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_15_1" href="chapter_15_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_15_2" href="chapter_15_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_15_3" href="chapter_15_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_16_1" href="chapter_16_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_16_2" href="chapter_16_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_16_3" href="chapter_16_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_16_4" href="chapter_16_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_16_5" href="chapter_16_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_17_1" href="chapter_17_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_17_2" href="chapter_17_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_17_3" href="chapter_17_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_18_1" href="chapter_18_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_18_2" href="chapter_18_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_18_3" href="chapter_18_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_18_4" href="chapter_18_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_19_1" href="chapter_19_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_19_2" href="chapter_19_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_19_3" href="chapter_19_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_19_4" href="chapter_19_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_20_1" href="chapter_20_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_20_2" href="chapter_20_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_20_3" href="chapter_20_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_20_4" href="chapter_20_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_20_5" href="chapter_20_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_20_6" href="chapter_20_6.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_21_1" href="chapter_21_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_21_2" href="chapter_21_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_21_3" href="chapter_21_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_21_4" href="chapter_21_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_21_5" href="chapter_21_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_22_1" href="chapter_22_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_22_2" href="chapter_22_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_22_3" href="chapter_22_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_22_4" href="chapter_22_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_23_1" href="chapter_23_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_23_2" href="chapter_23_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_23_3" href="chapter_23_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_23_4" href="chapter_23_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_23_5" href="chapter_23_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_23_6" href="chapter_23_6.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_23_7" href="chapter_23_7.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_24_1" href="chapter_24_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_24_2" href="chapter_24_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_24_3" href="chapter_24_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_25_1" href="chapter_25_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_25_2" href="chapter_25_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_25_3" href="chapter_25_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_25_4" href="chapter_25_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_26_1" href="chapter_26_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_26_2" href="chapter_26_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_26_3" href="chapter_26_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_26_4" href="chapter_26_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_26_5" href="chapter_26_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_26_6" href="chapter_26_6.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_27_1" href="chapter_27_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_27_2" href="chapter_27_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_27_3" href="chapter_27_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_27_4" href="chapter_27_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_28_1" href="chapter_28_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_28_2" href="chapter_28_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_28_3" href="chapter_28_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_29_1" href="chapter_29_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_29_2" href="chapter_29_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_29_3" href="chapter_29_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_30_1" href="chapter_30_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_30_2" href="chapter_30_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_30_3" href="chapter_30_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_30_4" href="chapter_30_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_30_5" href="chapter_30_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_31_1" href="chapter_31_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_31_2" href="chapter_31_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_31_3" href="chapter_31_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_31_4" href="chapter_31_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_32_1" href="chapter_32_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_32_2" href="chapter_32_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_32_3" href="chapter_32_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_32_4" href="chapter_32_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_32_5" href="chapter_32_5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_33_1" href="chapter_33_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_33_2" href="chapter_33_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_34_1" href="chapter_34_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_34_2" href="chapter_34_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_34_3" href="chapter_34_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_35_1" href="chapter_35_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_35_2" href="chapter_35_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_35_3" href="chapter_35_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_35_4" href="chapter_35_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_36_1" href="chapter_36_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_36_2" href="chapter_36_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_37_1" href="chapter_37_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_37_2" href="chapter_37_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_37_3" href="chapter_37_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_37_4" href="chapter_37_4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_38_1" href="chapter_38_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_38_2" href="chapter_38_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_38_3" href="chapter_38_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_39_1" href="chapter_39_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_39_2" href="chapter_39_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_39_3" href="chapter_39_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_40_1" href="chapter_40_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_40_2" href="chapter_40_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_41_1" href="chapter_41_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_41_2" href="chapter_41_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_41_3" href="chapter_41_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_42_1" href="chapter_42_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_42_2" href="chapter_42_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_43_1" href="chapter_43_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_43_2" href="chapter_43_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_44_1" href="chapter_44_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_44_2" href="chapter_44_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_44_3" href="chapter_44_3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_45_1" href="chapter_45_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_45_2" href="chapter_45_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_46_1" href="chapter_46_1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter_46_2" href="chapter_46_2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="1_1_math_notation_n_symbols-web_figures_pdf_block1-fig1_svg" href="1_1_math_notation_n_symbols-web/figures/pdf/block1-fig1.svg" media-type="image/svg+xml"/>
+    <item id="1_1_math_notation_n_symbols-web_figures_pdf_block1-fig3_svg" href="1_1_math_notation_n_symbols-web/figures/pdf/block1-fig3.svg" media-type="image/svg+xml"/>
+    <item id="1_1_math_notation_n_symbols-web_figures_pdf_block1-fig2_svg" href="1_1_math_notation_n_symbols-web/figures/pdf/block1-fig2.svg" media-type="image/svg+xml"/>
+    <item id="1_1_math_notation_n_symbols-web_figures_pdf_block1-figex1_svg" href="1_1_math_notation_n_symbols-web/figures/pdf/block1-figex1.svg" media-type="image/svg+xml"/>
+    <item id="1_3_simplificatn_n_factorisatn-web_figures_pdf_parallel2_svg" href="1_3_simplificatn_n_factorisatn-web/figures/pdf/parallel2.svg" media-type="image/svg+xml"/>
+    <item id="1_3_simplificatn_n_factorisatn-web_figures_pdf_series_svg" href="1_3_simplificatn_n_factorisatn-web/figures/pdf/series.svg" media-type="image/svg+xml"/>
+    <item id="1_3_simplificatn_n_factorisatn-web_figures_pdf_parallel_svg" href="1_3_simplificatn_n_factorisatn-web/figures/pdf/parallel.svg" media-type="image/svg+xml"/>
+    <item id="1_5_formulae_n_transposition-web_figures_pdf_insulatedBAR_svg" href="1_5_formulae_n_transposition-web/figures/pdf/insulatedBAR.svg" media-type="image/svg+xml"/>
+    <item id="2_1_basic_concpts_of_functions-web_figures_pdf_block1-fig1_svg" href="2_1_basic_concpts_of_functions-web/figures/pdf/block1-fig1.svg" media-type="image/svg+xml"/>
+    <item id="2_1_basic_concpts_of_functions-web_figures_pdf_block1-fig3_svg" href="2_1_basic_concpts_of_functions-web/figures/pdf/block1-fig3.svg" media-type="image/svg+xml"/>
+    <item id="2_1_basic_concpts_of_functions-web_figures_pdf_block1-fig2_svg" href="2_1_basic_concpts_of_functions-web/figures/pdf/block1-fig2.svg" media-type="image/svg+xml"/>
+    <item id="2_1_basic_concpts_of_functions-web_figures_pdf_block3-fig3_svg" href="2_1_basic_concpts_of_functions-web/figures/pdf/block3-fig3.svg" media-type="image/svg+xml"/>
+    <item id="2_1_basic_concpts_of_functions-web_figures_pdf_block3-fig2_svg" href="2_1_basic_concpts_of_functions-web/figures/pdf/block3-fig2.svg" media-type="image/svg+xml"/>
+    <item id="2_1_basic_concpts_of_functions-web_figures_pdf_block3-fig1_svg" href="2_1_basic_concpts_of_functions-web/figures/pdf/block3-fig1.svg" media-type="image/svg+xml"/>
+    <item id="2_2_graph_of_functn_n_paramtrc_form-web_figures_pdf_block2-fig3_svg" href="2_2_graph_of_functn_n_paramtrc_form-web/figures/pdf/block2-fig3.svg" media-type="image/svg+xml"/>
+    <item id="2_2_graph_of_functn_n_paramtrc_form-web_figures_pdf_block2-fig1_svg" href="2_2_graph_of_functn_n_paramtrc_form-web/figures/pdf/block2-fig1.svg" media-type="image/svg+xml"/>
+    <item id="2_2_graph_of_functn_n_paramtrc_form-web_figures_pdf_block5-fig1_svg" href="2_2_graph_of_functn_n_paramtrc_form-web/figures/pdf/block5-fig1.svg" media-type="image/svg+xml"/>
+    <item id="2_3_one_2_one_n_inverse_functions-web_figures_pdf_block4-fig8_svg" href="2_3_one_2_one_n_inverse_functions-web/figures/pdf/block4-fig8.svg" media-type="image/svg+xml"/>
+    <item id="2_3_one_2_one_n_inverse_functions-web_figures_pdf_block4-fig5_svg" href="2_3_one_2_one_n_inverse_functions-web/figures/pdf/block4-fig5.svg" media-type="image/svg+xml"/>
+    <item id="2_3_one_2_one_n_inverse_functions-web_figures_pdf_block4-fig4_svg" href="2_3_one_2_one_n_inverse_functions-web/figures/pdf/block4-fig4.svg" media-type="image/svg+xml"/>
+    <item id="2_3_one_2_one_n_inverse_functions-web_figures_pdf_block4-fig6_svg" href="2_3_one_2_one_n_inverse_functions-web/figures/pdf/block4-fig6.svg" media-type="image/svg+xml"/>
+    <item id="2_3_one_2_one_n_inverse_functions-web_figures_pdf_block4-fig7_svg" href="2_3_one_2_one_n_inverse_functions-web/figures/pdf/block4-fig7.svg" media-type="image/svg+xml"/>
+    <item id="2_3_one_2_one_n_inverse_functions-web_figures_pdf_block4-fig3_svg" href="2_3_one_2_one_n_inverse_functions-web/figures/pdf/block4-fig3.svg" media-type="image/svg+xml"/>
+    <item id="2_3_one_2_one_n_inverse_functions-web_figures_pdf_block4-fig2_svg" href="2_3_one_2_one_n_inverse_functions-web/figures/pdf/block4-fig2.svg" media-type="image/svg+xml"/>
+    <item id="2_3_one_2_one_n_inverse_functions-web_figures_pdf_block4-fig1_svg" href="2_3_one_2_one_n_inverse_functions-web/figures/pdf/block4-fig1.svg" media-type="image/svg+xml"/>
+    <item id="2_4_characterising_functions-web_figures_pdf_block6-fig5(ans)_svg" href="2_4_characterising_functions-web/figures/pdf/block6-fig5(ans).svg" media-type="image/svg+xml"/>
+    <item id="2_4_characterising_functions-web_figures_pdf_block6-fig1_svg" href="2_4_characterising_functions-web/figures/pdf/block6-fig1.svg" media-type="image/svg+xml"/>
+    <item id="2_4_characterising_functions-web_figures_pdf_block6-fig3_svg" href="2_4_characterising_functions-web/figures/pdf/block6-fig3.svg" media-type="image/svg+xml"/>
+    <item id="2_4_characterising_functions-web_figures_pdf_block6-fig2_svg" href="2_4_characterising_functions-web/figures/pdf/block6-fig2.svg" media-type="image/svg+xml"/>
+    <item id="2_4_characterising_functions-web_figures_pdf_block6-fig6_svg" href="2_4_characterising_functions-web/figures/pdf/block6-fig6.svg" media-type="image/svg+xml"/>
+    <item id="2_4_characterising_functions-web_figures_pdf_block6-fig7_svg" href="2_4_characterising_functions-web/figures/pdf/block6-fig7.svg" media-type="image/svg+xml"/>
+    <item id="2_4_characterising_functions-web_figures_pdf_block6-fig4_svg" href="2_4_characterising_functions-web/figures/pdf/block6-fig4.svg" media-type="image/svg+xml"/>
+    <item id="2_4_characterising_functions-web_figures_pdf_block6-fig9_svg" href="2_4_characterising_functions-web/figures/pdf/block6-fig9.svg" media-type="image/svg+xml"/>
+    <item id="2_4_characterising_functions-web_figures_pdf_block6-fig8_svg" href="2_4_characterising_functions-web/figures/pdf/block6-fig8.svg" media-type="image/svg+xml"/>
+    <item id="2_4_characterising_functions-web_figures_pdf_block6-fig5(new)_svg" href="2_4_characterising_functions-web/figures/pdf/block6-fig5(new).svg" media-type="image/svg+xml"/>
+    <item id="2_5_the_straight_line-web_figures_pdf_block7-fig1_svg" href="2_5_the_straight_line-web/figures/pdf/block7-fig1.svg" media-type="image/svg+xml"/>
+    <item id="2_5_the_straight_line-web_figures_pdf_block7-fig3_svg" href="2_5_the_straight_line-web/figures/pdf/block7-fig3.svg" media-type="image/svg+xml"/>
+    <item id="2_5_the_straight_line-web_figures_pdf_block7-fig2_svg" href="2_5_the_straight_line-web/figures/pdf/block7-fig2.svg" media-type="image/svg+xml"/>
+    <item id="2_5_the_straight_line-web_figures_pdf_block7-fig6_svg" href="2_5_the_straight_line-web/figures/pdf/block7-fig6.svg" media-type="image/svg+xml"/>
+    <item id="2_5_the_straight_line-web_figures_pdf_block7-fig5_svg" href="2_5_the_straight_line-web/figures/pdf/block7-fig5.svg" media-type="image/svg+xml"/>
+    <item id="2_5_the_straight_line-web_figures_pdf_block7-fig4_svg" href="2_5_the_straight_line-web/figures/pdf/block7-fig4.svg" media-type="image/svg+xml"/>
+    <item id="2_6_the_circle-web_figures_pdf_circle2_svg" href="2_6_the_circle-web/figures/pdf/circle2.svg" media-type="image/svg+xml"/>
+    <item id="2_6_the_circle-web_figures_pdf_circle3_svg" href="2_6_the_circle-web/figures/pdf/circle3.svg" media-type="image/svg+xml"/>
+    <item id="2_6_the_circle-web_figures_pdf_circle1_svg" href="2_6_the_circle-web/figures/pdf/circle1.svg" media-type="image/svg+xml"/>
+    <item id="2_6_the_circle-web_figures_pdf_circle4_svg" href="2_6_the_circle-web/figures/pdf/circle4.svg" media-type="image/svg+xml"/>
+    <item id="2_6_the_circle-web_figures_pdf_circle5_svg" href="2_6_the_circle-web/figures/pdf/circle5.svg" media-type="image/svg+xml"/>
+    <item id="2_6_the_circle-web_figures_pdf_circle7_svg" href="2_6_the_circle-web/figures/pdf/circle7.svg" media-type="image/svg+xml"/>
+    <item id="2_6_the_circle-web_figures_pdf_circle4a_svg" href="2_6_the_circle-web/figures/pdf/circle4a.svg" media-type="image/svg+xml"/>
+    <item id="2_6_the_circle-web_figures_pdf_circle6_svg" href="2_6_the_circle-web/figures/pdf/circle6.svg" media-type="image/svg+xml"/>
+    <item id="2_6_the_circle-web_figures_pdf_circle11_svg" href="2_6_the_circle-web/figures/pdf/circle11.svg" media-type="image/svg+xml"/>
+    <item id="2_6_the_circle-web_figures_pdf_circle10_svg" href="2_6_the_circle-web/figures/pdf/circle10.svg" media-type="image/svg+xml"/>
+    <item id="2_6_the_circle-web_figures_pdf_circle8_svg" href="2_6_the_circle-web/figures/pdf/circle8.svg" media-type="image/svg+xml"/>
+    <item id="2_6_the_circle-web_figures_pdf_circle9_svg" href="2_6_the_circle-web/figures/pdf/circle9.svg" media-type="image/svg+xml"/>
+    <item id="2_7_some_common_engineering_functns-web_figures_pdf_rae-step_svg" href="2_7_some_common_engineering_functns-web/figures/pdf/rae-step.svg" media-type="image/svg+xml"/>
+    <item id="2_7_some_common_engineering_functns-web_figures_pdf_block8-fig9_svg" href="2_7_some_common_engineering_functns-web/figures/pdf/block8-fig9.svg" media-type="image/svg+xml"/>
+    <item id="2_7_some_common_engineering_functns-web_figures_pdf_block8-fig8_svg" href="2_7_some_common_engineering_functns-web/figures/pdf/block8-fig8.svg" media-type="image/svg+xml"/>
+    <item id="2_7_some_common_engineering_functns-web_figures_pdf_block8-fig1_svg" href="2_7_some_common_engineering_functns-web/figures/pdf/block8-fig1.svg" media-type="image/svg+xml"/>
+    <item id="2_7_some_common_engineering_functns-web_figures_pdf_block8-fig3_svg" href="2_7_some_common_engineering_functns-web/figures/pdf/block8-fig3.svg" media-type="image/svg+xml"/>
+    <item id="2_7_some_common_engineering_functns-web_figures_pdf_block8-fig2_svg" href="2_7_some_common_engineering_functns-web/figures/pdf/block8-fig2.svg" media-type="image/svg+xml"/>
+    <item id="2_7_some_common_engineering_functns-web_figures_pdf_block8-fig7_svg" href="2_7_some_common_engineering_functns-web/figures/pdf/block8-fig7.svg" media-type="image/svg+xml"/>
+    <item id="2_7_some_common_engineering_functns-web_figures_pdf_block8-fig5_svg" href="2_7_some_common_engineering_functns-web/figures/pdf/block8-fig5.svg" media-type="image/svg+xml"/>
+    <item id="2_7_some_common_engineering_functns-web_figures_pdf_block8-fig4_svg" href="2_7_some_common_engineering_functns-web/figures/pdf/block8-fig4.svg" media-type="image/svg+xml"/>
+    <item id="3_1_solving_linear_equatns-web_figures_pdf_workbook31FIG1_svg" href="3_1_solving_linear_equatns-web/figures/pdf/workbook31FIG1.svg" media-type="image/svg+xml"/>
+    <item id="3_2_solving_quadratic_equatns-web_figures_pdf_fig7_svg" href="3_2_solving_quadratic_equatns-web/figures/pdf/fig7.svg" media-type="image/svg+xml"/>
+    <item id="3_2_solving_quadratic_equatns-web_figures_pdf_fig6_svg" href="3_2_solving_quadratic_equatns-web/figures/pdf/fig6.svg" media-type="image/svg+xml"/>
+    <item id="3_2_solving_quadratic_equatns-web_figures_pdf_workbook3b2fig2_svg" href="3_2_solving_quadratic_equatns-web/figures/pdf/workbook3b2fig2.svg" media-type="image/svg+xml"/>
+    <item id="3_2_solving_quadratic_equatns-web_figures_pdf_workbook3b2fig1_svg" href="3_2_solving_quadratic_equatns-web/figures/pdf/workbook3b2fig1.svg" media-type="image/svg+xml"/>
+    <item id="3_3_solving_polynomial_equatns-web_figures_pdf_block3fig1_svg" href="3_3_solving_polynomial_equatns-web/figures/pdf/block3fig1.svg" media-type="image/svg+xml"/>
+    <item id="3_3_solving_polynomial_equatns-web_figures_pdf_block3fig2_svg" href="3_3_solving_polynomial_equatns-web/figures/pdf/block3fig2.svg" media-type="image/svg+xml"/>
+    <item id="3_4_solving_simultneus_linear_equatns-web_figures_pdf_block4fig2_svg" href="3_4_solving_simultneus_linear_equatns-web/figures/pdf/block4fig2.svg" media-type="image/svg+xml"/>
+    <item id="3_4_solving_simultneus_linear_equatns-web_figures_pdf_block4fig3_svg" href="3_4_solving_simultneus_linear_equatns-web/figures/pdf/block4fig3.svg" media-type="image/svg+xml"/>
+    <item id="3_5_solving_inequalities-web_figures_pdf_block5fig6z_svg" href="3_5_solving_inequalities-web/figures/pdf/block5fig6z.svg" media-type="image/svg+xml"/>
+    <item id="3_5_solving_inequalities-web_figures_pdf_block5fig4_svg" href="3_5_solving_inequalities-web/figures/pdf/block5fig4.svg" media-type="image/svg+xml"/>
+    <item id="3_5_solving_inequalities-web_figures_pdf_block5fig5_svg" href="3_5_solving_inequalities-web/figures/pdf/block5fig5.svg" media-type="image/svg+xml"/>
+    <item id="3_5_solving_inequalities-web_figures_pdf_block5fig1_svg" href="3_5_solving_inequalities-web/figures/pdf/block5fig1.svg" media-type="image/svg+xml"/>
+    <item id="3_5_solving_inequalities-web_figures_pdf_block5fig2_svg" href="3_5_solving_inequalities-web/figures/pdf/block5fig2.svg" media-type="image/svg+xml"/>
+    <item id="3_5_solving_inequalities-web_figures_pdf_block5fig3_svg" href="3_5_solving_inequalities-web/figures/pdf/block5fig3.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_ex1fig4_svg" href="4_1_right_angled_triangles-web/figures/pdf/ex1fig4.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_ex1fig5_svg" href="4_1_right_angled_triangles-web/figures/pdf/ex1fig5.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_ex1fig7_svg" href="4_1_right_angled_triangles-web/figures/pdf/ex1fig7.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_ex1fig6_svg" href="4_1_right_angled_triangles-web/figures/pdf/ex1fig6.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_ex1fig2_svg" href="4_1_right_angled_triangles-web/figures/pdf/ex1fig2.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_brake_svg" href="4_1_right_angled_triangles-web/figures/pdf/brake.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_TrigFig31_svg" href="4_1_right_angled_triangles-web/figures/pdf/TrigFig31.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_ex1fig1_svg" href="4_1_right_angled_triangles-web/figures/pdf/ex1fig1.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_TrigFig30_svg" href="4_1_right_angled_triangles-web/figures/pdf/TrigFig30.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_horizon_svg" href="4_1_right_angled_triangles-web/figures/pdf/horizon.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_fig2_svg" href="4_1_right_angled_triangles-web/figures/pdf/fig2.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_pythag_svg" href="4_1_right_angled_triangles-web/figures/pdf/pythag.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_fig3_svg" href="4_1_right_angled_triangles-web/figures/pdf/fig3.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_Trig6Fig6c_svg" href="4_1_right_angled_triangles-web/figures/pdf/Trig6Fig6c.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_Trig6Fig6d_svg" href="4_1_right_angled_triangles-web/figures/pdf/Trig6Fig6d.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_sphere_svg" href="4_1_right_angled_triangles-web/figures/pdf/sphere.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_Trig6Fig6e_svg" href="4_1_right_angled_triangles-web/figures/pdf/Trig6Fig6e.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_Trig6Fig2_svg" href="4_1_right_angled_triangles-web/figures/pdf/Trig6Fig2.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_Trig6Fig3_svg" href="4_1_right_angled_triangles-web/figures/pdf/Trig6Fig3.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_Trig6Fig1_svg" href="4_1_right_angled_triangles-web/figures/pdf/Trig6Fig1.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_Trig6Fig4_svg" href="4_1_right_angled_triangles-web/figures/pdf/Trig6Fig4.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_Trig6Fig5_svg" href="4_1_right_angled_triangles-web/figures/pdf/Trig6Fig5.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_TrigFig29_svg" href="4_1_right_angled_triangles-web/figures/pdf/TrigFig29.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_noise_svg" href="4_1_right_angled_triangles-web/figures/pdf/noise.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_Trig6Fig6ab_svg" href="4_1_right_angled_triangles-web/figures/pdf/Trig6Fig6ab.svg" media-type="image/svg+xml"/>
+    <item id="4_1_right_angled_triangles-web_figures_pdf_ex1fig8_svg" href="4_1_right_angled_triangles-web/figures/pdf/ex1fig8.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_Trig6Fig13_svg" href="4_2_trigonometric_functns-web/figures/pdf/Trig6Fig13.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_Trig6Fig12_svg" href="4_2_trigonometric_functns-web/figures/pdf/Trig6Fig12.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_Trig6Fig10_svg" href="4_2_trigonometric_functns-web/figures/pdf/Trig6Fig10.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_Trig6Fig11_svg" href="4_2_trigonometric_functns-web/figures/pdf/Trig6Fig11.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_TrigFig18_svg" href="4_2_trigonometric_functns-web/figures/pdf/TrigFig18.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_TrigFig18a_svg" href="4_2_trigonometric_functns-web/figures/pdf/TrigFig18a.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_Trig6Fig8_svg" href="4_2_trigonometric_functns-web/figures/pdf/Trig6Fig8.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_Trig6Fig9_svg" href="4_2_trigonometric_functns-web/figures/pdf/Trig6Fig9.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_ex2fig1_svg" href="4_2_trigonometric_functns-web/figures/pdf/ex2fig1.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_ex2fig2_svg" href="4_2_trigonometric_functns-web/figures/pdf/ex2fig2.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_ex2fig3_svg" href="4_2_trigonometric_functns-web/figures/pdf/ex2fig3.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_Trig6Fig7ab_svg" href="4_2_trigonometric_functns-web/figures/pdf/Trig6Fig7ab.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_fringes_svg" href="4_2_trigonometric_functns-web/figures/pdf/fringes.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_glass_svg" href="4_2_trigonometric_functns-web/figures/pdf/glass.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_TrigFig15_svg" href="4_2_trigonometric_functns-web/figures/pdf/TrigFig15.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_TrigFig14_svg" href="4_2_trigonometric_functns-web/figures/pdf/TrigFig14.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_TrigFig16_svg" href="4_2_trigonometric_functns-web/figures/pdf/TrigFig16.svg" media-type="image/svg+xml"/>
+    <item id="4_2_trigonometric_functns-web_figures_pdf_TrigFig17_svg" href="4_2_trigonometric_functns-web/figures/pdf/TrigFig17.svg" media-type="image/svg+xml"/>
+    <item id="4_3_trigonometric_identities-web_figures_pdf_ex3fig1_svg" href="4_3_trigonometric_identities-web/figures/pdf/ex3fig1.svg" media-type="image/svg+xml"/>
+    <item id="4_3_trigonometric_identities-web_figures_pdf_projectile_svg" href="4_3_trigonometric_identities-web/figures/pdf/projectile.svg" media-type="image/svg+xml"/>
+    <item id="4_4_applicatn_trignmetry_to_triangles-web_figures_pdf_TrigFig20_svg" href="4_4_applicatn_trignmetry_to_triangles-web/figures/pdf/TrigFig20.svg" media-type="image/svg+xml"/>
+    <item id="4_4_applicatn_trignmetry_to_triangles-web_figures_pdf_TrigFig23_svg" href="4_4_applicatn_trignmetry_to_triangles-web/figures/pdf/TrigFig23.svg" media-type="image/svg+xml"/>
+    <item id="4_4_applicatn_trignmetry_to_triangles-web_figures_pdf_TrigFig24a_svg" href="4_4_applicatn_trignmetry_to_triangles-web/figures/pdf/TrigFig24a.svg" media-type="image/svg+xml"/>
+    <item id="4_4_applicatn_trignmetry_to_triangles-web_figures_pdf_TrigFig22_svg" href="4_4_applicatn_trignmetry_to_triangles-web/figures/pdf/TrigFig22.svg" media-type="image/svg+xml"/>
+    <item id="4_4_applicatn_trignmetry_to_triangles-web_figures_pdf_TrigFig18c_svg" href="4_4_applicatn_trignmetry_to_triangles-web/figures/pdf/TrigFig18c.svg" media-type="image/svg+xml"/>
+    <item id="4_4_applicatn_trignmetry_to_triangles-web_figures_pdf_ex4fig1_svg" href="4_4_applicatn_trignmetry_to_triangles-web/figures/pdf/ex4fig1.svg" media-type="image/svg+xml"/>
+    <item id="4_4_applicatn_trignmetry_to_triangles-web_figures_pdf_ex4fig6_svg" href="4_4_applicatn_trignmetry_to_triangles-web/figures/pdf/ex4fig6.svg" media-type="image/svg+xml"/>
+    <item id="4_4_applicatn_trignmetry_to_triangles-web_figures_pdf_ex4fig5_svg" href="4_4_applicatn_trignmetry_to_triangles-web/figures/pdf/ex4fig5.svg" media-type="image/svg+xml"/>
+    <item id="4_4_applicatn_trignmetry_to_triangles-web_figures_pdf_ex4fig4_svg" href="4_4_applicatn_trignmetry_to_triangles-web/figures/pdf/ex4fig4.svg" media-type="image/svg+xml"/>
+    <item id="4_5_applicatn_trignmetry_to_waves-web_figures_pdf_TrigFig26_svg" href="4_5_applicatn_trignmetry_to_waves-web/figures/pdf/TrigFig26.svg" media-type="image/svg+xml"/>
+    <item id="4_5_applicatn_trignmetry_to_waves-web_figures_pdf_TrigFig25a_svg" href="4_5_applicatn_trignmetry_to_waves-web/figures/pdf/TrigFig25a.svg" media-type="image/svg+xml"/>
+    <item id="4_5_applicatn_trignmetry_to_waves-web_figures_pdf_TrigFig27_svg" href="4_5_applicatn_trignmetry_to_waves-web/figures/pdf/TrigFig27.svg" media-type="image/svg+xml"/>
+    <item id="4_5_applicatn_trignmetry_to_waves-web_figures_pdf_TrigFig25_svg" href="4_5_applicatn_trignmetry_to_waves-web/figures/pdf/TrigFig25.svg" media-type="image/svg+xml"/>
+    <item id="4_5_applicatn_trignmetry_to_waves-web_figures_pdf_TrigFig28_svg" href="4_5_applicatn_trignmetry_to_waves-web/figures/pdf/TrigFig28.svg" media-type="image/svg+xml"/>
+    <item id="5_1_functions_n_modelling-web_figures_pdf_Block7_Fig8_svg" href="5_1_functions_n_modelling-web/figures/pdf/Block7_Fig8.svg" media-type="image/svg+xml"/>
+    <item id="5_1_functions_n_modelling-web_figures_pdf_Block7_Fig4a_svg" href="5_1_functions_n_modelling-web/figures/pdf/Block7_Fig4a.svg" media-type="image/svg+xml"/>
+    <item id="5_1_functions_n_modelling-web_figures_pdf_Block7_Fig6b_svg" href="5_1_functions_n_modelling-web/figures/pdf/Block7_Fig6b.svg" media-type="image/svg+xml"/>
+    <item id="5_1_functions_n_modelling-web_figures_pdf_Block7_Fig6a_svg" href="5_1_functions_n_modelling-web/figures/pdf/Block7_Fig6a.svg" media-type="image/svg+xml"/>
+    <item id="5_1_functions_n_modelling-web_figures_pdf_Block7_Fig3_svg" href="5_1_functions_n_modelling-web/figures/pdf/Block7_Fig3.svg" media-type="image/svg+xml"/>
+    <item id="5_1_functions_n_modelling-web_figures_pdf_Block7_fig2_svg" href="5_1_functions_n_modelling-web/figures/pdf/Block7_fig2.svg" media-type="image/svg+xml"/>
+    <item id="5_1_functions_n_modelling-web_figures_pdf_Block7_Fig1_svg" href="5_1_functions_n_modelling-web/figures/pdf/Block7_Fig1.svg" media-type="image/svg+xml"/>
+    <item id="5_1_functions_n_modelling-web_figures_pdf_Block7_Fig5_svg" href="5_1_functions_n_modelling-web/figures/pdf/Block7_Fig5.svg" media-type="image/svg+xml"/>
+    <item id="5_1_functions_n_modelling-web_figures_pdf_Block7_Fig4_svg" href="5_1_functions_n_modelling-web/figures/pdf/Block7_Fig4.svg" media-type="image/svg+xml"/>
+    <item id="5_1_functions_n_modelling-web_figures_pdf_Block7_Fig7_svg" href="5_1_functions_n_modelling-web/figures/pdf/Block7_Fig7.svg" media-type="image/svg+xml"/>
+    <item id="5_2_quadratic_functions_n_modelling-web_figures_pdf_Block7_Fig9_svg" href="5_2_quadratic_functions_n_modelling-web/figures/pdf/Block7_Fig9.svg" media-type="image/svg+xml"/>
+    <item id="5_2_quadratic_functions_n_modelling-web_figures_pdf_box_svg" href="5_2_quadratic_functions_n_modelling-web/figures/pdf/box.svg" media-type="image/svg+xml"/>
+    <item id="5_2_quadratic_functions_n_modelling-web_figures_pdf_sketch_svg" href="5_2_quadratic_functions_n_modelling-web/figures/pdf/sketch.svg" media-type="image/svg+xml"/>
+    <item id="5_2_quadratic_functions_n_modelling-web_figures_pdf_Block7_Fig12_svg" href="5_2_quadratic_functions_n_modelling-web/figures/pdf/Block7_Fig12.svg" media-type="image/svg+xml"/>
+    <item id="5_2_quadratic_functions_n_modelling-web_figures_pdf_Block7_Fig10_svg" href="5_2_quadratic_functions_n_modelling-web/figures/pdf/Block7_Fig10.svg" media-type="image/svg+xml"/>
+    <item id="5_2_quadratic_functions_n_modelling-web_figures_pdf_Block7_Fig11_svg" href="5_2_quadratic_functions_n_modelling-web/figures/pdf/Block7_Fig11.svg" media-type="image/svg+xml"/>
+    <item id="5_3_oscillating_functions_n_mdelling-web_figures_pdf_Figuretide_svg" href="5_3_oscillating_functions_n_mdelling-web/figures/pdf/Figuretide.svg" media-type="image/svg+xml"/>
+    <item id="5_3_oscillating_functions_n_mdelling-web_figures_pdf_Block7_Fig13a_svg" href="5_3_oscillating_functions_n_mdelling-web/figures/pdf/Block7_Fig13a.svg" media-type="image/svg+xml"/>
+    <item id="5_3_oscillating_functions_n_mdelling-web_figures_pdf_Block7_Fig13b_svg" href="5_3_oscillating_functions_n_mdelling-web/figures/pdf/Block7_Fig13b.svg" media-type="image/svg+xml"/>
+    <item id="5_3_oscillating_functions_n_mdelling-web_figures_pdf_Block7_Fig15_svg" href="5_3_oscillating_functions_n_mdelling-web/figures/pdf/Block7_Fig15.svg" media-type="image/svg+xml"/>
+    <item id="5_3_oscillating_functions_n_mdelling-web_figures_pdf_Block7_Fig14_svg" href="5_3_oscillating_functions_n_mdelling-web/figures/pdf/Block7_Fig14.svg" media-type="image/svg+xml"/>
+    <item id="5_3_oscillating_functions_n_mdelling-web_figures_pdf_Block7_Fig13_svg" href="5_3_oscillating_functions_n_mdelling-web/figures/pdf/Block7_Fig13.svg" media-type="image/svg+xml"/>
+    <item id="5_4_casestudy_invrse_squre_law_model-web_figures_pdf_Fig2_2_svg" href="5_4_casestudy_invrse_squre_law_model-web/figures/pdf/Fig2_2.svg" media-type="image/svg+xml"/>
+    <item id="5_4_casestudy_invrse_squre_law_model-web_figures_pdf_Fig2_1_svg" href="5_4_casestudy_invrse_squre_law_model-web/figures/pdf/Fig2_1.svg" media-type="image/svg+xml"/>
+    <item id="6_1_exponential_function-web_figures_pdf_workbook6block1fig1_svg" href="6_1_exponential_function-web/figures/pdf/workbook6block1fig1.svg" media-type="image/svg+xml"/>
+    <item id="6_1_exponential_function-web_figures_pdf_workbook6block1fig3_svg" href="6_1_exponential_function-web/figures/pdf/workbook6block1fig3.svg" media-type="image/svg+xml"/>
+    <item id="6_1_exponential_function-web_figures_pdf_workbook6block1fig2_svg" href="6_1_exponential_function-web/figures/pdf/workbook6block1fig2.svg" media-type="image/svg+xml"/>
+    <item id="6_2_hyperbolic_functions-web_figures_pdf_workbook6block2fig1_svg" href="6_2_hyperbolic_functions-web/figures/pdf/workbook6block2fig1.svg" media-type="image/svg+xml"/>
+    <item id="6_4_logarithmic_function-web_figures_pdf_workbook6block4fig1_svg" href="6_4_logarithmic_function-web/figures/pdf/workbook6block4fig1.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_Block6_FigNEW1a_svg" href="6_5_modelling_exercises-web/figures/pdf/Block6_FigNEW1a.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_Block6_FigNEW1c_svg" href="6_5_modelling_exercises-web/figures/pdf/Block6_FigNEW1c.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_Block6_FigNEW1b_svg" href="6_5_modelling_exercises-web/figures/pdf/Block6_FigNEW1b.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_Block6_FigNEW1_svg" href="6_5_modelling_exercises-web/figures/pdf/Block6_FigNEW1.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_Block6_FigNEW3_svg" href="6_5_modelling_exercises-web/figures/pdf/Block6_FigNEW3.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_trombone_svg" href="6_5_modelling_exercises-web/figures/pdf/trombone.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_Block7_Fig6_5_svg" href="6_5_modelling_exercises-web/figures/pdf/Block7_Fig6_5.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_Block7_Fig6_7_svg" href="6_5_modelling_exercises-web/figures/pdf/Block7_Fig6_7.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_Block7_Fig6_6_svg" href="6_5_modelling_exercises-web/figures/pdf/Block7_Fig6_6.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_logdiag_svg" href="6_5_modelling_exercises-web/figures/pdf/logdiag.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_Block7_Fig6_2_svg" href="6_5_modelling_exercises-web/figures/pdf/Block7_Fig6_2.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_Block7_Fig6_3_svg" href="6_5_modelling_exercises-web/figures/pdf/Block7_Fig6_3.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_Block7_Fig6_1_svg" href="6_5_modelling_exercises-web/figures/pdf/Block7_Fig6_1.svg" media-type="image/svg+xml"/>
+    <item id="6_5_modelling_exercises-web_figures_pdf_Block6_FigNEWONE2_svg" href="6_5_modelling_exercises-web/figures/pdf/Block6_FigNEWONE2.svg" media-type="image/svg+xml"/>
+    <item id="6_6_log_linear_graphs-web_figures_pdf_workbook6block5fig6a_svg" href="6_6_log_linear_graphs-web/figures/pdf/workbook6block5fig6a.svg" media-type="image/svg+xml"/>
+    <item id="6_6_log_linear_graphs-web_figures_pdf_workbook6block5fig6_svg" href="6_6_log_linear_graphs-web/figures/pdf/workbook6block5fig6.svg" media-type="image/svg+xml"/>
+    <item id="6_6_log_linear_graphs-web_figures_pdf_workbook6block5fig4_svg" href="6_6_log_linear_graphs-web/figures/pdf/workbook6block5fig4.svg" media-type="image/svg+xml"/>
+    <item id="6_6_log_linear_graphs-web_figures_pdf_workbook6block5fig5_svg" href="6_6_log_linear_graphs-web/figures/pdf/workbook6block5fig5.svg" media-type="image/svg+xml"/>
+    <item id="6_6_log_linear_graphs-web_figures_pdf_workbook6block5fig1_svg" href="6_6_log_linear_graphs-web/figures/pdf/workbook6block5fig1.svg" media-type="image/svg+xml"/>
+    <item id="6_6_log_linear_graphs-web_figures_pdf_workbook6block5fig2_svg" href="6_6_log_linear_graphs-web/figures/pdf/workbook6block5fig2.svg" media-type="image/svg+xml"/>
+    <item id="6_6_log_linear_graphs-web_figures_pdf_workbook6block5fig3_svg" href="6_6_log_linear_graphs-web/figures/pdf/workbook6block5fig3.svg" media-type="image/svg+xml"/>
+    <item id="6_6_log_linear_graphs-web_figures_pdf_workbook6block5fig3a_svg" href="6_6_log_linear_graphs-web/figures/pdf/workbook6block5fig3a.svg" media-type="image/svg+xml"/>
+    <item id="7_1_introduction_to_matrices-web_figures_pdf_workbook7bl11_svg" href="7_1_introduction_to_matrices-web/figures/pdf/workbook7bl11.svg" media-type="image/svg+xml"/>
+    <item id="7_2_matrix_multiplication-web_7_2_matrix_multiplication-web0x_svg" href="7_2_matrix_multiplication-web/7_2_matrix_multiplication-web0x.svg" media-type="image/svg+xml"/>
+    <item id="7_2_matrix_multiplication-web_7_2_matrix_multiplication-web1x_svg" href="7_2_matrix_multiplication-web/7_2_matrix_multiplication-web1x.svg" media-type="image/svg+xml"/>
+    <item id="7_2_matrix_multiplication-web_7_2_matrix_multiplication-web2x_svg" href="7_2_matrix_multiplication-web/7_2_matrix_multiplication-web2x.svg" media-type="image/svg+xml"/>
+    <item id="7_2_matrix_multiplication-web_figures_pdf_workbook7bl22_svg" href="7_2_matrix_multiplication-web/figures/pdf/workbook7bl22.svg" media-type="image/svg+xml"/>
+    <item id="7_2_matrix_multiplication-web_figures_pdf_workbook7bl23_svg" href="7_2_matrix_multiplication-web/figures/pdf/workbook7bl23.svg" media-type="image/svg+xml"/>
+    <item id="7_2_matrix_multiplication-web_figures_pdf_workbook7bl21_svg" href="7_2_matrix_multiplication-web/figures/pdf/workbook7bl21.svg" media-type="image/svg+xml"/>
+    <item id="7_2_matrix_multiplication-web_figures_pdf_network_svg" href="7_2_matrix_multiplication-web/figures/pdf/network.svg" media-type="image/svg+xml"/>
+    <item id="7_3_determinants-web_figures_pdf_workbook7bl36_svg" href="7_3_determinants-web/figures/pdf/workbook7bl36.svg" media-type="image/svg+xml"/>
+    <item id="7_3_determinants-web_figures_pdf_workbook7bl35_svg" href="7_3_determinants-web/figures/pdf/workbook7bl35.svg" media-type="image/svg+xml"/>
+    <item id="8_2_solv_simul_linr_eqn_inv_mtrx_mthd-web_figures_pdf_workbook8bl31_svg" href="8_2_solv_simul_linr_eqn_inv_mtrx_mthd-web/figures/pdf/workbook8bl31.svg" media-type="image/svg+xml"/>
+    <item id="8_3_gauss_elimination-web_figures_pdf_workbook8bl32_svg" href="8_3_gauss_elimination-web/figures/pdf/workbook8bl32.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig19_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig19.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig6_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig6.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig7_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig7.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig18_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig18.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig5_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig5.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig4_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig4.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig1_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig1.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig13a_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig13a.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig3_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig3.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig20_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig20.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig2_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig2.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_figdrg_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/figdrg.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_workbook9bl14_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/workbook9bl14.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_workbook9bl11_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/workbook9bl11.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_workbook9bl13_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/workbook9bl13.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_workbook9bl12_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/workbook9bl12.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig10_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig10.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig11_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig11.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig13_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig13.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig12_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig12.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig9_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig9.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig16_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig16.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig17_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig17.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig8_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig8.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig15_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig15.svg" media-type="image/svg+xml"/>
+    <item id="9_1_basic_concepts_vectors-web_figures_pdf_block1fig14_svg" href="9_1_basic_concepts_vectors-web/figures/pdf/block1fig14.svg" media-type="image/svg+xml"/>
+    <item id="9_2_cartesian_components_of_vector-web_figures_pdf_block2fig5_svg" href="9_2_cartesian_components_of_vector-web/figures/pdf/block2fig5.svg" media-type="image/svg+xml"/>
+    <item id="9_2_cartesian_components_of_vector-web_figures_pdf_block2fig4_svg" href="9_2_cartesian_components_of_vector-web/figures/pdf/block2fig4.svg" media-type="image/svg+xml"/>
+    <item id="9_2_cartesian_components_of_vector-web_figures_pdf_block2fig6_svg" href="9_2_cartesian_components_of_vector-web/figures/pdf/block2fig6.svg" media-type="image/svg+xml"/>
+    <item id="9_2_cartesian_components_of_vector-web_figures_pdf_block2fig7_svg" href="9_2_cartesian_components_of_vector-web/figures/pdf/block2fig7.svg" media-type="image/svg+xml"/>
+    <item id="9_2_cartesian_components_of_vector-web_figures_pdf_block2fig3_svg" href="9_2_cartesian_components_of_vector-web/figures/pdf/block2fig3.svg" media-type="image/svg+xml"/>
+    <item id="9_2_cartesian_components_of_vector-web_figures_pdf_block2fig2_svg" href="9_2_cartesian_components_of_vector-web/figures/pdf/block2fig2.svg" media-type="image/svg+xml"/>
+    <item id="9_2_cartesian_components_of_vector-web_figures_pdf_block2fig10_svg" href="9_2_cartesian_components_of_vector-web/figures/pdf/block2fig10.svg" media-type="image/svg+xml"/>
+    <item id="9_2_cartesian_components_of_vector-web_figures_pdf_block2fig1_svg" href="9_2_cartesian_components_of_vector-web/figures/pdf/block2fig1.svg" media-type="image/svg+xml"/>
+    <item id="9_2_cartesian_components_of_vector-web_figures_pdf_block2fig9_svg" href="9_2_cartesian_components_of_vector-web/figures/pdf/block2fig9.svg" media-type="image/svg+xml"/>
+    <item id="9_2_cartesian_components_of_vector-web_figures_pdf_block2fig8_svg" href="9_2_cartesian_components_of_vector-web/figures/pdf/block2fig8.svg" media-type="image/svg+xml"/>
+    <item id="9_3_scalar_product-web_figures_pdf_Fig0_1_svg" href="9_3_scalar_product-web/figures/pdf/Fig0_1.svg" media-type="image/svg+xml"/>
+    <item id="9_3_scalar_product-web_figures_pdf_Fig0_2_svg" href="9_3_scalar_product-web/figures/pdf/Fig0_2.svg" media-type="image/svg+xml"/>
+    <item id="9_3_scalar_product-web_figures_pdf_Figelectro_svg" href="9_3_scalar_product-web/figures/pdf/Figelectro.svg" media-type="image/svg+xml"/>
+    <item id="9_3_scalar_product-web_figures_pdf_block4fig2_svg" href="9_3_scalar_product-web/figures/pdf/block4fig2.svg" media-type="image/svg+xml"/>
+    <item id="9_3_scalar_product-web_figures_pdf_block4fig3_svg" href="9_3_scalar_product-web/figures/pdf/block4fig3.svg" media-type="image/svg+xml"/>
+    <item id="9_3_scalar_product-web_figures_pdf_block4fig1_svg" href="9_3_scalar_product-web/figures/pdf/block4fig1.svg" media-type="image/svg+xml"/>
+    <item id="9_3_scalar_product-web_figures_pdf_block4fig4_svg" href="9_3_scalar_product-web/figures/pdf/block4fig4.svg" media-type="image/svg+xml"/>
+    <item id="9_3_scalar_product-web_figures_pdf_block4fig5_svg" href="9_3_scalar_product-web/figures/pdf/block4fig5.svg" media-type="image/svg+xml"/>
+    <item id="9_4_vector_product-web_figures_pdf_block5fig7_svg" href="9_4_vector_product-web/figures/pdf/block5fig7.svg" media-type="image/svg+xml"/>
+    <item id="9_4_vector_product-web_figures_pdf_block5fig6_svg" href="9_4_vector_product-web/figures/pdf/block5fig6.svg" media-type="image/svg+xml"/>
+    <item id="9_4_vector_product-web_figures_pdf_block5fig4_svg" href="9_4_vector_product-web/figures/pdf/block5fig4.svg" media-type="image/svg+xml"/>
+    <item id="9_4_vector_product-web_figures_pdf_block5fig5_svg" href="9_4_vector_product-web/figures/pdf/block5fig5.svg" media-type="image/svg+xml"/>
+    <item id="9_4_vector_product-web_figures_pdf_block5fig1_svg" href="9_4_vector_product-web/figures/pdf/block5fig1.svg" media-type="image/svg+xml"/>
+    <item id="9_4_vector_product-web_figures_pdf_workbook9bl58a_svg" href="9_4_vector_product-web/figures/pdf/workbook9bl58a.svg" media-type="image/svg+xml"/>
+    <item id="9_4_vector_product-web_figures_pdf_block5fig2_svg" href="9_4_vector_product-web/figures/pdf/block5fig2.svg" media-type="image/svg+xml"/>
+    <item id="9_4_vector_product-web_figures_pdf_workbook9bl58b_svg" href="9_4_vector_product-web/figures/pdf/workbook9bl58b.svg" media-type="image/svg+xml"/>
+    <item id="9_4_vector_product-web_figures_pdf_block5fig3_svg" href="9_4_vector_product-web/figures/pdf/block5fig3.svg" media-type="image/svg+xml"/>
+    <item id="9_5_lines_and_planes-web_figures_pdf_block3fig1_svg" href="9_5_lines_and_planes-web/figures/pdf/block3fig1.svg" media-type="image/svg+xml"/>
+    <item id="9_5_lines_and_planes-web_figures_pdf_block3fig2_svg" href="9_5_lines_and_planes-web/figures/pdf/block3fig2.svg" media-type="image/svg+xml"/>
+    <item id="9_5_lines_and_planes-web_figures_pdf_block6fig2_svg" href="9_5_lines_and_planes-web/figures/pdf/block6fig2.svg" media-type="image/svg+xml"/>
+    <item id="9_5_lines_and_planes-web_figures_pdf_block6fig1_svg" href="9_5_lines_and_planes-web/figures/pdf/block6fig1.svg" media-type="image/svg+xml"/>
+    <item id="10_2_argnd_diag_n_polar_form-web_figures_pdf_figfive_svg" href="10_2_argnd_diag_n_polar_form-web/figures/pdf/figfive.svg" media-type="image/svg+xml"/>
+    <item id="10_2_argnd_diag_n_polar_form-web_figures_pdf_figseven_svg" href="10_2_argnd_diag_n_polar_form-web/figures/pdf/figseven.svg" media-type="image/svg+xml"/>
+    <item id="10_2_argnd_diag_n_polar_form-web_figures_pdf_figone_svg" href="10_2_argnd_diag_n_polar_form-web/figures/pdf/figone.svg" media-type="image/svg+xml"/>
+    <item id="10_2_argnd_diag_n_polar_form-web_figures_pdf_figthree_svg" href="10_2_argnd_diag_n_polar_form-web/figures/pdf/figthree.svg" media-type="image/svg+xml"/>
+    <item id="10_2_argnd_diag_n_polar_form-web_figures_pdf_figtwo_svg" href="10_2_argnd_diag_n_polar_form-web/figures/pdf/figtwo.svg" media-type="image/svg+xml"/>
+    <item id="10_2_argnd_diag_n_polar_form-web_figures_pdf_figsix_svg" href="10_2_argnd_diag_n_polar_form-web/figures/pdf/figsix.svg" media-type="image/svg+xml"/>
+    <item id="10_2_argnd_diag_n_polar_form-web_figures_pdf_figfour_svg" href="10_2_argnd_diag_n_polar_form-web/figures/pdf/figfour.svg" media-type="image/svg+xml"/>
+    <item id="10_3_expo_form_complx_num-web_figures_pdf_loop_svg" href="10_3_expo_form_complx_num-web/figures/pdf/loop.svg" media-type="image/svg+xml"/>
+    <item id="10_4_demoivre_theorem-web_figures_pdf_fig1_svg" href="10_4_demoivre_theorem-web/figures/pdf/fig1.svg" media-type="image/svg+xml"/>
+    <item id="11_1_intro_diffrntiatn-web_figures_pdf_temp1a_svg" href="11_1_intro_diffrntiatn-web/figures/pdf/temp1a.svg" media-type="image/svg+xml"/>
+    <item id="11_1_intro_diffrntiatn-web_figures_pdf_keypoint_svg" href="11_1_intro_diffrntiatn-web/figures/pdf/keypoint.svg" media-type="image/svg+xml"/>
+    <item id="11_1_intro_diffrntiatn-web_figures_pdf_workbook11block1fig2_svg" href="11_1_intro_diffrntiatn-web/figures/pdf/workbook11block1fig2.svg" media-type="image/svg+xml"/>
+    <item id="11_1_intro_diffrntiatn-web_figures_pdf_workbook11block1fig3_svg" href="11_1_intro_diffrntiatn-web/figures/pdf/workbook11block1fig3.svg" media-type="image/svg+xml"/>
+    <item id="11_1_intro_diffrntiatn-web_figures_pdf_workbook11block1fig1_svg" href="11_1_intro_diffrntiatn-web/figures/pdf/workbook11block1fig1.svg" media-type="image/svg+xml"/>
+    <item id="11_1_intro_diffrntiatn-web_figures_pdf_temp4_svg" href="11_1_intro_diffrntiatn-web/figures/pdf/temp4.svg" media-type="image/svg+xml"/>
+    <item id="11_1_intro_diffrntiatn-web_figures_pdf_temp2_svg" href="11_1_intro_diffrntiatn-web/figures/pdf/temp2.svg" media-type="image/svg+xml"/>
+    <item id="11_1_intro_diffrntiatn-web_figures_pdf_temp3_svg" href="11_1_intro_diffrntiatn-web/figures/pdf/temp3.svg" media-type="image/svg+xml"/>
+    <item id="11_2_use_derivative_table-web_figures_pdf_searchcoil_svg" href="11_2_use_derivative_table-web/figures/pdf/searchcoil.svg" media-type="image/svg+xml"/>
+    <item id="11_6_paramtrc_diffrntiatn-web_figures_pdf_block3fig1_svg" href="11_6_paramtrc_diffrntiatn-web/figures/pdf/block3fig1.svg" media-type="image/svg+xml"/>
+    <item id="11_7_implicit_diffrntiatn-web_figures_pdf_circle7_svg" href="11_7_implicit_diffrntiatn-web/figures/pdf/circle7.svg" media-type="image/svg+xml"/>
+    <item id="12_1_tangents_n_normals-web_figures_pdf_workbook13fig8_svg" href="12_1_tangents_n_normals-web/figures/pdf/workbook13fig8.svg" media-type="image/svg+xml"/>
+    <item id="12_1_tangents_n_normals-web_figures_pdf_workbook13fig9_svg" href="12_1_tangents_n_normals-web/figures/pdf/workbook13fig9.svg" media-type="image/svg+xml"/>
+    <item id="12_1_tangents_n_normals-web_figures_pdf_workbook13fig5d_svg" href="12_1_tangents_n_normals-web/figures/pdf/workbook13fig5d.svg" media-type="image/svg+xml"/>
+    <item id="12_1_tangents_n_normals-web_figures_pdf_workbook13fig5b_svg" href="12_1_tangents_n_normals-web/figures/pdf/workbook13fig5b.svg" media-type="image/svg+xml"/>
+    <item id="12_1_tangents_n_normals-web_figures_pdf_workbook13fig5c_svg" href="12_1_tangents_n_normals-web/figures/pdf/workbook13fig5c.svg" media-type="image/svg+xml"/>
+    <item id="12_1_tangents_n_normals-web_figures_pdf_workbook13fig5a_svg" href="12_1_tangents_n_normals-web/figures/pdf/workbook13fig5a.svg" media-type="image/svg+xml"/>
+    <item id="12_1_tangents_n_normals-web_figures_pdf_workbook13fig2_svg" href="12_1_tangents_n_normals-web/figures/pdf/workbook13fig2.svg" media-type="image/svg+xml"/>
+    <item id="12_1_tangents_n_normals-web_figures_pdf_workbook13fig3_svg" href="12_1_tangents_n_normals-web/figures/pdf/workbook13fig3.svg" media-type="image/svg+xml"/>
+    <item id="12_1_tangents_n_normals-web_figures_pdf_workbook13fig1_svg" href="12_1_tangents_n_normals-web/figures/pdf/workbook13fig1.svg" media-type="image/svg+xml"/>
+    <item id="12_1_tangents_n_normals-web_figures_pdf_workbook13fig4_svg" href="12_1_tangents_n_normals-web/figures/pdf/workbook13fig4.svg" media-type="image/svg+xml"/>
+    <item id="12_1_tangents_n_normals-web_figures_pdf_workbook13fig5_svg" href="12_1_tangents_n_normals-web/figures/pdf/workbook13fig5.svg" media-type="image/svg+xml"/>
+    <item id="12_1_tangents_n_normals-web_figures_pdf_workbook13fig7_svg" href="12_1_tangents_n_normals-web/figures/pdf/workbook13fig7.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig16_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig16.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig14_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig14.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig15_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig15.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig11_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig11.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig10_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig10.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_power_svg" href="12_2_maxima_n_minima-web/figures/pdf/power.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig12_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig12.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig13_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig13.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_resistor_svg" href="12_2_maxima_n_minima-web/figures/pdf/resistor.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_crank_svg" href="12_2_maxima_n_minima-web/figures/pdf/crank.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig9_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig9.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig8_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig8.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig6_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig6.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig7_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig7.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig4_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig4.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig5a_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig5a.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig4a_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig4a.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig1_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig1.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_decay_svg" href="12_2_maxima_n_minima-web/figures/pdf/decay.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig3_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig3.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_workbook132fig2_svg" href="12_2_maxima_n_minima-web/figures/pdf/workbook132fig2.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_figstore_svg" href="12_2_maxima_n_minima-web/figures/pdf/figstore.svg" media-type="image/svg+xml"/>
+    <item id="12_2_maxima_n_minima-web_figures_pdf_light_svg" href="12_2_maxima_n_minima-web/figures/pdf/light.svg" media-type="image/svg+xml"/>
+    <item id="12_3_newtn_raphsn_mthd-web_figures_pdf_figbuckling_svg" href="12_3_newtn_raphsn_mthd-web/figures/pdf/figbuckling.svg" media-type="image/svg+xml"/>
+    <item id="12_3_newtn_raphsn_mthd-web_figures_pdf_figtan_svg" href="12_3_newtn_raphsn_mthd-web/figures/pdf/figtan.svg" media-type="image/svg+xml"/>
+    <item id="12_3_newtn_raphsn_mthd-web_figures_pdf_workbook133fig9_svg" href="12_3_newtn_raphsn_mthd-web/figures/pdf/workbook133fig9.svg" media-type="image/svg+xml"/>
+    <item id="12_3_newtn_raphsn_mthd-web_figures_pdf_workbook133fig1_svg" href="12_3_newtn_raphsn_mthd-web/figures/pdf/workbook133fig1.svg" media-type="image/svg+xml"/>
+    <item id="12_3_newtn_raphsn_mthd-web_figures_pdf_workbook133fig5_svg" href="12_3_newtn_raphsn_mthd-web/figures/pdf/workbook133fig5.svg" media-type="image/svg+xml"/>
+    <item id="12_3_newtn_raphsn_mthd-web_figures_pdf_workbook133fig6_svg" href="12_3_newtn_raphsn_mthd-web/figures/pdf/workbook133fig6.svg" media-type="image/svg+xml"/>
+    <item id="12_3_newtn_raphsn_mthd-web_figures_pdf_workbook133fig7_svg" href="12_3_newtn_raphsn_mthd-web/figures/pdf/workbook133fig7.svg" media-type="image/svg+xml"/>
+    <item id="12_4_curvature-web_figures_pdf_workbook134fig1_svg" href="12_4_curvature-web/figures/pdf/workbook134fig1.svg" media-type="image/svg+xml"/>
+    <item id="12_4_curvature-web_figures_pdf_workbook134fig2_svg" href="12_4_curvature-web/figures/pdf/workbook134fig2.svg" media-type="image/svg+xml"/>
+    <item id="12_4_curvature-web_figures_pdf_workbook134fig3_svg" href="12_4_curvature-web/figures/pdf/workbook134fig3.svg" media-type="image/svg+xml"/>
+    <item id="12_4_curvature-web_figures_pdf_workbook134fig7_svg" href="12_4_curvature-web/figures/pdf/workbook134fig7.svg" media-type="image/svg+xml"/>
+    <item id="12_4_curvature-web_figures_pdf_workbook134fig6_svg" href="12_4_curvature-web/figures/pdf/workbook134fig6.svg" media-type="image/svg+xml"/>
+    <item id="12_4_curvature-web_figures_pdf_workbook134fig4_svg" href="12_4_curvature-web/figures/pdf/workbook134fig4.svg" media-type="image/svg+xml"/>
+    <item id="12_5_diffrntiatn_vectors-web_figures_pdf_block7fig1_svg" href="12_5_diffrntiatn_vectors-web/figures/pdf/block7fig1.svg" media-type="image/svg+xml"/>
+    <item id="12_5_diffrntiatn_vectors-web_figures_pdf_block7fig2_svg" href="12_5_diffrntiatn_vectors-web/figures/pdf/block7fig2.svg" media-type="image/svg+xml"/>
+    <item id="12_6_casestudy_complx_impednce-web_figures_pdf_Fig1_3_svg" href="12_6_casestudy_complx_impednce-web/figures/pdf/Fig1_3.svg" media-type="image/svg+xml"/>
+    <item id="12_6_casestudy_complx_impednce-web_figures_pdf_Fig1_2_svg" href="12_6_casestudy_complx_impednce-web/figures/pdf/Fig1_2.svg" media-type="image/svg+xml"/>
+    <item id="12_6_casestudy_complx_impednce-web_figures_pdf_Fig1_1_svg" href="12_6_casestudy_complx_impednce-web/figures/pdf/Fig1_1.svg" media-type="image/svg+xml"/>
+    <item id="12_6_casestudy_complx_impednce-web_figures_pdf_Fig1_5_svg" href="12_6_casestudy_complx_impednce-web/figures/pdf/Fig1_5.svg" media-type="image/svg+xml"/>
+    <item id="12_6_casestudy_complx_impednce-web_figures_pdf_Fig1_4_svg" href="12_6_casestudy_complx_impednce-web/figures/pdf/Fig1_4.svg" media-type="image/svg+xml"/>
+    <item id="12_6_casestudy_complx_impednce-web_figures_pdf_Fig1_6_svg" href="12_6_casestudy_complx_impednce-web/figures/pdf/Fig1_6.svg" media-type="image/svg+xml"/>
+    <item id="13_1_basics_integration-web_figures_pdf_spherical_svg" href="13_1_basics_integration-web/figures/pdf/spherical.svg" media-type="image/svg+xml"/>
+    <item id="13_1_basics_integration-web_figures_pdf_block1fig1_svg" href="13_1_basics_integration-web/figures/pdf/block1fig1.svg" media-type="image/svg+xml"/>
+    <item id="13_1_basics_integration-web_figures_pdf_block1fig2_svg" href="13_1_basics_integration-web/figures/pdf/block1fig2.svg" media-type="image/svg+xml"/>
+    <item id="13_2_definite_integrals-web_13_2_definite_integrals-web0x_svg" href="13_2_definite_integrals-web/13_2_definite_integrals-web0x.svg" media-type="image/svg+xml"/>
+    <item id="13_2_definite_integrals-web_figures_pdf_twist_svg" href="13_2_definite_integrals-web/figures/pdf/twist.svg" media-type="image/svg+xml"/>
+    <item id="13_2_definite_integrals-web_figures_pdf_fig1_svg" href="13_2_definite_integrals-web/figures/pdf/fig1.svg" media-type="image/svg+xml"/>
+    <item id="13_3_area_bounded_by_curve-web_figures_pdf_block3fig1b_svg" href="13_3_area_bounded_by_curve-web/figures/pdf/block3fig1b.svg" media-type="image/svg+xml"/>
+    <item id="13_3_area_bounded_by_curve-web_figures_pdf_block3fig1_svg" href="13_3_area_bounded_by_curve-web/figures/pdf/block3fig1.svg" media-type="image/svg+xml"/>
+    <item id="13_3_area_bounded_by_curve-web_figures_pdf_block3fig3_svg" href="13_3_area_bounded_by_curve-web/figures/pdf/block3fig3.svg" media-type="image/svg+xml"/>
+    <item id="13_3_area_bounded_by_curve-web_figures_pdf_block3fig1a_svg" href="13_3_area_bounded_by_curve-web/figures/pdf/block3fig1a.svg" media-type="image/svg+xml"/>
+    <item id="13_3_area_bounded_by_curve-web_figures_pdf_block3fig2_svg" href="13_3_area_bounded_by_curve-web/figures/pdf/block3fig2.svg" media-type="image/svg+xml"/>
+    <item id="13_3_area_bounded_by_curve-web_figures_pdf_block3fig6_svg" href="13_3_area_bounded_by_curve-web/figures/pdf/block3fig6.svg" media-type="image/svg+xml"/>
+    <item id="13_3_area_bounded_by_curve-web_figures_pdf_block3fig5_svg" href="13_3_area_bounded_by_curve-web/figures/pdf/block3fig5.svg" media-type="image/svg+xml"/>
+    <item id="13_3_area_bounded_by_curve-web_figures_pdf_block3fig4_svg" href="13_3_area_bounded_by_curve-web/figures/pdf/block3fig4.svg" media-type="image/svg+xml"/>
+    <item id="13_3_area_bounded_by_curve-web_figures_pdf_block3fig4a_svg" href="13_3_area_bounded_by_curve-web/figures/pdf/block3fig4a.svg" media-type="image/svg+xml"/>
+    <item id="13_6_integrtn_trig_functns-web_figures_pdf_sinc_a_svg" href="13_6_integrtn_trig_functns-web/figures/pdf/sinc_a.svg" media-type="image/svg+xml"/>
+    <item id="13_6_integrtn_trig_functns-web_figures_pdf_sinc_svg" href="13_6_integrtn_trig_functns-web/figures/pdf/sinc.svg" media-type="image/svg+xml"/>
+    <item id="13_6_integrtn_trig_functns-web_figures_pdf_solenoid_svg" href="13_6_integrtn_trig_functns-web/figures/pdf/solenoid.svg" media-type="image/svg+xml"/>
+    <item id="14_1_integrtn_as_limit_of_sum-web_figures_pdf_block1fig3a_svg" href="14_1_integrtn_as_limit_of_sum-web/figures/pdf/block1fig3a.svg" media-type="image/svg+xml"/>
+    <item id="14_1_integrtn_as_limit_of_sum-web_figures_pdf_block1fig1_svg" href="14_1_integrtn_as_limit_of_sum-web/figures/pdf/block1fig1.svg" media-type="image/svg+xml"/>
+    <item id="14_1_integrtn_as_limit_of_sum-web_figures_pdf_block1fig3_svg" href="14_1_integrtn_as_limit_of_sum-web/figures/pdf/block1fig3.svg" media-type="image/svg+xml"/>
+    <item id="14_1_integrtn_as_limit_of_sum-web_figures_pdf_block1fig2_svg" href="14_1_integrtn_as_limit_of_sum-web/figures/pdf/block1fig2.svg" media-type="image/svg+xml"/>
+    <item id="14_1_integrtn_as_limit_of_sum-web_figures_pdf_belt_svg" href="14_1_integrtn_as_limit_of_sum-web/figures/pdf/belt.svg" media-type="image/svg+xml"/>
+    <item id="14_2_meanvalue_n_rms_functn-web_figures_pdf_meter_svg" href="14_2_meanvalue_n_rms_functn-web/figures/pdf/meter.svg" media-type="image/svg+xml"/>
+    <item id="14_2_meanvalue_n_rms_functn-web_figures_pdf_sonic_svg" href="14_2_meanvalue_n_rms_functn-web/figures/pdf/sonic.svg" media-type="image/svg+xml"/>
+    <item id="14_2_meanvalue_n_rms_functn-web_figures_pdf_block6fig1_svg" href="14_2_meanvalue_n_rms_functn-web/figures/pdf/block6fig1.svg" media-type="image/svg+xml"/>
+    <item id="14_3_volum_of_revolutn-web_figures_pdf_block2fig5_svg" href="14_3_volum_of_revolutn-web/figures/pdf/block2fig5.svg" media-type="image/svg+xml"/>
+    <item id="14_3_volum_of_revolutn-web_figures_pdf_block2fig4_svg" href="14_3_volum_of_revolutn-web/figures/pdf/block2fig4.svg" media-type="image/svg+xml"/>
+    <item id="14_3_volum_of_revolutn-web_figures_pdf_block2fig3_svg" href="14_3_volum_of_revolutn-web/figures/pdf/block2fig3.svg" media-type="image/svg+xml"/>
+    <item id="14_3_volum_of_revolutn-web_figures_pdf_block2fig2_svg" href="14_3_volum_of_revolutn-web/figures/pdf/block2fig2.svg" media-type="image/svg+xml"/>
+    <item id="14_3_volum_of_revolutn-web_figures_pdf_block2fig1_svg" href="14_3_volum_of_revolutn-web/figures/pdf/block2fig1.svg" media-type="image/svg+xml"/>
+    <item id="14_4_lengths_curvs_surfs_revlutn-web_figures_pdf_block5fig1_svg" href="14_4_lengths_curvs_surfs_revlutn-web/figures/pdf/block5fig1.svg" media-type="image/svg+xml"/>
+    <item id="14_4_lengths_curvs_surfs_revlutn-web_figures_pdf_block5fig2_svg" href="14_4_lengths_curvs_surfs_revlutn-web/figures/pdf/block5fig2.svg" media-type="image/svg+xml"/>
+    <item id="14_4_lengths_curvs_surfs_revlutn-web_figures_pdf_block5fig3a_svg" href="14_4_lengths_curvs_surfs_revlutn-web/figures/pdf/block5fig3a.svg" media-type="image/svg+xml"/>
+    <item id="15_1_integrtn_of_vectors-web_figures_pdf_workbook15bl73_svg" href="15_1_integrtn_of_vectors-web/figures/pdf/workbook15bl73.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig8x_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig8x.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_chain_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/chain.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig1_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig1.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig3_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig3.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig2_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig2.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig6_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig6.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig13_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig13.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig12_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig12.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig7_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig7.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig5_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig5.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig10_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig10.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig11_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig11.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig4_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig4.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig9_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig9.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig8_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig8.svg" media-type="image/svg+xml"/>
+    <item id="15_2_calculate_cntre_of_mass-web_figures_pdf_block3fig10xx_svg" href="15_2_calculate_cntre_of_mass-web/figures/pdf/block3fig10xx.svg" media-type="image/svg+xml"/>
+    <item id="15_3_momnts_of_inertia-web_figures_pdf_block4fig2_svg" href="15_3_momnts_of_inertia-web/figures/pdf/block4fig2.svg" media-type="image/svg+xml"/>
+    <item id="15_3_momnts_of_inertia-web_figures_pdf_block4fig3_svg" href="15_3_momnts_of_inertia-web/figures/pdf/block4fig3.svg" media-type="image/svg+xml"/>
+    <item id="15_3_momnts_of_inertia-web_figures_pdf_block4fig1_svg" href="15_3_momnts_of_inertia-web/figures/pdf/block4fig1.svg" media-type="image/svg+xml"/>
+    <item id="15_3_momnts_of_inertia-web_figures_pdf_block4fig4_svg" href="15_3_momnts_of_inertia-web/figures/pdf/block4fig4.svg" media-type="image/svg+xml"/>
+    <item id="15_3_momnts_of_inertia-web_figures_pdf_block4fig5_svg" href="15_3_momnts_of_inertia-web/figures/pdf/block4fig5.svg" media-type="image/svg+xml"/>
+    <item id="16_1_sequences_n_series-web_figures_pdf_workbook16block1fig1b_svg" href="16_1_sequences_n_series-web/figures/pdf/workbook16block1fig1b.svg" media-type="image/svg+xml"/>
+    <item id="16_1_sequences_n_series-web_figures_pdf_workbook16block1fig1c_svg" href="16_1_sequences_n_series-web/figures/pdf/workbook16block1fig1c.svg" media-type="image/svg+xml"/>
+    <item id="16_1_sequences_n_series-web_figures_pdf_workbook16block1fig1a_svg" href="16_1_sequences_n_series-web/figures/pdf/workbook16block1fig1a.svg" media-type="image/svg+xml"/>
+    <item id="16_3_binomial_series-web_figures_pdf_workbook16block3fig1_svg" href="16_3_binomial_series-web/figures/pdf/workbook16block3fig1.svg" media-type="image/svg+xml"/>
+    <item id="16_3_binomial_series-web_figures_pdf_workbook16block3fig2_svg" href="16_3_binomial_series-web/figures/pdf/workbook16block3fig2.svg" media-type="image/svg+xml"/>
+    <item id="16_4_power_series-web_figures_pdf_workbook16block4fig2_svg" href="16_4_power_series-web/figures/pdf/workbook16block4fig2.svg" media-type="image/svg+xml"/>
+    <item id="16_4_power_series-web_figures_pdf_workbook16block4fig3_svg" href="16_4_power_series-web/figures/pdf/workbook16block4fig3.svg" media-type="image/svg+xml"/>
+    <item id="16_4_power_series-web_figures_pdf_workbook16block4fig1_svg" href="16_4_power_series-web/figures/pdf/workbook16block4fig1.svg" media-type="image/svg+xml"/>
+    <item id="16_5_maclaurin_n_taylor_series-web_figures_pdf_workbook16block5fig1_svg" href="16_5_maclaurin_n_taylor_series-web/figures/pdf/workbook16block5fig1.svg" media-type="image/svg+xml"/>
+    <item id="16_5_maclaurin_n_taylor_series-web_figures_pdf_workbook16block5fig2_svg" href="16_5_maclaurin_n_taylor_series-web/figures/pdf/workbook16block5fig2.svg" media-type="image/svg+xml"/>
+    <item id="16_5_maclaurin_n_taylor_series-web_figures_pdf_workbook16block5fig3_svg" href="16_5_maclaurin_n_taylor_series-web/figures/pdf/workbook16block5fig3.svg" media-type="image/svg+xml"/>
+    <item id="16_5_maclaurin_n_taylor_series-web_figures_pdf_workbook16block5fig4_svg" href="16_5_maclaurin_n_taylor_series-web/figures/pdf/workbook16block5fig4.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_17_1_conic_sections-web1x_svg" href="17_1_conic_sections-web/17_1_conic_sections-web1x.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_17_1_conic_sections-web0x_svg" href="17_1_conic_sections-web/17_1_conic_sections-web0x.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_17_1_conic_sections-web3x_svg" href="17_1_conic_sections-web/17_1_conic_sections-web3x.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_17_1_conic_sections-web2x_svg" href="17_1_conic_sections-web/17_1_conic_sections-web2x.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_fig7b_svg" href="17_1_conic_sections-web/figures/pdf/fig7b.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_fig7a_svg" href="17_1_conic_sections-web/figures/pdf/fig7a.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_fig2_svg" href="17_1_conic_sections-web/figures/pdf/fig2.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_fig3_svg" href="17_1_conic_sections-web/figures/pdf/fig3.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_ellipse_svg" href="17_1_conic_sections-web/figures/pdf/ellipse.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_fig4_svg" href="17_1_conic_sections-web/figures/pdf/fig4.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_fig5_svg" href="17_1_conic_sections-web/figures/pdf/fig5.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_fig1a_svg" href="17_1_conic_sections-web/figures/pdf/fig1a.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_fig1c_svg" href="17_1_conic_sections-web/figures/pdf/fig1c.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_fig7_svg" href="17_1_conic_sections-web/figures/pdf/fig7.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_fig6_svg" href="17_1_conic_sections-web/figures/pdf/fig6.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_fig1b_svg" href="17_1_conic_sections-web/figures/pdf/fig1b.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_fig8_svg" href="17_1_conic_sections-web/figures/pdf/fig8.svg" media-type="image/svg+xml"/>
+    <item id="17_1_conic_sections-web_figures_pdf_fig5a_svg" href="17_1_conic_sections-web/figures/pdf/fig5a.svg" media-type="image/svg+xml"/>
+    <item id="17_2_polar_coordinates-web_figures_pdf_fig2_2_svg" href="17_2_polar_coordinates-web/figures/pdf/fig2_2.svg" media-type="image/svg+xml"/>
+    <item id="17_2_polar_coordinates-web_figures_pdf_fig3d_2_svg" href="17_2_polar_coordinates-web/figures/pdf/fig3d_2.svg" media-type="image/svg+xml"/>
+    <item id="17_2_polar_coordinates-web_figures_pdf_fig5c_2_svg" href="17_2_polar_coordinates-web/figures/pdf/fig5c_2.svg" media-type="image/svg+xml"/>
+    <item id="17_2_polar_coordinates-web_figures_pdf_fig4_2_svg" href="17_2_polar_coordinates-web/figures/pdf/fig4_2.svg" media-type="image/svg+xml"/>
+    <item id="17_2_polar_coordinates-web_figures_pdf_fig5a_2_svg" href="17_2_polar_coordinates-web/figures/pdf/fig5a_2.svg" media-type="image/svg+xml"/>
+    <item id="17_2_polar_coordinates-web_figures_pdf_fig1_2_svg" href="17_2_polar_coordinates-web/figures/pdf/fig1_2.svg" media-type="image/svg+xml"/>
+    <item id="17_2_polar_coordinates-web_figures_pdf_fig3_2_svg" href="17_2_polar_coordinates-web/figures/pdf/fig3_2.svg" media-type="image/svg+xml"/>
+    <item id="17_2_polar_coordinates-web_figures_pdf_fig3e_2_svg" href="17_2_polar_coordinates-web/figures/pdf/fig3e_2.svg" media-type="image/svg+xml"/>
+    <item id="17_2_polar_coordinates-web_figures_pdf_fig3a_2_svg" href="17_2_polar_coordinates-web/figures/pdf/fig3a_2.svg" media-type="image/svg+xml"/>
+    <item id="17_2_polar_coordinates-web_figures_pdf_fig5_2_svg" href="17_2_polar_coordinates-web/figures/pdf/fig5_2.svg" media-type="image/svg+xml"/>
+    <item id="17_2_polar_coordinates-web_figures_pdf_fig3c_2_svg" href="17_2_polar_coordinates-web/figures/pdf/fig3c_2.svg" media-type="image/svg+xml"/>
+    <item id="17_2_polar_coordinates-web_figures_pdf_fig33_2_svg" href="17_2_polar_coordinates-web/figures/pdf/fig33_2.svg" media-type="image/svg+xml"/>
+    <item id="17_2_polar_coordinates-web_figures_pdf_fig3aa_2_svg" href="17_2_polar_coordinates-web/figures/pdf/fig3aa_2.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_fig2_3_svg" href="17_3_parametric_curves-web/figures/pdf/fig2_3.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_fig4_3_svg" href="17_3_parametric_curves-web/figures/pdf/fig4_3.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_fig6_3_svg" href="17_3_parametric_curves-web/figures/pdf/fig6_3.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_fig1_3_svg" href="17_3_parametric_curves-web/figures/pdf/fig1_3.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_figd_svg" href="17_3_parametric_curves-web/figures/pdf/figd.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_fige_svg" href="17_3_parametric_curves-web/figures/pdf/fige.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_figg_svg" href="17_3_parametric_curves-web/figures/pdf/figg.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_figf_svg" href="17_3_parametric_curves-web/figures/pdf/figf.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_fig3_3_svg" href="17_3_parametric_curves-web/figures/pdf/fig3_3.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_fig7_3_svg" href="17_3_parametric_curves-web/figures/pdf/fig7_3.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_figb_svg" href="17_3_parametric_curves-web/figures/pdf/figb.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_figc_svg" href="17_3_parametric_curves-web/figures/pdf/figc.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_figa_svg" href="17_3_parametric_curves-web/figures/pdf/figa.svg" media-type="image/svg+xml"/>
+    <item id="17_3_parametric_curves-web_figures_pdf_fig5_3_svg" href="17_3_parametric_curves-web/figures/pdf/fig5_3.svg" media-type="image/svg+xml"/>
+    <item id="18_1_funcns_severl_variabls-web_figures_pdf_fig5_svg" href="18_1_funcns_severl_variabls-web/figures/pdf/fig5.svg" media-type="image/svg+xml"/>
+    <item id="18_1_funcns_severl_variabls-web_figures_pdf_fig1a_svg" href="18_1_funcns_severl_variabls-web/figures/pdf/fig1a.svg" media-type="image/svg+xml"/>
+    <item id="18_1_funcns_severl_variabls-web_figures_pdf_fig7_svg" href="18_1_funcns_severl_variabls-web/figures/pdf/fig7.svg" media-type="image/svg+xml"/>
+    <item id="18_1_funcns_severl_variabls-web_figures_pdf_fig6_svg" href="18_1_funcns_severl_variabls-web/figures/pdf/fig6.svg" media-type="image/svg+xml"/>
+    <item id="18_1_funcns_severl_variabls-web_figures_pdf_fig3a_svg" href="18_1_funcns_severl_variabls-web/figures/pdf/fig3a.svg" media-type="image/svg+xml"/>
+    <item id="18_1_funcns_severl_variabls-web_figures_pdf_fig4a_svg" href="18_1_funcns_severl_variabls-web/figures/pdf/fig4a.svg" media-type="image/svg+xml"/>
+    <item id="18_3_stationary_points-web_figures_pdf_stat1_svg" href="18_3_stationary_points-web/figures/pdf/stat1.svg" media-type="image/svg+xml"/>
+    <item id="18_3_stationary_points-web_figures_pdf_stat2_svg" href="18_3_stationary_points-web/figures/pdf/stat2.svg" media-type="image/svg+xml"/>
+    <item id="18_3_stationary_points-web_figures_pdf_stat3_svg" href="18_3_stationary_points-web/figures/pdf/stat3.svg" media-type="image/svg+xml"/>
+    <item id="18_4_errors_n_percntge_chnge-web_figures_pdf_error-load_svg" href="18_4_errors_n_percntge_chnge-web/figures/pdf/error-load.svg" media-type="image/svg+xml"/>
+    <item id="18_4_errors_n_percntge_chnge-web_figures_pdf_engex1_svg" href="18_4_errors_n_percntge_chnge-web/figures/pdf/engex1.svg" media-type="image/svg+xml"/>
+    <item id="19_1_modling_with_diffrntl_eqns-web_figures_pdf_fig2_svg" href="19_1_modling_with_diffrntl_eqns-web/figures/pdf/fig2.svg" media-type="image/svg+xml"/>
+    <item id="19_1_modling_with_diffrntl_eqns-web_figures_pdf_fig3_svg" href="19_1_modling_with_diffrntl_eqns-web/figures/pdf/fig3.svg" media-type="image/svg+xml"/>
+    <item id="19_1_modling_with_diffrntl_eqns-web_figures_pdf_fig1_svg" href="19_1_modling_with_diffrntl_eqns-web/figures/pdf/fig1.svg" media-type="image/svg+xml"/>
+    <item id="19_1_modling_with_diffrntl_eqns-web_figures_pdf_fig4_svg" href="19_1_modling_with_diffrntl_eqns-web/figures/pdf/fig4.svg" media-type="image/svg+xml"/>
+    <item id="19_1_modling_with_diffrntl_eqns-web_figures_pdf_fig5_svg" href="19_1_modling_with_diffrntl_eqns-web/figures/pdf/fig5.svg" media-type="image/svg+xml"/>
+    <item id="19_1_modling_with_diffrntl_eqns-web_figures_pdf_fig6_svg" href="19_1_modling_with_diffrntl_eqns-web/figures/pdf/fig6.svg" media-type="image/svg+xml"/>
+    <item id="19_3_second_order_odes-web_figures_pdf_fig1_3_svg" href="19_3_second_order_odes-web/figures/pdf/fig1_3.svg" media-type="image/svg+xml"/>
+    <item id="19_4_applications_diffrntl_eqns-web_figures_pdf_fig4_4_svg" href="19_4_applications_diffrntl_eqns-web/figures/pdf/fig4_4.svg" media-type="image/svg+xml"/>
+    <item id="19_4_applications_diffrntl_eqns-web_figures_pdf_fig6_4_svg" href="19_4_applications_diffrntl_eqns-web/figures/pdf/fig6_4.svg" media-type="image/svg+xml"/>
+    <item id="19_4_applications_diffrntl_eqns-web_figures_pdf_fig2_4_svg" href="19_4_applications_diffrntl_eqns-web/figures/pdf/fig2_4.svg" media-type="image/svg+xml"/>
+    <item id="19_4_applications_diffrntl_eqns-web_figures_pdf_beam_svg" href="19_4_applications_diffrntl_eqns-web/figures/pdf/beam.svg" media-type="image/svg+xml"/>
+    <item id="19_4_applications_diffrntl_eqns-web_figures_pdf_fig5_4_svg" href="19_4_applications_diffrntl_eqns-web/figures/pdf/fig5_4.svg" media-type="image/svg+xml"/>
+    <item id="19_4_applications_diffrntl_eqns-web_figures_pdf_fig1_4_svg" href="19_4_applications_diffrntl_eqns-web/figures/pdf/fig1_4.svg" media-type="image/svg+xml"/>
+    <item id="19_4_applications_diffrntl_eqns-web_figures_pdf_fig3_4_svg" href="19_4_applications_diffrntl_eqns-web/figures/pdf/fig3_4.svg" media-type="image/svg+xml"/>
+    <item id="19_4_applications_diffrntl_eqns-web_figures_pdf_Fig1(BendM)_svg" href="19_4_applications_diffrntl_eqns-web/figures/pdf/Fig1(BendM).svg" media-type="image/svg+xml"/>
+    <item id="20_1_causal_functions-web_figures_pdf_figout10_svg" href="20_1_causal_functions-web/figures/pdf/figout10.svg" media-type="image/svg+xml"/>
+    <item id="20_1_causal_functions-web_figures_pdf_figout5_svg" href="20_1_causal_functions-web/figures/pdf/figout5.svg" media-type="image/svg+xml"/>
+    <item id="20_1_causal_functions-web_figures_pdf_figout4_svg" href="20_1_causal_functions-web/figures/pdf/figout4.svg" media-type="image/svg+xml"/>
+    <item id="20_1_causal_functions-web_figures_pdf_figout6_svg" href="20_1_causal_functions-web/figures/pdf/figout6.svg" media-type="image/svg+xml"/>
+    <item id="20_1_causal_functions-web_figures_pdf_figout7_svg" href="20_1_causal_functions-web/figures/pdf/figout7.svg" media-type="image/svg+xml"/>
+    <item id="20_1_causal_functions-web_figures_pdf_figout3_svg" href="20_1_causal_functions-web/figures/pdf/figout3.svg" media-type="image/svg+xml"/>
+    <item id="20_1_causal_functions-web_figures_pdf_figout2_svg" href="20_1_causal_functions-web/figures/pdf/figout2.svg" media-type="image/svg+xml"/>
+    <item id="20_1_causal_functions-web_figures_pdf_figout1_svg" href="20_1_causal_functions-web/figures/pdf/figout1.svg" media-type="image/svg+xml"/>
+    <item id="20_1_causal_functions-web_figures_pdf_figout7a_svg" href="20_1_causal_functions-web/figures/pdf/figout7a.svg" media-type="image/svg+xml"/>
+    <item id="20_1_causal_functions-web_figures_pdf_figout9_svg" href="20_1_causal_functions-web/figures/pdf/figout9.svg" media-type="image/svg+xml"/>
+    <item id="20_1_causal_functions-web_figures_pdf_figout8_svg" href="20_1_causal_functions-web/figures/pdf/figout8.svg" media-type="image/svg+xml"/>
+    <item id="20_2_laplce_transfrm_n_inverse-web_figures_pdf_figout1_2_svg" href="20_2_laplce_transfrm_n_inverse-web/figures/pdf/figout1_2.svg" media-type="image/svg+xml"/>
+    <item id="20_2_laplce_transfrm_n_inverse-web_figures_pdf_figout2_2_svg" href="20_2_laplce_transfrm_n_inverse-web/figures/pdf/figout2_2.svg" media-type="image/svg+xml"/>
+    <item id="20_3_frthr_laplce_trnsforms-web_figures_pdf_figout3_3_svg" href="20_3_frthr_laplce_trnsforms-web/figures/pdf/figout3_3.svg" media-type="image/svg+xml"/>
+    <item id="20_3_frthr_laplce_trnsforms-web_figures_pdf_figout1_3_svg" href="20_3_frthr_laplce_trnsforms-web/figures/pdf/figout1_3.svg" media-type="image/svg+xml"/>
+    <item id="20_3_frthr_laplce_trnsforms-web_figures_pdf_fig4_3_svg" href="20_3_frthr_laplce_trnsforms-web/figures/pdf/fig4_3.svg" media-type="image/svg+xml"/>
+    <item id="20_3_frthr_laplce_trnsforms-web_figures_pdf_figout2_3_svg" href="20_3_frthr_laplce_trnsforms-web/figures/pdf/figout2_3.svg" media-type="image/svg+xml"/>
+    <item id="20_4_solving_diffrntl_equatins-web_figures_pdf_Figextra1_svg" href="20_4_solving_diffrntl_equatins-web/figures/pdf/Figextra1.svg" media-type="image/svg+xml"/>
+    <item id="20_4_solving_diffrntl_equatins-web_figures_pdf_Figextra2_svg" href="20_4_solving_diffrntl_equatins-web/figures/pdf/Figextra2.svg" media-type="image/svg+xml"/>
+    <item id="20_4_solving_diffrntl_equatins-web_figures_pdf_beam_svg" href="20_4_solving_diffrntl_equatins-web/figures/pdf/beam.svg" media-type="image/svg+xml"/>
+    <item id="20_4_solving_diffrntl_equatins-web_figures_pdf_fig1_4_svg" href="20_4_solving_diffrntl_equatins-web/figures/pdf/fig1_4.svg" media-type="image/svg+xml"/>
+    <item id="20_4_solving_diffrntl_equatins-web_figures_pdf_figout2_4_svg" href="20_4_solving_diffrntl_equatins-web/figures/pdf/figout2_4.svg" media-type="image/svg+xml"/>
+    <item id="20_4_solving_diffrntl_equatins-web_figures_pdf_LRCcircuit_svg" href="20_4_solving_diffrntl_equatins-web/figures/pdf/LRCcircuit.svg" media-type="image/svg+xml"/>
+    <item id="20_4_solving_diffrntl_equatins-web_figures_pdf_Fig1Colin1_svg" href="20_4_solving_diffrntl_equatins-web/figures/pdf/Fig1Colin1.svg" media-type="image/svg+xml"/>
+    <item id="20_6_transfer_functions-web_figures_pdf_fig2_svg" href="20_6_transfer_functions-web/figures/pdf/fig2.svg" media-type="image/svg+xml"/>
+    <item id="20_6_transfer_functions-web_figures_pdf_fig3_svg" href="20_6_transfer_functions-web/figures/pdf/fig3.svg" media-type="image/svg+xml"/>
+    <item id="20_6_transfer_functions-web_figures_pdf_fig1_svg" href="20_6_transfer_functions-web/figures/pdf/fig1.svg" media-type="image/svg+xml"/>
+    <item id="20_6_transfer_functions-web_figures_pdf_fig4_svg" href="20_6_transfer_functions-web/figures/pdf/fig4.svg" media-type="image/svg+xml"/>
+    <item id="20_6_transfer_functions-web_figures_pdf_fig5_svg" href="20_6_transfer_functions-web/figures/pdf/fig5.svg" media-type="image/svg+xml"/>
+    <item id="20_6_transfer_functions-web_figures_pdf_fig7_svg" href="20_6_transfer_functions-web/figures/pdf/fig7.svg" media-type="image/svg+xml"/>
+    <item id="20_6_transfer_functions-web_figures_pdf_fig6_svg" href="20_6_transfer_functions-web/figures/pdf/fig6.svg" media-type="image/svg+xml"/>
+    <item id="20_6_transfer_functions-web_figures_pdf_fig8_svg" href="20_6_transfer_functions-web/figures/pdf/fig8.svg" media-type="image/svg+xml"/>
+    <item id="20_6_transfer_functions-web_figures_pdf_fig9_svg" href="20_6_transfer_functions-web/figures/pdf/fig9.svg" media-type="image/svg+xml"/>
+    <item id="21_1_z_trnsms-web_figures_pdf_zfig5_svg" href="21_1_z_trnsms-web/figures/pdf/zfig5.svg" media-type="image/svg+xml"/>
+    <item id="21_1_z_trnsms-web_figures_pdf_zfig4_svg" href="21_1_z_trnsms-web/figures/pdf/zfig4.svg" media-type="image/svg+xml"/>
+    <item id="21_1_z_trnsms-web_figures_pdf_zfig6_svg" href="21_1_z_trnsms-web/figures/pdf/zfig6.svg" media-type="image/svg+xml"/>
+    <item id="21_1_z_trnsms-web_figures_pdf_zfig3_svg" href="21_1_z_trnsms-web/figures/pdf/zfig3.svg" media-type="image/svg+xml"/>
+    <item id="21_1_z_trnsms-web_figures_pdf_zfig2_svg" href="21_1_z_trnsms-web/figures/pdf/zfig2.svg" media-type="image/svg+xml"/>
+    <item id="21_1_z_trnsms-web_figures_pdf_zfig1_svg" href="21_1_z_trnsms-web/figures/pdf/zfig1.svg" media-type="image/svg+xml"/>
+    <item id="21_2_bscs_z_trnsfm_thry-web_figures_pdf_zfig4_svg" href="21_2_bscs_z_trnsfm_thry-web/figures/pdf/zfig4.svg" media-type="image/svg+xml"/>
+    <item id="21_2_bscs_z_trnsfm_thry-web_figures_pdf_zfig7_svg" href="21_2_bscs_z_trnsfm_thry-web/figures/pdf/zfig7.svg" media-type="image/svg+xml"/>
+    <item id="21_2_bscs_z_trnsfm_thry-web_figures_pdf_zfig9_svg" href="21_2_bscs_z_trnsfm_thry-web/figures/pdf/zfig9.svg" media-type="image/svg+xml"/>
+    <item id="21_3_z_trnsfm_n_difrnce_eqn-web_figures_pdf_zfig10_svg" href="21_3_z_trnsfm_n_difrnce_eqn-web/figures/pdf/zfig10.svg" media-type="image/svg+xml"/>
+    <item id="21_4_eng_app_z_trnsfms-web_figures_pdf_zfig16_svg" href="21_4_eng_app_z_trnsfms-web/figures/pdf/zfig16.svg" media-type="image/svg+xml"/>
+    <item id="21_4_eng_app_z_trnsfms-web_figures_pdf_zfig17_svg" href="21_4_eng_app_z_trnsfms-web/figures/pdf/zfig17.svg" media-type="image/svg+xml"/>
+    <item id="21_4_eng_app_z_trnsfms-web_figures_pdf_zfig15_svg" href="21_4_eng_app_z_trnsfms-web/figures/pdf/zfig15.svg" media-type="image/svg+xml"/>
+    <item id="21_4_eng_app_z_trnsfms-web_figures_pdf_zfig14_svg" href="21_4_eng_app_z_trnsfms-web/figures/pdf/zfig14.svg" media-type="image/svg+xml"/>
+    <item id="21_4_eng_app_z_trnsfms-web_figures_pdf_zfig11_svg" href="21_4_eng_app_z_trnsfms-web/figures/pdf/zfig11.svg" media-type="image/svg+xml"/>
+    <item id="21_4_eng_app_z_trnsfms-web_figures_pdf_zfig13_svg" href="21_4_eng_app_z_trnsfms-web/figures/pdf/zfig13.svg" media-type="image/svg+xml"/>
+    <item id="21_4_eng_app_z_trnsfms-web_figures_pdf_zfig12_svg" href="21_4_eng_app_z_trnsfms-web/figures/pdf/zfig12.svg" media-type="image/svg+xml"/>
+    <item id="21_4_eng_app_z_trnsfms-web_figures_pdf_zfig19_svg" href="21_4_eng_app_z_trnsfms-web/figures/pdf/zfig19.svg" media-type="image/svg+xml"/>
+    <item id="21_4_eng_app_z_trnsfms-web_figures_pdf_zfig18_svg" href="21_4_eng_app_z_trnsfms-web/figures/pdf/zfig18.svg" media-type="image/svg+xml"/>
+    <item id="21_5_smpld_fns-web_figures_pdf_zfig23_svg" href="21_5_smpld_fns-web/figures/pdf/zfig23.svg" media-type="image/svg+xml"/>
+    <item id="21_5_smpld_fns-web_figures_pdf_zfig22_svg" href="21_5_smpld_fns-web/figures/pdf/zfig22.svg" media-type="image/svg+xml"/>
+    <item id="21_5_smpld_fns-web_figures_pdf_zfig21_svg" href="21_5_smpld_fns-web/figures/pdf/zfig21.svg" media-type="image/svg+xml"/>
+    <item id="21_5_smpld_fns-web_figures_pdf_zfig25_svg" href="21_5_smpld_fns-web/figures/pdf/zfig25.svg" media-type="image/svg+xml"/>
+    <item id="21_5_smpld_fns-web_figures_pdf_zfig24_svg" href="21_5_smpld_fns-web/figures/pdf/zfig24.svg" media-type="image/svg+xml"/>
+    <item id="21_5_smpld_fns-web_figures_pdf_zfig26_svg" href="21_5_smpld_fns-web/figures/pdf/zfig26.svg" media-type="image/svg+xml"/>
+    <item id="23_1_periodic_functions-web_figures_pdf_Block1fig6_svg" href="23_1_periodic_functions-web/figures/pdf/Block1fig6.svg" media-type="image/svg+xml"/>
+    <item id="23_1_periodic_functions-web_figures_pdf_Block1fig7_svg" href="23_1_periodic_functions-web/figures/pdf/Block1fig7.svg" media-type="image/svg+xml"/>
+    <item id="23_1_periodic_functions-web_figures_pdf_Block1fig5_svg" href="23_1_periodic_functions-web/figures/pdf/Block1fig5.svg" media-type="image/svg+xml"/>
+    <item id="23_1_periodic_functions-web_figures_pdf_Block1fig4_svg" href="23_1_periodic_functions-web/figures/pdf/Block1fig4.svg" media-type="image/svg+xml"/>
+    <item id="23_1_periodic_functions-web_figures_pdf_Block1fig1_svg" href="23_1_periodic_functions-web/figures/pdf/Block1fig1.svg" media-type="image/svg+xml"/>
+    <item id="23_1_periodic_functions-web_figures_pdf_Block1fig3_svg" href="23_1_periodic_functions-web/figures/pdf/Block1fig3.svg" media-type="image/svg+xml"/>
+    <item id="23_1_periodic_functions-web_figures_pdf_Block1fig2_svg" href="23_1_periodic_functions-web/figures/pdf/Block1fig2.svg" media-type="image/svg+xml"/>
+    <item id="23_1_periodic_functions-web_figures_pdf_Block1fig9_svg" href="23_1_periodic_functions-web/figures/pdf/Block1fig9.svg" media-type="image/svg+xml"/>
+    <item id="23_1_periodic_functions-web_figures_pdf_Block1fig8_svg" href="23_1_periodic_functions-web/figures/pdf/Block1fig8.svg" media-type="image/svg+xml"/>
+    <item id="23_2_rprsnt_periodc_funcn_fourr_series-web_figures_pdf_Block3fig1_svg" href="23_2_rprsnt_periodc_funcn_fourr_series-web/figures/pdf/Block3fig1.svg" media-type="image/svg+xml"/>
+    <item id="23_2_rprsnt_periodc_funcn_fourr_series-web_figures_pdf_Block3fig3_svg" href="23_2_rprsnt_periodc_funcn_fourr_series-web/figures/pdf/Block3fig3.svg" media-type="image/svg+xml"/>
+    <item id="23_2_rprsnt_periodc_funcn_fourr_series-web_figures_pdf_Block3fig2_svg" href="23_2_rprsnt_periodc_funcn_fourr_series-web/figures/pdf/Block3fig2.svg" media-type="image/svg+xml"/>
+    <item id="23_2_rprsnt_periodc_funcn_fourr_series-web_figures_pdf_Block2fig3_svg" href="23_2_rprsnt_periodc_funcn_fourr_series-web/figures/pdf/Block2fig3.svg" media-type="image/svg+xml"/>
+    <item id="23_2_rprsnt_periodc_funcn_fourr_series-web_figures_pdf_Block2fig2_svg" href="23_2_rprsnt_periodc_funcn_fourr_series-web/figures/pdf/Block2fig2.svg" media-type="image/svg+xml"/>
+    <item id="23_2_rprsnt_periodc_funcn_fourr_series-web_figures_pdf_Block2fig1_svg" href="23_2_rprsnt_periodc_funcn_fourr_series-web/figures/pdf/Block2fig1.svg" media-type="image/svg+xml"/>
+    <item id="23_2_rprsnt_periodc_funcn_fourr_series-web_figures_pdf_Block3fig4_svg" href="23_2_rprsnt_periodc_funcn_fourr_series-web/figures/pdf/Block3fig4.svg" media-type="image/svg+xml"/>
+    <item id="23_3_even_n_odd_funcns-web_figures_pdf_Block3fig8_3_svg" href="23_3_even_n_odd_funcns-web/figures/pdf/Block3fig8_3.svg" media-type="image/svg+xml"/>
+    <item id="23_3_even_n_odd_funcns-web_figures_pdf_Block3fig9_3_svg" href="23_3_even_n_odd_funcns-web/figures/pdf/Block3fig9_3.svg" media-type="image/svg+xml"/>
+    <item id="23_3_even_n_odd_funcns-web_figures_pdf_Block3fig7_3_svg" href="23_3_even_n_odd_funcns-web/figures/pdf/Block3fig7_3.svg" media-type="image/svg+xml"/>
+    <item id="23_3_even_n_odd_funcns-web_figures_pdf_Block3fig5_3_svg" href="23_3_even_n_odd_funcns-web/figures/pdf/Block3fig5_3.svg" media-type="image/svg+xml"/>
+    <item id="23_3_even_n_odd_funcns-web_figures_pdf_Block3fig1_3_svg" href="23_3_even_n_odd_funcns-web/figures/pdf/Block3fig1_3.svg" media-type="image/svg+xml"/>
+    <item id="23_3_even_n_odd_funcns-web_figures_pdf_Block3fig3_3_svg" href="23_3_even_n_odd_funcns-web/figures/pdf/Block3fig3_3.svg" media-type="image/svg+xml"/>
+    <item id="23_3_even_n_odd_funcns-web_figures_pdf_Block3fig4_3_svg" href="23_3_even_n_odd_funcns-web/figures/pdf/Block3fig4_3.svg" media-type="image/svg+xml"/>
+    <item id="23_3_even_n_odd_funcns-web_figures_pdf_Block3fig6_3_svg" href="23_3_even_n_odd_funcns-web/figures/pdf/Block3fig6_3.svg" media-type="image/svg+xml"/>
+    <item id="23_3_even_n_odd_funcns-web_figures_pdf_Block3fig10_3_svg" href="23_3_even_n_odd_funcns-web/figures/pdf/Block3fig10_3.svg" media-type="image/svg+xml"/>
+    <item id="23_3_even_n_odd_funcns-web_figures_pdf_Block3fig2_3_svg" href="23_3_even_n_odd_funcns-web/figures/pdf/Block3fig2_3.svg" media-type="image/svg+xml"/>
+    <item id="23_4_convergence-web_figures_pdf_Block6fig2_svg" href="23_4_convergence-web/figures/pdf/Block6fig2.svg" media-type="image/svg+xml"/>
+    <item id="23_4_convergence-web_figures_pdf_Block6fig3_svg" href="23_4_convergence-web/figures/pdf/Block6fig3.svg" media-type="image/svg+xml"/>
+    <item id="23_4_convergence-web_figures_pdf_Block6fig1_svg" href="23_4_convergence-web/figures/pdf/Block6fig1.svg" media-type="image/svg+xml"/>
+    <item id="23_5_halfrange_series-web_figures_pdf_Block5fig8_svg" href="23_5_halfrange_series-web/figures/pdf/Block5fig8.svg" media-type="image/svg+xml"/>
+    <item id="23_5_halfrange_series-web_figures_pdf_Block5fig7_svg" href="23_5_halfrange_series-web/figures/pdf/Block5fig7.svg" media-type="image/svg+xml"/>
+    <item id="23_5_halfrange_series-web_figures_pdf_Block5fig6_svg" href="23_5_halfrange_series-web/figures/pdf/Block5fig6.svg" media-type="image/svg+xml"/>
+    <item id="23_5_halfrange_series-web_figures_pdf_Block5fig4_svg" href="23_5_halfrange_series-web/figures/pdf/Block5fig4.svg" media-type="image/svg+xml"/>
+    <item id="23_5_halfrange_series-web_figures_pdf_Block5fig5_svg" href="23_5_halfrange_series-web/figures/pdf/Block5fig5.svg" media-type="image/svg+xml"/>
+    <item id="23_5_halfrange_series-web_figures_pdf_Block5fig1_svg" href="23_5_halfrange_series-web/figures/pdf/Block5fig1.svg" media-type="image/svg+xml"/>
+    <item id="23_5_halfrange_series-web_figures_pdf_Block5fig2_svg" href="23_5_halfrange_series-web/figures/pdf/Block5fig2.svg" media-type="image/svg+xml"/>
+    <item id="23_5_halfrange_series-web_figures_pdf_Block5fig3_svg" href="23_5_halfrange_series-web/figures/pdf/Block5fig3.svg" media-type="image/svg+xml"/>
+    <item id="23_6_fourr_complex_form-web_figures_pdf_workbook29Block7fig2_svg" href="23_6_fourr_complex_form-web/figures/pdf/workbook29Block7fig2.svg" media-type="image/svg+xml"/>
+    <item id="23_6_fourr_complex_form-web_figures_pdf_workbook29Block7fig3_svg" href="23_6_fourr_complex_form-web/figures/pdf/workbook29Block7fig3.svg" media-type="image/svg+xml"/>
+    <item id="23_6_fourr_complex_form-web_figures_pdf_workbook29Block7fig1_svg" href="23_6_fourr_complex_form-web/figures/pdf/workbook29Block7fig1.svg" media-type="image/svg+xml"/>
+    <item id="23_7_applicatn_fourier_series-web_figures_pdf_figure9_svg" href="23_7_applicatn_fourier_series-web/figures/pdf/figure9.svg" media-type="image/svg+xml"/>
+    <item id="24_1_fourier_transform-web_figures_pdf_workbook30Block1fig5_svg" href="24_1_fourier_transform-web/figures/pdf/workbook30Block1fig5.svg" media-type="image/svg+xml"/>
+    <item id="24_1_fourier_transform-web_figures_pdf_workbook30Block1fig4_svg" href="24_1_fourier_transform-web/figures/pdf/workbook30Block1fig4.svg" media-type="image/svg+xml"/>
+    <item id="24_1_fourier_transform-web_figures_pdf_workbook30Block1fig1_svg" href="24_1_fourier_transform-web/figures/pdf/workbook30Block1fig1.svg" media-type="image/svg+xml"/>
+    <item id="24_1_fourier_transform-web_figures_pdf_workbook30Block1fig3_svg" href="24_1_fourier_transform-web/figures/pdf/workbook30Block1fig3.svg" media-type="image/svg+xml"/>
+    <item id="24_1_fourier_transform-web_figures_pdf_workbook30Block1fig2_svg" href="24_1_fourier_transform-web/figures/pdf/workbook30Block1fig2.svg" media-type="image/svg+xml"/>
+    <item id="24_1_fourier_transform-web_figures_pdf_workbook30Block1figkey_svg" href="24_1_fourier_transform-web/figures/pdf/workbook30Block1figkey.svg" media-type="image/svg+xml"/>
+    <item id="24_2_properties_fourier_trnsform-web_figures_pdf_workbook30Block2fig5_svg" href="24_2_properties_fourier_trnsform-web/figures/pdf/workbook30Block2fig5.svg" media-type="image/svg+xml"/>
+    <item id="24_2_properties_fourier_trnsform-web_figures_pdf_workbook30Block2fig4_svg" href="24_2_properties_fourier_trnsform-web/figures/pdf/workbook30Block2fig4.svg" media-type="image/svg+xml"/>
+    <item id="24_2_properties_fourier_trnsform-web_figures_pdf_workbook30Block2fig6_svg" href="24_2_properties_fourier_trnsform-web/figures/pdf/workbook30Block2fig6.svg" media-type="image/svg+xml"/>
+    <item id="24_2_properties_fourier_trnsform-web_figures_pdf_workbook30Block2fig7_svg" href="24_2_properties_fourier_trnsform-web/figures/pdf/workbook30Block2fig7.svg" media-type="image/svg+xml"/>
+    <item id="24_2_properties_fourier_trnsform-web_figures_pdf_workbook30Block2fig3_svg" href="24_2_properties_fourier_trnsform-web/figures/pdf/workbook30Block2fig3.svg" media-type="image/svg+xml"/>
+    <item id="24_2_properties_fourier_trnsform-web_figures_pdf_workbook30Block2fig2_svg" href="24_2_properties_fourier_trnsform-web/figures/pdf/workbook30Block2fig2.svg" media-type="image/svg+xml"/>
+    <item id="24_2_properties_fourier_trnsform-web_figures_pdf_workbook30Block2fig1_svg" href="24_2_properties_fourier_trnsform-web/figures/pdf/workbook30Block2fig1.svg" media-type="image/svg+xml"/>
+    <item id="24_2_properties_fourier_trnsform-web_figures_pdf_Exercise1_svg" href="24_2_properties_fourier_trnsform-web/figures/pdf/Exercise1.svg" media-type="image/svg+xml"/>
+    <item id="24_2_properties_fourier_trnsform-web_figures_pdf_workbook30Block2fig9_svg" href="24_2_properties_fourier_trnsform-web/figures/pdf/workbook30Block2fig9.svg" media-type="image/svg+xml"/>
+    <item id="24_2_properties_fourier_trnsform-web_figures_pdf_workbook30Block2fig8_svg" href="24_2_properties_fourier_trnsform-web/figures/pdf/workbook30Block2fig8.svg" media-type="image/svg+xml"/>
+    <item id="24_3_special_fourier_trnsform_pairs-web_figures_pdf_workbook30Block3fig1_svg" href="24_3_special_fourier_trnsform_pairs-web/figures/pdf/workbook30Block3fig1.svg" media-type="image/svg+xml"/>
+    <item id="24_3_special_fourier_trnsform_pairs-web_figures_pdf_workbook30Block3fig3_svg" href="24_3_special_fourier_trnsform_pairs-web/figures/pdf/workbook30Block3fig3.svg" media-type="image/svg+xml"/>
+    <item id="24_3_special_fourier_trnsform_pairs-web_figures_pdf_workbook30Block3fig2_svg" href="24_3_special_fourier_trnsform_pairs-web/figures/pdf/workbook30Block3fig2.svg" media-type="image/svg+xml"/>
+    <item id="24_3_special_fourier_trnsform_pairs-web_figures_pdf_workbook30Block3fig6_svg" href="24_3_special_fourier_trnsform_pairs-web/figures/pdf/workbook30Block3fig6.svg" media-type="image/svg+xml"/>
+    <item id="24_3_special_fourier_trnsform_pairs-web_figures_pdf_workbook30Block3fig7_svg" href="24_3_special_fourier_trnsform_pairs-web/figures/pdf/workbook30Block3fig7.svg" media-type="image/svg+xml"/>
+    <item id="24_3_special_fourier_trnsform_pairs-web_figures_pdf_workbook30Block3fig5_svg" href="24_3_special_fourier_trnsform_pairs-web/figures/pdf/workbook30Block3fig5.svg" media-type="image/svg+xml"/>
+    <item id="24_3_special_fourier_trnsform_pairs-web_figures_pdf_workbook30Block3fig4_svg" href="24_3_special_fourier_trnsform_pairs-web/figures/pdf/workbook30Block3fig4.svg" media-type="image/svg+xml"/>
+    <item id="24_3_special_fourier_trnsform_pairs-web_figures_pdf_workbook30Block3fig9_svg" href="24_3_special_fourier_trnsform_pairs-web/figures/pdf/workbook30Block3fig9.svg" media-type="image/svg+xml"/>
+    <item id="24_3_special_fourier_trnsform_pairs-web_figures_pdf_workbook30Block3fig8_svg" href="24_3_special_fourier_trnsform_pairs-web/figures/pdf/workbook30Block3fig8.svg" media-type="image/svg+xml"/>
+    <item id="24_3_special_fourier_trnsform_pairs-web_figures_pdf_workbook30Block3fig10_svg" href="24_3_special_fourier_trnsform_pairs-web/figures/pdf/workbook30Block3fig10.svg" media-type="image/svg+xml"/>
+    <item id="25_1_partial_diffrntl_equatns-web_figures_pdf_workbook31fig1_svg" href="25_1_partial_diffrntl_equatns-web/figures/pdf/workbook31fig1.svg" media-type="image/svg+xml"/>
+    <item id="25_2_applications_of_pdes-web_figures_pdf_workbook25fig1_svg" href="25_2_applications_of_pdes-web/figures/pdf/workbook25fig1.svg" media-type="image/svg+xml"/>
+    <item id="25_2_applications_of_pdes-web_figures_pdf_workbook25fig3_svg" href="25_2_applications_of_pdes-web/figures/pdf/workbook25fig3.svg" media-type="image/svg+xml"/>
+    <item id="25_2_applications_of_pdes-web_figures_pdf_workbook25fig2_svg" href="25_2_applications_of_pdes-web/figures/pdf/workbook25fig2.svg" media-type="image/svg+xml"/>
+    <item id="25_2_applications_of_pdes-web_figures_pdf_workbook25fig5_svg" href="25_2_applications_of_pdes-web/figures/pdf/workbook25fig5.svg" media-type="image/svg+xml"/>
+    <item id="25_2_applications_of_pdes-web_figures_pdf_workbook25fig4_svg" href="25_2_applications_of_pdes-web/figures/pdf/workbook25fig4.svg" media-type="image/svg+xml"/>
+    <item id="25_4_solutn_using_fourier_series-web_figures_pdf_workbook31fig2_svg" href="25_4_solutn_using_fourier_series-web/figures/pdf/workbook31fig2.svg" media-type="image/svg+xml"/>
+    <item id="25_4_solutn_using_fourier_series-web_figures_pdf_workbook31fig3_svg" href="25_4_solutn_using_fourier_series-web/figures/pdf/workbook31fig3.svg" media-type="image/svg+xml"/>
+    <item id="25_4_solutn_using_fourier_series-web_figures_pdf_workbook31fig4_svg" href="25_4_solutn_using_fourier_series-web/figures/pdf/workbook31fig4.svg" media-type="image/svg+xml"/>
+    <item id="26_1_cmplx_fns-web_figures_pdf_Block261_Fig1_svg" href="26_1_cmplx_fns-web/figures/pdf/Block261_Fig1.svg" media-type="image/svg+xml"/>
+    <item id="26_2_cr_eqns_n_cnfml_mpng-web_figures_pdf_Block261_Fig3_svg" href="26_2_cr_eqns_n_cnfml_mpng-web/figures/pdf/Block261_Fig3.svg" media-type="image/svg+xml"/>
+    <item id="26_2_cr_eqns_n_cnfml_mpng-web_figures_pdf_Block261_Fig5_svg" href="26_2_cr_eqns_n_cnfml_mpng-web/figures/pdf/Block261_Fig5.svg" media-type="image/svg+xml"/>
+    <item id="26_2_cr_eqns_n_cnfml_mpng-web_figures_pdf_Block261_Fig4_svg" href="26_2_cr_eqns_n_cnfml_mpng-web/figures/pdf/Block261_Fig4.svg" media-type="image/svg+xml"/>
+    <item id="26_2_cr_eqns_n_cnfml_mpng-web_figures_pdf_figextra_svg" href="26_2_cr_eqns_n_cnfml_mpng-web/figures/pdf/figextra.svg" media-type="image/svg+xml"/>
+    <item id="26_3_stnd_cmplx_fns-web_figures_pdf_Block261_Fig2_svg" href="26_3_stnd_cmplx_fns-web/figures/pdf/Block261_Fig2.svg" media-type="image/svg+xml"/>
+    <item id="26_4_bsc_cmplx_int-web_figures_pdf_Block262_Fig4_svg" href="26_4_bsc_cmplx_int-web/figures/pdf/Block262_Fig4.svg" media-type="image/svg+xml"/>
+    <item id="26_4_bsc_cmplx_int-web_figures_pdf_Block262_Fig1_svg" href="26_4_bsc_cmplx_int-web/figures/pdf/Block262_Fig1.svg" media-type="image/svg+xml"/>
+    <item id="26_4_bsc_cmplx_int-web_figures_pdf_Block262_Fig3_svg" href="26_4_bsc_cmplx_int-web/figures/pdf/Block262_Fig3.svg" media-type="image/svg+xml"/>
+    <item id="26_4_bsc_cmplx_int-web_figures_pdf_Block262_Fig2_svg" href="26_4_bsc_cmplx_int-web/figures/pdf/Block262_Fig2.svg" media-type="image/svg+xml"/>
+    <item id="26_5_cauchy_thm-web_figures_pdf_Block262_Fig8_svg" href="26_5_cauchy_thm-web/figures/pdf/Block262_Fig8.svg" media-type="image/svg+xml"/>
+    <item id="26_5_cauchy_thm-web_figures_pdf_Block262_FigQ2_svg" href="26_5_cauchy_thm-web/figures/pdf/Block262_FigQ2.svg" media-type="image/svg+xml"/>
+    <item id="26_5_cauchy_thm-web_figures_pdf_Block262_Fig6_svg" href="26_5_cauchy_thm-web/figures/pdf/Block262_Fig6.svg" media-type="image/svg+xml"/>
+    <item id="26_5_cauchy_thm-web_figures_pdf_Block262_Fig7_svg" href="26_5_cauchy_thm-web/figures/pdf/Block262_Fig7.svg" media-type="image/svg+xml"/>
+    <item id="26_5_cauchy_thm-web_figures_pdf_Block262_Fig9b_svg" href="26_5_cauchy_thm-web/figures/pdf/Block262_Fig9b.svg" media-type="image/svg+xml"/>
+    <item id="26_5_cauchy_thm-web_figures_pdf_Block262_Fig5_svg" href="26_5_cauchy_thm-web/figures/pdf/Block262_Fig5.svg" media-type="image/svg+xml"/>
+    <item id="26_5_cauchy_thm-web_figures_pdf_Block262_Fig9a_svg" href="26_5_cauchy_thm-web/figures/pdf/Block262_Fig9a.svg" media-type="image/svg+xml"/>
+    <item id="26_6_snglrts_n_resdus-web_figures_pdf_Block262_FigQ2-ans_svg" href="26_6_snglrts_n_resdus-web/figures/pdf/Block262_FigQ2-ans.svg" media-type="image/svg+xml"/>
+    <item id="26_6_snglrts_n_resdus-web_figures_pdf_Block262_Fig11_svg" href="26_6_snglrts_n_resdus-web/figures/pdf/Block262_Fig11.svg" media-type="image/svg+xml"/>
+    <item id="26_6_snglrts_n_resdus-web_figures_pdf_Block262_Fig10_svg" href="26_6_snglrts_n_resdus-web/figures/pdf/Block262_Fig10.svg" media-type="image/svg+xml"/>
+    <item id="27_1_intro_srfc_ints-web_figures_pdf_fig2_svg" href="27_1_intro_srfc_ints-web/figures/pdf/fig2.svg" media-type="image/svg+xml"/>
+    <item id="27_1_intro_srfc_ints-web_figures_pdf_Fig361d_svg" href="27_1_intro_srfc_ints-web/figures/pdf/Fig361d.svg" media-type="image/svg+xml"/>
+    <item id="27_1_intro_srfc_ints-web_figures_pdf_fig3_svg" href="27_1_intro_srfc_ints-web/figures/pdf/fig3.svg" media-type="image/svg+xml"/>
+    <item id="27_1_intro_srfc_ints-web_figures_pdf_fig1_svg" href="27_1_intro_srfc_ints-web/figures/pdf/fig1.svg" media-type="image/svg+xml"/>
+    <item id="27_1_intro_srfc_ints-web_figures_pdf_Fig361b_svg" href="27_1_intro_srfc_ints-web/figures/pdf/Fig361b.svg" media-type="image/svg+xml"/>
+    <item id="27_1_intro_srfc_ints-web_figures_pdf_fig4_svg" href="27_1_intro_srfc_ints-web/figures/pdf/fig4.svg" media-type="image/svg+xml"/>
+    <item id="27_1_intro_srfc_ints-web_figures_pdf_fig5_svg" href="27_1_intro_srfc_ints-web/figures/pdf/fig5.svg" media-type="image/svg+xml"/>
+    <item id="27_1_intro_srfc_ints-web_figures_pdf_Fig361c_svg" href="27_1_intro_srfc_ints-web/figures/pdf/Fig361c.svg" media-type="image/svg+xml"/>
+    <item id="27_1_intro_srfc_ints-web_figures_pdf_Fig361a_svg" href="27_1_intro_srfc_ints-web/figures/pdf/Fig361a.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_task_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/task.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_Fig362_8_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/Fig362_8.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_Fig362_11_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/Fig362_11.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_Fig362_10_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/Fig362_10.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_Fig362_9_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/Fig362_9.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_Fig27taskpage28_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/Fig27taskpage28.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_Fig3612_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/Fig3612.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_elcylinder_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/elcylinder.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_fig27_1_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/fig27_1.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_Fig362_4_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/Fig362_4.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_Fig362_5_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/Fig362_5.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_Fig362_6_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/Fig362_6.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_Fig362_2_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/Fig362_2.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_Fig362_3_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/Fig362_3.svg" media-type="image/svg+xml"/>
+    <item id="27_2_mult_ints_non_rctnglr_rgns-web_figures_pdf_Fig362_1_svg" href="27_2_mult_ints_non_rctnglr_rgns-web/figures/pdf/Fig362_1.svg" media-type="image/svg+xml"/>
+    <item id="27_3_vol_ints-web_figures_pdf_Fig363a_5_svg" href="27_3_vol_ints-web/figures/pdf/Fig363a_5.svg" media-type="image/svg+xml"/>
+    <item id="27_3_vol_ints-web_figures_pdf_Fig363b_5_svg" href="27_3_vol_ints-web/figures/pdf/Fig363b_5.svg" media-type="image/svg+xml"/>
+    <item id="27_3_vol_ints-web_figures_pdf_Fig363_6_svg" href="27_3_vol_ints-web/figures/pdf/Fig363_6.svg" media-type="image/svg+xml"/>
+    <item id="27_3_vol_ints-web_figures_pdf_Fig363_4_svg" href="27_3_vol_ints-web/figures/pdf/Fig363_4.svg" media-type="image/svg+xml"/>
+    <item id="27_3_vol_ints-web_figures_pdf_Fig363_1_svg" href="27_3_vol_ints-web/figures/pdf/Fig363_1.svg" media-type="image/svg+xml"/>
+    <item id="27_3_vol_ints-web_figures_pdf_Fig363_2_svg" href="27_3_vol_ints-web/figures/pdf/Fig363_2.svg" media-type="image/svg+xml"/>
+    <item id="27_3_vol_ints-web_figures_pdf_Fig363_3_svg" href="27_3_vol_ints-web/figures/pdf/Fig363_3.svg" media-type="image/svg+xml"/>
+    <item id="27_4_chng_coords-web_figures_pdf_Fig364_8_svg" href="27_4_chng_coords-web/figures/pdf/Fig364_8.svg" media-type="image/svg+xml"/>
+    <item id="27_4_chng_coords-web_figures_pdf_Fig3649_svg" href="27_4_chng_coords-web/figures/pdf/Fig3649.svg" media-type="image/svg+xml"/>
+    <item id="27_4_chng_coords-web_figures_pdf_Fig36410_svg" href="27_4_chng_coords-web/figures/pdf/Fig36410.svg" media-type="image/svg+xml"/>
+    <item id="27_4_chng_coords-web_figures_pdf_ellipsoid_svg" href="27_4_chng_coords-web/figures/pdf/ellipsoid.svg" media-type="image/svg+xml"/>
+    <item id="27_4_chng_coords-web_figures_pdf_Fig364_2_svg" href="27_4_chng_coords-web/figures/pdf/Fig364_2.svg" media-type="image/svg+xml"/>
+    <item id="27_4_chng_coords-web_figures_pdf_Fig364_3_svg" href="27_4_chng_coords-web/figures/pdf/Fig364_3.svg" media-type="image/svg+xml"/>
+    <item id="27_4_chng_coords-web_figures_pdf_Fig364_1_svg" href="27_4_chng_coords-web/figures/pdf/Fig364_1.svg" media-type="image/svg+xml"/>
+    <item id="27_4_chng_coords-web_figures_pdf_Fig364_4_svg" href="27_4_chng_coords-web/figures/pdf/Fig364_4.svg" media-type="image/svg+xml"/>
+    <item id="27_4_chng_coords-web_figures_pdf_Fig364_5_svg" href="27_4_chng_coords-web/figures/pdf/Fig364_5.svg" media-type="image/svg+xml"/>
+    <item id="27_4_chng_coords-web_figures_pdf_Fig364_7_svg" href="27_4_chng_coords-web/figures/pdf/Fig364_7.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig3712_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig3712.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig3713_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig3713.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig3717_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig3717.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig3716_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig3716.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig3714_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig3714.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig3715_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig3715.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig37extra_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig37extra.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig37111_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig37111.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig37110_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig37110.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig37112_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig37112.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig37113_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig37113.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig37116_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig37116.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig37114_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig37114.svg" media-type="image/svg+xml"/>
+    <item id="28_1_bkgrnd_vec_calc-web_figures_pdf_Fig37115_svg" href="28_1_bkgrnd_vec_calc-web/figures/pdf/Fig37115.svg" media-type="image/svg+xml"/>
+    <item id="28_2_diff_vec_calc-web_figures_pdf_37_2_8_svg" href="28_2_diff_vec_calc-web/figures/pdf/37_2_8.svg" media-type="image/svg+xml"/>
+    <item id="28_2_diff_vec_calc-web_figures_pdf_37_2_7_svg" href="28_2_diff_vec_calc-web/figures/pdf/37_2_7.svg" media-type="image/svg+xml"/>
+    <item id="28_2_diff_vec_calc-web_figures_pdf_37_2_5_svg" href="28_2_diff_vec_calc-web/figures/pdf/37_2_5.svg" media-type="image/svg+xml"/>
+    <item id="28_2_diff_vec_calc-web_figures_pdf_magfield_svg" href="28_2_diff_vec_calc-web/figures/pdf/magfield.svg" media-type="image/svg+xml"/>
+    <item id="28_2_diff_vec_calc-web_figures_pdf_37_2_4_svg" href="28_2_diff_vec_calc-web/figures/pdf/37_2_4.svg" media-type="image/svg+xml"/>
+    <item id="28_2_diff_vec_calc-web_figures_pdf_Fig3721_svg" href="28_2_diff_vec_calc-web/figures/pdf/Fig3721.svg" media-type="image/svg+xml"/>
+    <item id="28_2_diff_vec_calc-web_figures_pdf_37_2_2_svg" href="28_2_diff_vec_calc-web/figures/pdf/37_2_2.svg" media-type="image/svg+xml"/>
+    <item id="28_3_orthog_cvlnr_coords-web_figures_pdf_37_2_9_svg" href="28_3_orthog_cvlnr_coords-web/figures/pdf/37_2_9.svg" media-type="image/svg+xml"/>
+    <item id="28_3_orthog_cvlnr_coords-web_figures_pdf_helix_svg" href="28_3_orthog_cvlnr_coords-web/figures/pdf/helix.svg" media-type="image/svg+xml"/>
+    <item id="28_3_orthog_cvlnr_coords-web_figures_pdf_37_2_10_svg" href="28_3_orthog_cvlnr_coords-web/figures/pdf/37_2_10.svg" media-type="image/svg+xml"/>
+    <item id="29_1_line_ints_vecs-web_figures_pdf_37_3_5_svg" href="29_1_line_ints_vecs-web/figures/pdf/37_3_5.svg" media-type="image/svg+xml"/>
+    <item id="29_1_line_ints_vecs-web_figures_pdf_twopath_svg" href="29_1_line_ints_vecs-web/figures/pdf/twopath.svg" media-type="image/svg+xml"/>
+    <item id="29_1_line_ints_vecs-web_figures_pdf_loop_svg" href="29_1_line_ints_vecs-web/figures/pdf/loop.svg" media-type="image/svg+xml"/>
+    <item id="29_1_line_ints_vecs-web_figures_pdf_Fig29page3_svg" href="29_1_line_ints_vecs-web/figures/pdf/Fig29page3.svg" media-type="image/svg+xml"/>
+    <item id="29_1_line_ints_vecs-web_figures_pdf_current_svg" href="29_1_line_ints_vecs-web/figures/pdf/current.svg" media-type="image/svg+xml"/>
+    <item id="29_1_line_ints_vecs-web_figures_pdf_37_3_4a_svg" href="29_1_line_ints_vecs-web/figures/pdf/37_3_4a.svg" media-type="image/svg+xml"/>
+    <item id="29_1_line_ints_vecs-web_figures_pdf_37_3_4b_svg" href="29_1_line_ints_vecs-web/figures/pdf/37_3_4b.svg" media-type="image/svg+xml"/>
+    <item id="29_1_line_ints_vecs-web_figures_pdf_37_3_4c_svg" href="29_1_line_ints_vecs-web/figures/pdf/37_3_4c.svg" media-type="image/svg+xml"/>
+    <item id="29_2_sfc_n_vol_ints-web_figures_pdf_Fig29page36_svg" href="29_2_sfc_n_vol_ints-web/figures/pdf/Fig29page36.svg" media-type="image/svg+xml"/>
+    <item id="29_2_sfc_n_vol_ints-web_figures_pdf_37_5_3_svg" href="29_2_sfc_n_vol_ints-web/figures/pdf/37_5_3.svg" media-type="image/svg+xml"/>
+    <item id="29_2_sfc_n_vol_ints-web_figures_pdf_lightening_svg" href="29_2_sfc_n_vol_ints-web/figures/pdf/lightening.svg" media-type="image/svg+xml"/>
+    <item id="29_2_sfc_n_vol_ints-web_figures_pdf_infline_svg" href="29_2_sfc_n_vol_ints-web/figures/pdf/infline.svg" media-type="image/svg+xml"/>
+    <item id="29_2_sfc_n_vol_ints-web_figures_pdf_37_5_1_svg" href="29_2_sfc_n_vol_ints-web/figures/pdf/37_5_1.svg" media-type="image/svg+xml"/>
+    <item id="29_2_sfc_n_vol_ints-web_figures_pdf_37_5_5_svg" href="29_2_sfc_n_vol_ints-web/figures/pdf/37_5_5.svg" media-type="image/svg+xml"/>
+    <item id="29_2_sfc_n_vol_ints-web_figures_pdf_37_5_4_svg" href="29_2_sfc_n_vol_ints-web/figures/pdf/37_5_4.svg" media-type="image/svg+xml"/>
+    <item id="29_2_sfc_n_vol_ints-web_figures_pdf_37_5_6_svg" href="29_2_sfc_n_vol_ints-web/figures/pdf/37_5_6.svg" media-type="image/svg+xml"/>
+    <item id="29_2_sfc_n_vol_ints-web_figures_pdf_37_5_ext_svg" href="29_2_sfc_n_vol_ints-web/figures/pdf/37_5_ext.svg" media-type="image/svg+xml"/>
+    <item id="29_2_sfc_n_vol_ints-web_figures_pdf_37_5_7_svg" href="29_2_sfc_n_vol_ints-web/figures/pdf/37_5_7.svg" media-type="image/svg+xml"/>
+    <item id="29_3_int_vec_thms-web_figures_pdf_Fig29page55bot_svg" href="29_3_int_vec_thms-web/figures/pdf/Fig29page55bot.svg" media-type="image/svg+xml"/>
+    <item id="29_3_int_vec_thms-web_figures_pdf_fig16_svg" href="29_3_int_vec_thms-web/figures/pdf/fig16.svg" media-type="image/svg+xml"/>
+    <item id="29_3_int_vec_thms-web_figures_pdf_fig15_svg" href="29_3_int_vec_thms-web/figures/pdf/fig15.svg" media-type="image/svg+xml"/>
+    <item id="29_3_int_vec_thms-web_figures_pdf_NEWDIAGRAM_svg" href="29_3_int_vec_thms-web/figures/pdf/NEWDIAGRAM.svg" media-type="image/svg+xml"/>
+    <item id="29_3_int_vec_thms-web_figures_pdf_line_svg" href="29_3_int_vec_thms-web/figures/pdf/line.svg" media-type="image/svg+xml"/>
+    <item id="30_5_itrtv_mthds_systms_eqns-web_figures_pdf_circuit_svg" href="30_5_itrtv_mthds_systms_eqns-web/figures/pdf/circuit.svg" media-type="image/svg+xml"/>
+    <item id="31_1_plynml_approx-web_figures_pdf_Ch25splineJPW_svg" href="31_1_plynml_approx-web/figures/pdf/Ch25splineJPW.svg" media-type="image/svg+xml"/>
+    <item id="31_1_plynml_approx-web_figures_pdf_bestfitpic-RD_svg" href="31_1_plynml_approx-web/figures/pdf/bestfitpic-RD.svg" media-type="image/svg+xml"/>
+    <item id="31_1_plynml_approx-web_figures_pdf_Ch25lagpolyJPW_svg" href="31_1_plynml_approx-web/figures/pdf/Ch25lagpolyJPW.svg" media-type="image/svg+xml"/>
+    <item id="31_1_plynml_approx-web_figures_pdf_Ch25interpJPW_svg" href="31_1_plynml_approx-web/figures/pdf/Ch25interpJPW.svg" media-type="image/svg+xml"/>
+    <item id="31_1_plynml_approx-web_figures_pdf_bestfitpicJPW_svg" href="31_1_plynml_approx-web/figures/pdf/bestfitpicJPW.svg" media-type="image/svg+xml"/>
+    <item id="31_2_num_int-web_figures_pdf_Ch25comp3trappicJPW_svg" href="31_2_num_int-web/figures/pdf/Ch25comp3trappicJPW.svg" media-type="image/svg+xml"/>
+    <item id="31_2_num_int-web_figures_pdf_Ch25comp4trappicJPW_svg" href="31_2_num_int-web/figures/pdf/Ch25comp4trappicJPW.svg" media-type="image/svg+xml"/>
+    <item id="31_2_num_int-web_figures_pdf_Ch25trappicJPW_svg" href="31_2_num_int-web/figures/pdf/Ch25trappicJPW.svg" media-type="image/svg+xml"/>
+    <item id="31_2_num_int-web_figures_pdf_cubic_svg" href="31_2_num_int-web/figures/pdf/cubic.svg" media-type="image/svg+xml"/>
+    <item id="31_2_num_int-web_figures_pdf_Ch25comp2trappicJPW_svg" href="31_2_num_int-web/figures/pdf/Ch25comp2trappicJPW.svg" media-type="image/svg+xml"/>
+    <item id="31_3_num_diff-web_figures_pdf_Ch25ndiffcentralJPW_svg" href="31_3_num_diff-web/figures/pdf/Ch25ndiffcentralJPW.svg" media-type="image/svg+xml"/>
+    <item id="31_3_num_diff-web_figures_pdf_Ch25ndiffonesideJPW_svg" href="31_3_num_diff-web/figures/pdf/Ch25ndiffonesideJPW.svg" media-type="image/svg+xml"/>
+    <item id="31_4_non_lin_eqns-web_figures_pdf_Ch25newtonpicJPW_svg" href="31_4_non_lin_eqns-web/figures/pdf/Ch25newtonpicJPW.svg" media-type="image/svg+xml"/>
+    <item id="31_4_non_lin_eqns-web_figures_pdf_multi_svg" href="31_4_non_lin_eqns-web/figures/pdf/multi.svg" media-type="image/svg+xml"/>
+    <item id="31_4_non_lin_eqns-web_figures_pdf_Ch25bispicJPW_svg" href="31_4_non_lin_eqns-web/figures/pdf/Ch25bispicJPW.svg" media-type="image/svg+xml"/>
+    <item id="32_1_init_val_probs-web_figures_pdf_ivpplot_svg" href="32_1_init_val_probs-web/figures/pdf/ivpplot.svg" media-type="image/svg+xml"/>
+    <item id="32_4_prblc_pde-web_figures_pdf_heatstencil_svg" href="32_4_prblc_pde-web/figures/pdf/heatstencil.svg" media-type="image/svg+xml"/>
+    <item id="32_4_prblc_pde-web_figures_pdf_subscript_svg" href="32_4_prblc_pde-web/figures/pdf/subscript.svg" media-type="image/svg+xml"/>
+    <item id="32_4_prblc_pde-web_figures_pdf_crankex1_svg" href="32_4_prblc_pde-web/figures/pdf/crankex1.svg" media-type="image/svg+xml"/>
+    <item id="32_4_prblc_pde-web_figures_pdf_heatexample_svg" href="32_4_prblc_pde-web/figures/pdf/heatexample.svg" media-type="image/svg+xml"/>
+    <item id="32_4_prblc_pde-web_figures_pdf_bar_svg" href="32_4_prblc_pde-web/figures/pdf/bar.svg" media-type="image/svg+xml"/>
+    <item id="32_4_prblc_pde-web_figures_pdf_crankstencil_svg" href="32_4_prblc_pde-web/figures/pdf/crankstencil.svg" media-type="image/svg+xml"/>
+    <item id="32_4_prblc_pde-web_figures_pdf_heatunstable_svg" href="32_4_prblc_pde-web/figures/pdf/heatunstable.svg" media-type="image/svg+xml"/>
+    <item id="32_4_prblc_pde-web_figures_pdf_heatgrid_svg" href="32_4_prblc_pde-web/figures/pdf/heatgrid.svg" media-type="image/svg+xml"/>
+    <item id="32_5_hypblc_pde-web_figures_pdf_waveexample_svg" href="32_5_hypblc_pde-web/figures/pdf/waveexample.svg" media-type="image/svg+xml"/>
+    <item id="32_5_hypblc_pde-web_figures_pdf_waveexample2_svg" href="32_5_hypblc_pde-web/figures/pdf/waveexample2.svg" media-type="image/svg+xml"/>
+    <item id="32_5_hypblc_pde-web_figures_pdf_wavestencil_svg" href="32_5_hypblc_pde-web/figures/pdf/wavestencil.svg" media-type="image/svg+xml"/>
+    <item id="33_1_two_pt_bdry_val_prblm-web_figures_pdf_bvplot_svg" href="33_1_two_pt_bdry_val_prblm-web/figures/pdf/bvplot.svg" media-type="image/svg+xml"/>
+    <item id="33_1_two_pt_bdry_val_prblm-web_figures_pdf_bvpexample331b_svg" href="33_1_two_pt_bdry_val_prblm-web/figures/pdf/bvpexample331b.svg" media-type="image/svg+xml"/>
+    <item id="33_1_two_pt_bdry_val_prblm-web_figures_pdf_bvpexample331a_svg" href="33_1_two_pt_bdry_val_prblm-web/figures/pdf/bvpexample331a.svg" media-type="image/svg+xml"/>
+    <item id="33_1_two_pt_bdry_val_prblm-web_figures_pdf_bvpexample332_svg" href="33_1_two_pt_bdry_val_prblm-web/figures/pdf/bvpexample332.svg" media-type="image/svg+xml"/>
+    <item id="33_2_elliptic_pde-web_figures_pdf_d2_svg" href="33_2_elliptic_pde-web/figures/pdf/d2.svg" media-type="image/svg+xml"/>
+    <item id="33_2_elliptic_pde-web_figures_pdf_d3_svg" href="33_2_elliptic_pde-web/figures/pdf/d3.svg" media-type="image/svg+xml"/>
+    <item id="33_2_elliptic_pde-web_figures_pdf_d1_svg" href="33_2_elliptic_pde-web/figures/pdf/d1.svg" media-type="image/svg+xml"/>
+    <item id="33_2_elliptic_pde-web_figures_pdf_d4_svg" href="33_2_elliptic_pde-web/figures/pdf/d4.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig18P_svg" href="34_1_prjctls-web/figures/pdf/Fig18P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig7P_svg" href="34_1_prjctls-web/figures/pdf/Fig7P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig14P_svg" href="34_1_prjctls-web/figures/pdf/Fig14P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig6P_svg" href="34_1_prjctls-web/figures/pdf/Fig6P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig19P_svg" href="34_1_prjctls-web/figures/pdf/Fig19P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig35P_svg" href="34_1_prjctls-web/figures/pdf/Fig35P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig1P_svg" href="34_1_prjctls-web/figures/pdf/Fig1P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig12P_svg" href="34_1_prjctls-web/figures/pdf/Fig12P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig10P_svg" href="34_1_prjctls-web/figures/pdf/Fig10P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig3P_svg" href="34_1_prjctls-web/figures/pdf/Fig3P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig2P_svg" href="34_1_prjctls-web/figures/pdf/Fig2P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig11P_svg" href="34_1_prjctls-web/figures/pdf/Fig11P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig9P_svg" href="34_1_prjctls-web/figures/pdf/Fig9P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig36P_svg" href="34_1_prjctls-web/figures/pdf/Fig36P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig16P_svg" href="34_1_prjctls-web/figures/pdf/Fig16P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig5P_svg" href="34_1_prjctls-web/figures/pdf/Fig5P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig4P_svg" href="34_1_prjctls-web/figures/pdf/Fig4P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig17P_svg" href="34_1_prjctls-web/figures/pdf/Fig17P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig37P_svg" href="34_1_prjctls-web/figures/pdf/Fig37P.svg" media-type="image/svg+xml"/>
+    <item id="34_1_prjctls-web_figures_pdf_Fig8P_svg" href="34_1_prjctls-web/figures/pdf/Fig8P.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_Fig22P_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/Fig22P.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_cartrack_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/cartrack.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_track_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/track.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_Fig23P_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/Fig23P.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_carreaction_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/carreaction.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_Fig28P_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/Fig28P.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_Fig24P_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/Fig24P.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_Fig25P_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/Fig25P.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_Fig29P_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/Fig29P.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_Fig26P_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/Fig26P.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_Fig30P_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/Fig30P.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_Fig27P_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/Fig27P.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_Fig20P_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/Fig20P.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_pedal_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/pedal.svg" media-type="image/svg+xml"/>
+    <item id="34_2_forces_mr_thn_one_d-web_figures_pdf_Fig21P_svg" href="34_2_forces_mr_thn_one_d-web/figures/pdf/Fig21P.svg" media-type="image/svg+xml"/>
+    <item id="34_3_rstd_motn-web_figures_pdf_Fig34P_svg" href="34_3_rstd_motn-web/figures/pdf/Fig34P.svg" media-type="image/svg+xml"/>
+    <item id="34_3_rstd_motn-web_figures_pdf_Fig38P_svg" href="34_3_rstd_motn-web/figures/pdf/Fig38P.svg" media-type="image/svg+xml"/>
+    <item id="34_3_rstd_motn-web_figures_pdf_keithlog_svg" href="34_3_rstd_motn-web/figures/pdf/keithlog.svg" media-type="image/svg+xml"/>
+    <item id="34_3_rstd_motn-web_figures_pdf_Fig32P_svg" href="34_3_rstd_motn-web/figures/pdf/Fig32P.svg" media-type="image/svg+xml"/>
+    <item id="34_3_rstd_motn-web_figures_pdf_Fig31P_svg" href="34_3_rstd_motn-web/figures/pdf/Fig31P.svg" media-type="image/svg+xml"/>
+    <item id="35_1_sets-web_figures_pdf_figure3a_svg" href="35_1_sets-web/figures/pdf/figure3a.svg" media-type="image/svg+xml"/>
+    <item id="35_1_sets-web_figures_pdf_figure7_svg" href="35_1_sets-web/figures/pdf/figure7.svg" media-type="image/svg+xml"/>
+    <item id="35_1_sets-web_figures_pdf_figure1a_svg" href="35_1_sets-web/figures/pdf/figure1a.svg" media-type="image/svg+xml"/>
+    <item id="35_1_sets-web_figures_pdf_figure6_svg" href="35_1_sets-web/figures/pdf/figure6.svg" media-type="image/svg+xml"/>
+    <item id="35_1_sets-web_figures_pdf_figure4_svg" href="35_1_sets-web/figures/pdf/figure4.svg" media-type="image/svg+xml"/>
+    <item id="35_1_sets-web_figures_pdf_figure5_svg" href="35_1_sets-web/figures/pdf/figure5.svg" media-type="image/svg+xml"/>
+    <item id="35_1_sets-web_figures_pdf_figure1_svg" href="35_1_sets-web/figures/pdf/figure1.svg" media-type="image/svg+xml"/>
+    <item id="35_1_sets-web_figures_pdf_figure2_svg" href="35_1_sets-web/figures/pdf/figure2.svg" media-type="image/svg+xml"/>
+    <item id="35_1_sets-web_figures_pdf_figure3_svg" href="35_1_sets-web/figures/pdf/figure3.svg" media-type="image/svg+xml"/>
+    <item id="35_1_sets-web_figures_pdf_figure7a_svg" href="35_1_sets-web/figures/pdf/figure7a.svg" media-type="image/svg+xml"/>
+    <item id="35_2_elmntry_prob-web_figures_pdf_fig1_svg" href="35_2_elmntry_prob-web/figures/pdf/fig1.svg" media-type="image/svg+xml"/>
+    <item id="35_2_elmntry_prob-web_figures_pdf_event_svg" href="35_2_elmntry_prob-web/figures/pdf/event.svg" media-type="image/svg+xml"/>
+    <item id="35_2_elmntry_prob-web_figures_pdf_exam_svg" href="35_2_elmntry_prob-web/figures/pdf/exam.svg" media-type="image/svg+xml"/>
+    <item id="35_2_elmntry_prob-web_figures_pdf_tree_svg" href="35_2_elmntry_prob-web/figures/pdf/tree.svg" media-type="image/svg+xml"/>
+    <item id="35_3_addn_mult_laws_prob-web_figures_pdf_Block222_Fig3_svg" href="35_3_addn_mult_laws_prob-web/figures/pdf/Block222_Fig3.svg" media-type="image/svg+xml"/>
+    <item id="35_3_addn_mult_laws_prob-web_figures_pdf_Block222_Fig2_svg" href="35_3_addn_mult_laws_prob-web/figures/pdf/Block222_Fig2.svg" media-type="image/svg+xml"/>
+    <item id="35_3_addn_mult_laws_prob-web_figures_pdf_figure1_3_svg" href="35_3_addn_mult_laws_prob-web/figures/pdf/figure1_3.svg" media-type="image/svg+xml"/>
+    <item id="35_3_addn_mult_laws_prob-web_figures_pdf_figure2_3_svg" href="35_3_addn_mult_laws_prob-web/figures/pdf/figure2_3.svg" media-type="image/svg+xml"/>
+    <item id="35_3_addn_mult_laws_prob-web_figures_pdf_exer_svg" href="35_3_addn_mult_laws_prob-web/figures/pdf/exer.svg" media-type="image/svg+xml"/>
+    <item id="35_4_total_prob_bayes_thm-web_figures_pdf_Block222Fig4bP_svg" href="35_4_total_prob_bayes_thm-web/figures/pdf/Block222Fig4bP.svg" media-type="image/svg+xml"/>
+    <item id="35_4_total_prob_bayes_thm-web_figures_pdf_Block222_Fig5_svg" href="35_4_total_prob_bayes_thm-web/figures/pdf/Block222_Fig5.svg" media-type="image/svg+xml"/>
+    <item id="35_4_total_prob_bayes_thm-web_figures_pdf_Block222FigE16P_svg" href="35_4_total_prob_bayes_thm-web/figures/pdf/Block222FigE16P.svg" media-type="image/svg+xml"/>
+    <item id="35_4_total_prob_bayes_thm-web_figures_pdf_Block222Fig4aP_svg" href="35_4_total_prob_bayes_thm-web/figures/pdf/Block222Fig4aP.svg" media-type="image/svg+xml"/>
+    <item id="36_1_dscrbng_data-web_figures_pdf_Block22_1_Fig12_svg" href="36_1_dscrbng_data-web/figures/pdf/Block22_1_Fig12.svg" media-type="image/svg+xml"/>
+    <item id="36_1_dscrbng_data-web_figures_pdf_Block221_Fig10_svg" href="36_1_dscrbng_data-web/figures/pdf/Block221_Fig10.svg" media-type="image/svg+xml"/>
+    <item id="36_1_dscrbng_data-web_figures_pdf_Block221_Fig11_svg" href="36_1_dscrbng_data-web/figures/pdf/Block221_Fig11.svg" media-type="image/svg+xml"/>
+    <item id="36_1_dscrbng_data-web_figures_pdf_Block221_Fig13_svg" href="36_1_dscrbng_data-web/figures/pdf/Block221_Fig13.svg" media-type="image/svg+xml"/>
+    <item id="36_1_dscrbng_data-web_figures_pdf_Block221FigQ2bP_svg" href="36_1_dscrbng_data-web/figures/pdf/Block221FigQ2bP.svg" media-type="image/svg+xml"/>
+    <item id="36_1_dscrbng_data-web_figures_pdf_Block221_Fig9_svg" href="36_1_dscrbng_data-web/figures/pdf/Block221_Fig9.svg" media-type="image/svg+xml"/>
+    <item id="36_1_dscrbng_data-web_figures_pdf_Block221FigQ2aP_svg" href="36_1_dscrbng_data-web/figures/pdf/Block221FigQ2aP.svg" media-type="image/svg+xml"/>
+    <item id="36_1_dscrbng_data-web_figures_pdf_Block221_Fig5_svg" href="36_1_dscrbng_data-web/figures/pdf/Block221_Fig5.svg" media-type="image/svg+xml"/>
+    <item id="36_1_dscrbng_data-web_figures_pdf_Block221_Fig7_svg" href="36_1_dscrbng_data-web/figures/pdf/Block221_Fig7.svg" media-type="image/svg+xml"/>
+    <item id="36_1_dscrbng_data-web_figures_pdf_Block221_Fig3_svg" href="36_1_dscrbng_data-web/figures/pdf/Block221_Fig3.svg" media-type="image/svg+xml"/>
+    <item id="36_1_dscrbng_data-web_figures_pdf_Block221_Fig2_svg" href="36_1_dscrbng_data-web/figures/pdf/Block221_Fig2.svg" media-type="image/svg+xml"/>
+    <item id="36_1_dscrbng_data-web_figures_pdf_Block221_Fig1_svg" href="36_1_dscrbng_data-web/figures/pdf/Block221_Fig1.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221_Fig16_svg" href="36_2_explrng_data-web/figures/pdf/Block221_Fig16.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221_Fig17_svg" href="36_2_explrng_data-web/figures/pdf/Block221_Fig17.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221_Fig15_svg" href="36_2_explrng_data-web/figures/pdf/Block221_Fig15.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221_Fig14_svg" href="36_2_explrng_data-web/figures/pdf/Block221_Fig14.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block222FigE7P_svg" href="36_2_explrng_data-web/figures/pdf/Block222FigE7P.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221FigQ7bP_svg" href="36_2_explrng_data-web/figures/pdf/Block221FigQ7bP.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221FigQ7aP_svg" href="36_2_explrng_data-web/figures/pdf/Block221FigQ7aP.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221_Fig23_svg" href="36_2_explrng_data-web/figures/pdf/Block221_Fig23.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221_Fig22_svg" href="36_2_explrng_data-web/figures/pdf/Block221_Fig22.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221_Fig20_svg" href="36_2_explrng_data-web/figures/pdf/Block221_Fig20.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221_Fig21_svg" href="36_2_explrng_data-web/figures/pdf/Block221_Fig21.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221_Fig25_svg" href="36_2_explrng_data-web/figures/pdf/Block221_Fig25.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221_Fig19_svg" href="36_2_explrng_data-web/figures/pdf/Block221_Fig19.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221_Fig18_svg" href="36_2_explrng_data-web/figures/pdf/Block221_Fig18.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221_Fig24_svg" href="36_2_explrng_data-web/figures/pdf/Block221_Fig24.svg" media-type="image/svg+xml"/>
+    <item id="36_2_explrng_data-web_figures_pdf_Block221_Fig26_svg" href="36_2_explrng_data-web/figures/pdf/Block221_Fig26.svg" media-type="image/svg+xml"/>
+    <item id="37_1_dscrt_prob_distn-web_figures_pdf_figure51aP_svg" href="37_1_dscrt_prob_distn-web/figures/pdf/figure51aP.svg" media-type="image/svg+xml"/>
+    <item id="37_1_dscrt_prob_distn-web_figures_pdf_figure51bP_svg" href="37_1_dscrt_prob_distn-web/figures/pdf/figure51bP.svg" media-type="image/svg+xml"/>
+    <item id="38_1_cont_prob_dist-web_38_1_cont_prob_dist-web0x_svg" href="38_1_cont_prob_dist-web/38_1_cont_prob_dist-web0x.svg" media-type="image/svg+xml"/>
+    <item id="38_1_cont_prob_dist-web_38_1_cont_prob_dist-web1x_svg" href="38_1_cont_prob_dist-web/38_1_cont_prob_dist-web1x.svg" media-type="image/svg+xml"/>
+    <item id="38_1_cont_prob_dist-web_figures_pdf_figure8_svg" href="38_1_cont_prob_dist-web/figures/pdf/figure8.svg" media-type="image/svg+xml"/>
+    <item id="38_1_cont_prob_dist-web_figures_pdf_figure7_svg" href="38_1_cont_prob_dist-web/figures/pdf/figure7.svg" media-type="image/svg+xml"/>
+    <item id="38_1_cont_prob_dist-web_figures_pdf_figure6_svg" href="38_1_cont_prob_dist-web/figures/pdf/figure6.svg" media-type="image/svg+xml"/>
+    <item id="38_1_cont_prob_dist-web_figures_pdf_figure5_svg" href="38_1_cont_prob_dist-web/figures/pdf/figure5.svg" media-type="image/svg+xml"/>
+    <item id="38_2_unifm_dist-web_figures_pdf_Uniformdist_svg" href="38_2_unifm_dist-web/figures/pdf/Uniformdist.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_workbook21Block3fig9_svg" href="39_1_norm_dist-web/figures/pdf/workbook21Block3fig9.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_workbook21Block3fig8_svg" href="39_1_norm_dist-web/figures/pdf/workbook21Block3fig8.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_workbook21Block3figextra_svg" href="39_1_norm_dist-web/figures/pdf/workbook21Block3figextra.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_workbook21Block3fig3_svg" href="39_1_norm_dist-web/figures/pdf/workbook21Block3fig3.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_workbook21Block3fig2_svg" href="39_1_norm_dist-web/figures/pdf/workbook21Block3fig2.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_workbook21Block3fig1_svg" href="39_1_norm_dist-web/figures/pdf/workbook21Block3fig1.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_workbook21Block3fig5_svg" href="39_1_norm_dist-web/figures/pdf/workbook21Block3fig5.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_workbook21Block3fig4_svg" href="39_1_norm_dist-web/figures/pdf/workbook21Block3fig4.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_workbook21Block3fig2dp_svg" href="39_1_norm_dist-web/figures/pdf/workbook21Block3fig2dp.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_workbook21Block3fig6_svg" href="39_1_norm_dist-web/figures/pdf/workbook21Block3fig6.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_workbook21Block3fig7_svg" href="39_1_norm_dist-web/figures/pdf/workbook21Block3fig7.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_workbook21Block3fig5dp_svg" href="39_1_norm_dist-web/figures/pdf/workbook21Block3fig5dp.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_workbook21Block3fig1dp_svg" href="39_1_norm_dist-web/figures/pdf/workbook21Block3fig1dp.svg" media-type="image/svg+xml"/>
+    <item id="39_1_norm_dist-web_figures_pdf_CumulativeDistFct_svg" href="39_1_norm_dist-web/figures/pdf/CumulativeDistFct.svg" media-type="image/svg+xml"/>
+    <item id="39_3_sums_n_diffs_rndm_vars-web_figures_pdf_table_svg" href="39_3_sums_n_diffs_rndm_vars-web/figures/pdf/table.svg" media-type="image/svg+xml"/>
+    <item id="40_1_smplng_dists-web_figures_pdf_figure1_svg" href="40_1_smplng_dists-web/figures/pdf/figure1.svg" media-type="image/svg+xml"/>
+    <item id="40_2_intvl_est_var-web_figures_pdf_figure4_svg" href="40_2_intvl_est_var-web/figures/pdf/figure4.svg" media-type="image/svg+xml"/>
+    <item id="40_2_intvl_est_var-web_figures_pdf_figure5_svg" href="40_2_intvl_est_var-web/figures/pdf/figure5.svg" media-type="image/svg+xml"/>
+    <item id="40_2_intvl_est_var-web_figures_pdf_figure2_svg" href="40_2_intvl_est_var-web/figures/pdf/figure2.svg" media-type="image/svg+xml"/>
+    <item id="40_2_intvl_est_var-web_figures_pdf_figure3_svg" href="40_2_intvl_est_var-web/figures/pdf/figure3.svg" media-type="image/svg+xml"/>
+    <item id="41_2_tsts_cncng_sngl_smpl-web_figures_pdf_Figurehyp2P_svg" href="41_2_tsts_cncng_sngl_smpl-web/figures/pdf/Figurehyp2P.svg" media-type="image/svg+xml"/>
+    <item id="41_2_tsts_cncng_sngl_smpl-web_figures_pdf_Figurehyp3P_svg" href="41_2_tsts_cncng_sngl_smpl-web/figures/pdf/Figurehyp3P.svg" media-type="image/svg+xml"/>
+    <item id="41_2_tsts_cncng_sngl_smpl-web_figures_pdf_Figurehyp4P_svg" href="41_2_tsts_cncng_sngl_smpl-web/figures/pdf/Figurehyp4P.svg" media-type="image/svg+xml"/>
+    <item id="41_2_tsts_cncng_sngl_smpl-web_figures_pdf_Figurehyp5P_svg" href="41_2_tsts_cncng_sngl_smpl-web/figures/pdf/Figurehyp5P.svg" media-type="image/svg+xml"/>
+    <item id="41_2_tsts_cncng_sngl_smpl-web_figures_pdf_Figurehyp1P_svg" href="41_2_tsts_cncng_sngl_smpl-web/figures/pdf/Figurehyp1P.svg" media-type="image/svg+xml"/>
+    <item id="41_3_tsts_cnsng_two_smpls-web_figures_pdf_Figurehyp8P_svg" href="41_3_tsts_cnsng_two_smpls-web/figures/pdf/Figurehyp8P.svg" media-type="image/svg+xml"/>
+    <item id="41_3_tsts_cnsng_two_smpls-web_figures_pdf_figure8_svg" href="41_3_tsts_cnsng_two_smpls-web/figures/pdf/figure8.svg" media-type="image/svg+xml"/>
+    <item id="41_3_tsts_cnsng_two_smpls-web_figures_pdf_figure7_svg" href="41_3_tsts_cnsng_two_smpls-web/figures/pdf/figure7.svg" media-type="image/svg+xml"/>
+    <item id="41_3_tsts_cnsng_two_smpls-web_figures_pdf_Figurehyp6P_svg" href="41_3_tsts_cnsng_two_smpls-web/figures/pdf/Figurehyp6P.svg" media-type="image/svg+xml"/>
+    <item id="41_3_tsts_cnsng_two_smpls-web_figures_pdf_figure6_svg" href="41_3_tsts_cnsng_two_smpls-web/figures/pdf/figure6.svg" media-type="image/svg+xml"/>
+    <item id="41_3_tsts_cnsng_two_smpls-web_figures_pdf_Figurehyp7P_svg" href="41_3_tsts_cnsng_two_smpls-web/figures/pdf/Figurehyp7P.svg" media-type="image/svg+xml"/>
+    <item id="41_3_tsts_cnsng_two_smpls-web_figures_pdf_figure6a_svg" href="41_3_tsts_cnsng_two_smpls-web/figures/pdf/figure6a.svg" media-type="image/svg+xml"/>
+    <item id="42_2_cntngncy_tbls-web_figures_pdf_figure5_svg" href="42_2_cntngncy_tbls-web/figures/pdf/figure5.svg" media-type="image/svg+xml"/>
+    <item id="43_1_rgrssn-web_figures_pdf_workbook23Fig123_svg" href="43_1_rgrssn-web/figures/pdf/workbook23Fig123.svg" media-type="image/svg+xml"/>
+    <item id="43_1_rgrssn-web_figures_pdf_workbook23Fig6_svg" href="43_1_rgrssn-web/figures/pdf/workbook23Fig6.svg" media-type="image/svg+xml"/>
+    <item id="43_1_rgrssn-web_figures_pdf_workbook23Fig4_svg" href="43_1_rgrssn-web/figures/pdf/workbook23Fig4.svg" media-type="image/svg+xml"/>
+    <item id="43_1_rgrssn-web_figures_pdf_workbook23Fig5_svg" href="43_1_rgrssn-web/figures/pdf/workbook23Fig5.svg" media-type="image/svg+xml"/>
+    <item id="43_1_rgrssn-web_figures_pdf_workbook23Fig8_svg" href="43_1_rgrssn-web/figures/pdf/workbook23Fig8.svg" media-type="image/svg+xml"/>
+    <item id="43_2_correln-web_figures_pdf_Figuretable_svg" href="43_2_correln-web/figures/pdf/Figuretable.svg" media-type="image/svg+xml"/>
+    <item id="43_2_correln-web_figures_pdf_workbook23Fig7_svg" href="43_2_correln-web/figures/pdf/workbook23Fig7.svg" media-type="image/svg+xml"/>
+    <item id="43_2_correln-web_figures_pdf_workbook23Fig9_svg" href="43_2_correln-web/figures/pdf/workbook23Fig9.svg" media-type="image/svg+xml"/>
+    <item id="43_2_correln-web_figures_pdf_workbook23Fig10_svg" href="43_2_correln-web/figures/pdf/workbook23Fig10.svg" media-type="image/svg+xml"/>
+    <item id="44_1_one_way_anova-web_figures_pdf_TableCase1_svg" href="44_1_one_way_anova-web/figures/pdf/TableCase1.svg" media-type="image/svg+xml"/>
+    <item id="44_1_one_way_anova-web_figures_pdf_TableCase2_svg" href="44_1_one_way_anova-web/figures/pdf/TableCase2.svg" media-type="image/svg+xml"/>
+    <item id="44_1_one_way_anova-web_figures_pdf_table5_svg" href="44_1_one_way_anova-web/figures/pdf/table5.svg" media-type="image/svg+xml"/>
+    <item id="44_1_one_way_anova-web_figures_pdf_table4_svg" href="44_1_one_way_anova-web/figures/pdf/table4.svg" media-type="image/svg+xml"/>
+    <item id="44_2_two_way_anova-web_figures_pdf_table9_svg" href="44_2_two_way_anova-web/figures/pdf/table9.svg" media-type="image/svg+xml"/>
+    <item id="44_2_two_way_anova-web_figures_pdf_table8_svg" href="44_2_two_way_anova-web/figures/pdf/table8.svg" media-type="image/svg+xml"/>
+    <item id="44_2_two_way_anova-web_figures_pdf_table10_svg" href="44_2_two_way_anova-web/figures/pdf/table10.svg" media-type="image/svg+xml"/>
+    <item id="44_2_two_way_anova-web_figures_pdf_FigbarbP_svg" href="44_2_two_way_anova-web/figures/pdf/FigbarbP.svg" media-type="image/svg+xml"/>
+    <item id="44_2_two_way_anova-web_figures_pdf_FigbaraP_svg" href="44_2_two_way_anova-web/figures/pdf/FigbaraP.svg" media-type="image/svg+xml"/>
+    <item id="44_2_two_way_anova-web_figures_pdf_table3_svg" href="44_2_two_way_anova-web/figures/pdf/table3.svg" media-type="image/svg+xml"/>
+    <item id="44_2_two_way_anova-web_figures_pdf_table2_svg" href="44_2_two_way_anova-web/figures/pdf/table2.svg" media-type="image/svg+xml"/>
+    <item id="44_2_two_way_anova-web_figures_pdf_table1_svg" href="44_2_two_way_anova-web/figures/pdf/table1.svg" media-type="image/svg+xml"/>
+    <item id="44_2_two_way_anova-web_figures_pdf_table6_svg" href="44_2_two_way_anova-web/figures/pdf/table6.svg" media-type="image/svg+xml"/>
+    <item id="44_2_two_way_anova-web_figures_pdf_table7_svg" href="44_2_two_way_anova-web/figures/pdf/table7.svg" media-type="image/svg+xml"/>
+    <item id="44_3_expmntl_desgn-web_figures_pdf_figure7_svg" href="44_3_expmntl_desgn-web/figures/pdf/figure7.svg" media-type="image/svg+xml"/>
+    <item id="46_1_reliability-web_figures_pdf_weibulFig_svg" href="46_1_reliability-web/figures/pdf/weibulFig.svg" media-type="image/svg+xml"/>
+    <item id="46_1_reliability-web_figures_pdf_bathtub_svg" href="46_1_reliability-web/figures/pdf/bathtub.svg" media-type="image/svg+xml"/>
+    <item id="46_1_reliability-web_figures_pdf_SeriesDesign1_svg" href="46_1_reliability-web/figures/pdf/SeriesDesign1.svg" media-type="image/svg+xml"/>
+    <item id="46_1_reliability-web_figures_pdf_SeriesDesign2_svg" href="46_1_reliability-web/figures/pdf/SeriesDesign2.svg" media-type="image/svg+xml"/>
+    <item id="46_1_reliability-web_figures_pdf_ParallelDesign1_svg" href="46_1_reliability-web/figures/pdf/ParallelDesign1.svg" media-type="image/svg+xml"/>
+    <item id="46_1_reliability-web_figures_pdf_SeriespDesign_svg" href="46_1_reliability-web/figures/pdf/SeriespDesign.svg" media-type="image/svg+xml"/>
+    <item id="46_2_quality_cntrl-web_figures_pdf_qcfig10_svg" href="46_2_quality_cntrl-web/figures/pdf/qcfig10.svg" media-type="image/svg+xml"/>
+    <item id="46_2_quality_cntrl-web_figures_pdf_qcfig9_svg" href="46_2_quality_cntrl-web/figures/pdf/qcfig9.svg" media-type="image/svg+xml"/>
+    <item id="46_2_quality_cntrl-web_figures_pdf_qcfig7_svg" href="46_2_quality_cntrl-web/figures/pdf/qcfig7.svg" media-type="image/svg+xml"/>
+    <item id="46_2_quality_cntrl-web_figures_pdf_qcfig6_svg" href="46_2_quality_cntrl-web/figures/pdf/qcfig6.svg" media-type="image/svg+xml"/>
+    <item id="46_2_quality_cntrl-web_figures_pdf_qcfig4_svg" href="46_2_quality_cntrl-web/figures/pdf/qcfig4.svg" media-type="image/svg+xml"/>
+    <item id="46_2_quality_cntrl-web_figures_pdf_QCFigTable_svg" href="46_2_quality_cntrl-web/figures/pdf/QCFigTable.svg" media-type="image/svg+xml"/>
+    <item id="46_2_quality_cntrl-web_figures_pdf_qcfig5_svg" href="46_2_quality_cntrl-web/figures/pdf/qcfig5.svg" media-type="image/svg+xml"/>
+    <item id="46_2_quality_cntrl-web_figures_pdf_qcfig1_svg" href="46_2_quality_cntrl-web/figures/pdf/qcfig1.svg" media-type="image/svg+xml"/>
+    <item id="46_2_quality_cntrl-web_figures_pdf_qcfig2_svg" href="46_2_quality_cntrl-web/figures/pdf/qcfig2.svg" media-type="image/svg+xml"/>
+    <item id="46_2_quality_cntrl-web_figures_pdf_paretochart_svg" href="46_2_quality_cntrl-web/figures/pdf/paretochart.svg" media-type="image/svg+xml"/>
+    <item id="46_2_quality_cntrl-web_figures_pdf_qcfig3_svg" href="46_2_quality_cntrl-web/figures/pdf/qcfig3.svg" media-type="image/svg+xml"/>
+    </manifest>
+    <spine>
+        <itemref idref="nav"/>
+    <itemref idref="chapter_1_1"/>
+    <itemref idref="chapter_1_2"/>
+    <itemref idref="chapter_1_3"/>
+    <itemref idref="chapter_1_4"/>
+    <itemref idref="chapter_1_5"/>
+    <itemref idref="chapter_2_1"/>
+    <itemref idref="chapter_2_2"/>
+    <itemref idref="chapter_2_3"/>
+    <itemref idref="chapter_2_4"/>
+    <itemref idref="chapter_2_5"/>
+    <itemref idref="chapter_2_6"/>
+    <itemref idref="chapter_2_7"/>
+    <itemref idref="chapter_3_1"/>
+    <itemref idref="chapter_3_2"/>
+    <itemref idref="chapter_3_3"/>
+    <itemref idref="chapter_3_4"/>
+    <itemref idref="chapter_3_5"/>
+    <itemref idref="chapter_3_6"/>
+    <itemref idref="chapter_4_1"/>
+    <itemref idref="chapter_4_2"/>
+    <itemref idref="chapter_4_3"/>
+    <itemref idref="chapter_4_4"/>
+    <itemref idref="chapter_4_5"/>
+    <itemref idref="chapter_5_1"/>
+    <itemref idref="chapter_5_2"/>
+    <itemref idref="chapter_5_3"/>
+    <itemref idref="chapter_5_4"/>
+    <itemref idref="chapter_6_1"/>
+    <itemref idref="chapter_6_2"/>
+    <itemref idref="chapter_6_3"/>
+    <itemref idref="chapter_6_4"/>
+    <itemref idref="chapter_6_5"/>
+    <itemref idref="chapter_6_6"/>
+    <itemref idref="chapter_7_1"/>
+    <itemref idref="chapter_7_2"/>
+    <itemref idref="chapter_7_3"/>
+    <itemref idref="chapter_7_4"/>
+    <itemref idref="chapter_8_1"/>
+    <itemref idref="chapter_8_2"/>
+    <itemref idref="chapter_8_3"/>
+    <itemref idref="chapter_9_1"/>
+    <itemref idref="chapter_9_2"/>
+    <itemref idref="chapter_9_3"/>
+    <itemref idref="chapter_9_4"/>
+    <itemref idref="chapter_9_5"/>
+    <itemref idref="chapter_10_2"/>
+    <itemref idref="chapter_10_3"/>
+    <itemref idref="chapter_10_4"/>
+    <itemref idref="chapter_11_1"/>
+    <itemref idref="chapter_11_2"/>
+    <itemref idref="chapter_11_3"/>
+    <itemref idref="chapter_11_4"/>
+    <itemref idref="chapter_11_5"/>
+    <itemref idref="chapter_11_6"/>
+    <itemref idref="chapter_11_7"/>
+    <itemref idref="chapter_12_1"/>
+    <itemref idref="chapter_12_2"/>
+    <itemref idref="chapter_12_3"/>
+    <itemref idref="chapter_12_4"/>
+    <itemref idref="chapter_12_5"/>
+    <itemref idref="chapter_12_6"/>
+    <itemref idref="chapter_13_1"/>
+    <itemref idref="chapter_13_2"/>
+    <itemref idref="chapter_13_3"/>
+    <itemref idref="chapter_13_4"/>
+    <itemref idref="chapter_13_5"/>
+    <itemref idref="chapter_13_6"/>
+    <itemref idref="chapter_14_1"/>
+    <itemref idref="chapter_14_2"/>
+    <itemref idref="chapter_14_3"/>
+    <itemref idref="chapter_14_4"/>
+    <itemref idref="chapter_15_1"/>
+    <itemref idref="chapter_15_2"/>
+    <itemref idref="chapter_15_3"/>
+    <itemref idref="chapter_16_1"/>
+    <itemref idref="chapter_16_2"/>
+    <itemref idref="chapter_16_3"/>
+    <itemref idref="chapter_16_4"/>
+    <itemref idref="chapter_16_5"/>
+    <itemref idref="chapter_17_1"/>
+    <itemref idref="chapter_17_2"/>
+    <itemref idref="chapter_17_3"/>
+    <itemref idref="chapter_18_1"/>
+    <itemref idref="chapter_18_2"/>
+    <itemref idref="chapter_18_3"/>
+    <itemref idref="chapter_18_4"/>
+    <itemref idref="chapter_19_1"/>
+    <itemref idref="chapter_19_2"/>
+    <itemref idref="chapter_19_3"/>
+    <itemref idref="chapter_19_4"/>
+    <itemref idref="chapter_20_1"/>
+    <itemref idref="chapter_20_2"/>
+    <itemref idref="chapter_20_3"/>
+    <itemref idref="chapter_20_4"/>
+    <itemref idref="chapter_20_5"/>
+    <itemref idref="chapter_20_6"/>
+    <itemref idref="chapter_21_1"/>
+    <itemref idref="chapter_21_2"/>
+    <itemref idref="chapter_21_3"/>
+    <itemref idref="chapter_21_4"/>
+    <itemref idref="chapter_21_5"/>
+    <itemref idref="chapter_22_1"/>
+    <itemref idref="chapter_22_2"/>
+    <itemref idref="chapter_22_3"/>
+    <itemref idref="chapter_22_4"/>
+    <itemref idref="chapter_23_1"/>
+    <itemref idref="chapter_23_2"/>
+    <itemref idref="chapter_23_3"/>
+    <itemref idref="chapter_23_4"/>
+    <itemref idref="chapter_23_5"/>
+    <itemref idref="chapter_23_6"/>
+    <itemref idref="chapter_23_7"/>
+    <itemref idref="chapter_24_1"/>
+    <itemref idref="chapter_24_2"/>
+    <itemref idref="chapter_24_3"/>
+    <itemref idref="chapter_25_1"/>
+    <itemref idref="chapter_25_2"/>
+    <itemref idref="chapter_25_3"/>
+    <itemref idref="chapter_25_4"/>
+    <itemref idref="chapter_26_1"/>
+    <itemref idref="chapter_26_2"/>
+    <itemref idref="chapter_26_3"/>
+    <itemref idref="chapter_26_4"/>
+    <itemref idref="chapter_26_5"/>
+    <itemref idref="chapter_26_6"/>
+    <itemref idref="chapter_27_1"/>
+    <itemref idref="chapter_27_2"/>
+    <itemref idref="chapter_27_3"/>
+    <itemref idref="chapter_27_4"/>
+    <itemref idref="chapter_28_1"/>
+    <itemref idref="chapter_28_2"/>
+    <itemref idref="chapter_28_3"/>
+    <itemref idref="chapter_29_1"/>
+    <itemref idref="chapter_29_2"/>
+    <itemref idref="chapter_29_3"/>
+    <itemref idref="chapter_30_1"/>
+    <itemref idref="chapter_30_2"/>
+    <itemref idref="chapter_30_3"/>
+    <itemref idref="chapter_30_4"/>
+    <itemref idref="chapter_30_5"/>
+    <itemref idref="chapter_31_1"/>
+    <itemref idref="chapter_31_2"/>
+    <itemref idref="chapter_31_3"/>
+    <itemref idref="chapter_31_4"/>
+    <itemref idref="chapter_32_1"/>
+    <itemref idref="chapter_32_2"/>
+    <itemref idref="chapter_32_3"/>
+    <itemref idref="chapter_32_4"/>
+    <itemref idref="chapter_32_5"/>
+    <itemref idref="chapter_33_1"/>
+    <itemref idref="chapter_33_2"/>
+    <itemref idref="chapter_34_1"/>
+    <itemref idref="chapter_34_2"/>
+    <itemref idref="chapter_34_3"/>
+    <itemref idref="chapter_35_1"/>
+    <itemref idref="chapter_35_2"/>
+    <itemref idref="chapter_35_3"/>
+    <itemref idref="chapter_35_4"/>
+    <itemref idref="chapter_36_1"/>
+    <itemref idref="chapter_36_2"/>
+    <itemref idref="chapter_37_1"/>
+    <itemref idref="chapter_37_2"/>
+    <itemref idref="chapter_37_3"/>
+    <itemref idref="chapter_37_4"/>
+    <itemref idref="chapter_38_1"/>
+    <itemref idref="chapter_38_2"/>
+    <itemref idref="chapter_38_3"/>
+    <itemref idref="chapter_39_1"/>
+    <itemref idref="chapter_39_2"/>
+    <itemref idref="chapter_39_3"/>
+    <itemref idref="chapter_40_1"/>
+    <itemref idref="chapter_40_2"/>
+    <itemref idref="chapter_41_1"/>
+    <itemref idref="chapter_41_2"/>
+    <itemref idref="chapter_41_3"/>
+    <itemref idref="chapter_42_1"/>
+    <itemref idref="chapter_42_2"/>
+    <itemref idref="chapter_43_1"/>
+    <itemref idref="chapter_43_2"/>
+    <itemref idref="chapter_44_1"/>
+    <itemref idref="chapter_44_2"/>
+    <itemref idref="chapter_44_3"/>
+    <itemref idref="chapter_45_1"/>
+    <itemref idref="chapter_45_2"/>
+    <itemref idref="chapter_46_1"/>
+    <itemref idref="chapter_46_2"/>
+    </spine>
+</package>
