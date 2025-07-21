@@ -77,8 +77,9 @@ class FixedEpubBuilder:
     </rootfiles>
 </container>'''
 
-    def create_content_opf(self, html_files, image_files):
-        book_id = str(uuid.uuid4())
+    def create_content_opf(self, html_files, image_files, book_id=None):
+        if book_id is None:
+            book_id = str(uuid.uuid4())
         timestamp = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
         manifest_items = []
         spine_items = []
@@ -127,9 +128,10 @@ class FixedEpubBuilder:
     </spine>
 </package>'''
 
-    def create_toc_ncx(self, html_files):
+    def create_toc_ncx(self, html_files, book_id=None):
         """Create NCX table of contents for EPUB 2.0"""
-        book_id = str(uuid.uuid4())
+        if book_id is None:
+            book_id = str(uuid.uuid4())
         nav_points = []
         
         # Group files by chapter for hierarchical navigation
@@ -189,7 +191,7 @@ class FixedEpubBuilder:
   </navMap>
 </ncx>'''
 
-    def clean_html_content(self, content, chapter_dir_name=None):
+    def clean_html_content(self, content, chapter_dir_name=None, html_files_map=None):
         # Remove script tags
         content = re.sub(r'<script[^>]*>.*?</script>', '', content, flags=re.DOTALL | re.IGNORECASE)
         # Remove navigation elements
@@ -213,13 +215,33 @@ class FixedEpubBuilder:
         content = re.sub(r'<ol([^>]*) start="[^"]*"', r'<ol\1', content, flags=re.IGNORECASE)
         # Remove ARIA and data attributes for EPUB 2.0 compatibility
         content = re.sub(r' (aria-[^=]*|data-[^=]*|role)="[^"]*"', '', content, flags=re.IGNORECASE)
-        # Remove all id attributes to prevent duplicates after merging
-        content = re.sub(r' id="[^"]*"', '', content, flags=re.IGNORECASE)
         # Remove external links and scripts
         content = re.sub(r'<link[^>]*href="http[^"]*"[^>]*>', '', content, flags=re.IGNORECASE)
         content = re.sub(r'<script[^>]*src="http[^"]*"[^>]*></script>', '', content, flags=re.IGNORECASE)
-        # Remove href attributes pointing to .html files, as these are merged into single xhtml
-        content = re.sub(r'href="[^"]*\.html"', '', content, flags=re.IGNORECASE)
+        
+        # Convert internal HTML links to XHTML links if we have the mapping
+        if html_files_map:
+            def convert_html_link(match):
+                href_content = match.group(1)
+                # Check if it's a link to an HTML file (with or without fragment)
+                if '#' in href_content:
+                    html_file, fragment = href_content.split('#', 1)
+                    if html_file.endswith('.html') and html_file in html_files_map:
+                        # Convert to XHTML file reference
+                        return f'href="{html_files_map[html_file]}.xhtml#{fragment}"'
+                    elif html_file == '' and fragment:
+                        # Fragment-only link (same page), keep as is
+                        return f'href="#{fragment}"'
+                elif href_content.endswith('.html') and href_content in html_files_map:
+                    # Direct HTML file link without fragment
+                    return f'href="{html_files_map[href_content]}.xhtml"'
+                # If we can't convert it, remove the href to avoid broken links
+                return ''
+            
+            content = re.sub(r'href="([^"]*)"', convert_html_link, content, flags=re.IGNORECASE)
+        else:
+            # Fallback: Remove href attributes pointing to .html files
+            content = re.sub(r'href="[^"]*\.html[^"]*"', '', content, flags=re.IGNORECASE)
         
         # CRITICAL: Convert MathML to SVG images for EPUB compatibility
         content = self.mathml_converter.convert_html_with_mathml(content)
@@ -278,8 +300,60 @@ class FixedEpubBuilder:
         # Remove specific <h4> tag with external link
         content = re.sub(r'<h4>\s*<a href="https://www.lboro.ac.uk/departments/mlsc/student-resources/helm-workbooks/">\s*View these resources in original pdf format\s*</a>\s*</h4>', '', content, flags=re.DOTALL | re.IGNORECASE)
 
-        # Replace all heading tags with div tags to ensure valid nesting in all cases
-        content = re.sub(r'<(h[1-6])([^>]*)>(.*?)<\/\1>', r'<div\2>\3</div>', content, flags=re.DOTALL | re.IGNORECASE)
+        # Convert all headings to paragraphs with CSS classes to avoid nesting issues
+        # This is more compatible with EPUB readers and avoids XHTML validation errors
+        def convert_heading_to_p(match):
+            heading_tag = match.group(1)
+            heading_attrs = match.group(2)
+            heading_content = match.group(3)
+            
+            # Map heading levels to CSS classes
+            heading_class = f"heading-{heading_tag}"
+            
+            # Add the heading class to existing class attribute or create new one
+            if 'class=' in heading_attrs:
+                heading_attrs = re.sub(r'class="([^"]*)"', rf'class="\1 {heading_class}"', heading_attrs)
+            else:
+                heading_attrs = f' class="{heading_class}"{heading_attrs}'
+            
+            return f'<p{heading_attrs}>{heading_content}</p>'
+        
+        content = re.sub(r'<(h[1-6])([^>]*)>(.*?)</h[1-6]>', convert_heading_to_p, content, flags=re.DOTALL | re.IGNORECASE)
+        
+        # Fix invalid nesting: <p> elements inside <span> elements
+        # Convert <span><p>content</p></span> to <div class="span-class">content</div>
+        def fix_p_in_span(match):
+            span_attrs = match.group(1)
+            p_attrs = match.group(2)
+            p_content = match.group(3)
+            
+            # Merge classes from span and p
+            span_class = ''
+            p_class = ''
+            
+            # Extract class from span
+            span_class_match = re.search(r'class="([^"]*)"', span_attrs)
+            if span_class_match:
+                span_class = span_class_match.group(1)
+            
+            # Extract class from p
+            p_class_match = re.search(r'class="([^"]*)"', p_attrs)
+            if p_class_match:
+                p_class = p_class_match.group(1)
+            
+            # Combine classes
+            combined_class = ' '.join(filter(None, [span_class, p_class]))
+            
+            # Create div with combined attributes
+            if combined_class:
+                return f'<div class="{combined_class}">{p_content}</div>'
+            else:
+                return f'<div>{p_content}</div>'
+        
+        content = re.sub(r'<span([^>]*)>\s*<p([^>]*)>(.*?)</p>\s*</span>', fix_p_in_span, content, flags=re.DOTALL | re.IGNORECASE)
+        
+        # Remove id attributes from all elements to prevent duplicates
+        content = re.sub(r' id="[^"]*"', '', content, flags=re.IGNORECASE)
 
         content = re.sub(r'\s+', ' ', content)
         content = re.sub(r'>\s+<', '><', content)
@@ -290,7 +364,7 @@ class FixedEpubBuilder:
         content = re.sub(r'<rdf:RDF>.*?</rdf:RDF>', '', content, flags=re.DOTALL | re.IGNORECASE)
         return content
 
-    def create_html_file_xhtml(self, html_file_info):
+    def create_html_file_xhtml(self, html_file_info, html_files_map=None):
         """Create XHTML content for a single HTML file"""
         html_file = html_file_info['path']
         chapter_dir = html_file_info['chapter_dir']
@@ -309,12 +383,12 @@ class FixedEpubBuilder:
                 # Extract content between <body> tags if present
                 body_match = re.search(r'<body[^>]*>(.*?)</body>', html_content, re.DOTALL | re.IGNORECASE)
                 if body_match:
-                    content = self.clean_html_content(body_match.group(1), chapter_dir.name)
+                    content = self.clean_html_content(body_match.group(1), chapter_dir.name, html_files_map)
                 else:
                     # Try to extract main content
                     main_match = re.search(r'<main[^>]*>(.*?)</main>', html_content, re.DOTALL | re.IGNORECASE)
                     if main_match:
-                        content = self.clean_html_content(main_match.group(1), chapter_dir.name)
+                        content = self.clean_html_content(main_match.group(1), chapter_dir.name, html_files_map)
                     else:
                         content = f"<p>Could not extract content from {html_file.name}</p>"
         except Exception as e:
@@ -333,15 +407,18 @@ class FixedEpubBuilder:
             margin: 2em;
             max-width: 40em;
         }}
-        h1, h2, h3, h4, h5, h6 {{
+        h1, h2, h3, h4, h5, h6, .heading-h1, .heading-h2, .heading-h3, .heading-h4, .heading-h5, .heading-h6 {{
             color: #2c3e50;
             margin-top: 1.5em;
             margin-bottom: 0.5em;
+            font-weight: bold;
         }}
-        h1 {{ font-size: 1.8em; }}
-        h2 {{ font-size: 1.5em; }}
-        h3 {{ font-size: 1.3em; }}
-        h4 {{ font-size: 1.1em; }}
+        h1, .heading-h1 {{ font-size: 1.8em; }}
+        h2, .heading-h2 {{ font-size: 1.5em; }}
+        h3, .heading-h3 {{ font-size: 1.3em; }}
+        h4, .heading-h4 {{ font-size: 1.1em; }}
+        h5, .heading-h5 {{ font-size: 1.0em; }}
+        h6, .heading-h6 {{ font-size: 0.9em; }}
         p {{
             margin-bottom: 1em;
             text-align: justify;
@@ -449,6 +526,15 @@ class FixedEpubBuilder:
         html_files = self.get_all_html_files(chapter_dirs)
         print(f"Found {len(html_files)} HTML files")
         
+        # Create a mapping from HTML filenames to XHTML IDs for link conversion
+        html_files_map = {}
+        for html_file_info in html_files:
+            html_filename = html_file_info['path'].name
+            html_files_map[html_filename] = html_file_info['id']
+        
+        # Generate a single book ID for consistency between OPF and NCX
+        book_id = str(uuid.uuid4())
+        
         with zipfile.ZipFile(self.output_file, 'w', zipfile.ZIP_DEFLATED) as epub_zip:
             # Add mimetype (uncompressed, must be first)
             epub_zip.writestr('mimetype', self.create_mimetype(), compress_type=zipfile.ZIP_STORED)
@@ -459,17 +545,17 @@ class FixedEpubBuilder:
             # Add individual HTML files as XHTML
             for html_file_info in html_files:
                 print(f"Processing {html_file_info['path'].name} from chapter {html_file_info['chapter_num']}.{html_file_info['section_num']}")
-                xhtml_content = self.create_html_file_xhtml(html_file_info)
+                xhtml_content = self.create_html_file_xhtml(html_file_info, html_files_map)
                 epub_zip.writestr(f'OEBPS/{html_file_info["id"]}.xhtml', xhtml_content)
             
             # Add images
             image_files = self.find_and_add_images(epub_zip, chapter_dirs)
             
             # Add content.opf (EPUB 2.0 format)
-            epub_zip.writestr('OEBPS/content.opf', self.create_content_opf(html_files, image_files))
+            epub_zip.writestr('OEBPS/content.opf', self.create_content_opf(html_files, image_files, book_id))
             
             # Add NCX table of contents (EPUB 2.0 format)
-            epub_zip.writestr('OEBPS/toc.ncx', self.create_toc_ncx(html_files))
+            epub_zip.writestr('OEBPS/toc.ncx', self.create_toc_ncx(html_files, book_id))
         
         print(f"EPUB 2.0 created: {self.output_file}")
         print(f"Total chapters: {len(chapter_dirs)}")
