@@ -20,6 +20,7 @@ class FixedEpubBuilder:
         self.source_dir = Path(source_dir)
         self.output_file = output_file
         self.chapters = []
+        self.html_files = []  # Store individual HTML files instead of merged chapters
         self.image_files = []
         self.single_chapter_mode = single_chapter_mode
         # Initialize MathML to SVG converter
@@ -44,6 +45,27 @@ class FixedEpubBuilder:
         
         return chapter_dirs
 
+    def get_all_html_files(self, chapter_dirs):
+        """Get all HTML files from all chapter directories"""
+        html_files = []
+        for chapter_num, section_num, chapter_title, chapter_dir in chapter_dirs:
+            # Get all HTML files in this chapter directory
+            chapter_html_files = sorted(chapter_dir.glob('*.html'), key=lambda f: f.name)
+            for html_file in chapter_html_files:
+                # Create a unique identifier for this HTML file
+                file_stem = html_file.stem
+                html_id = f"chapter_{chapter_num}_{section_num}_{file_stem}"
+                html_files.append({
+                    'id': html_id,
+                    'path': html_file,
+                    'chapter_num': chapter_num,
+                    'section_num': section_num,
+                    'chapter_title': chapter_title,
+                    'chapter_dir': chapter_dir,
+                    'file_title': file_stem.replace('_', ' ').title()
+                })
+        return html_files
+
     def create_mimetype(self):
         return "application/epub+zip"
 
@@ -55,7 +77,7 @@ class FixedEpubBuilder:
     </rootfiles>
 </container>'''
 
-    def create_content_opf(self, chapters, image_files):
+    def create_content_opf(self, html_files, image_files):
         book_id = str(uuid.uuid4())
         timestamp = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
         manifest_items = []
@@ -64,11 +86,11 @@ class FixedEpubBuilder:
         # EPUB 2.0 doesn't use nav - use NCX instead
         manifest_items.append('    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>')
         
-        # Add chapters
-        for i, (chapter_num, section_num, title, _) in enumerate(chapters):
-            chapter_id = f"chapter_{chapter_num}_{section_num}"
-            manifest_items.append(f'    <item id="{chapter_id}" href="{chapter_id}.xhtml" media-type="application/xhtml+xml"/>')
-            spine_items.append(f'    <itemref idref="{chapter_id}"/>')
+        # Add individual HTML files
+        for html_file in html_files:
+            html_id = html_file['id']
+            manifest_items.append(f'    <item id="{html_id}" href="{html_id}.xhtml" media-type="application/xhtml+xml"/>')
+            spine_items.append(f'    <itemref idref="{html_id}"/>')
         
         # Add images
         for img in image_files:
@@ -105,28 +127,57 @@ class FixedEpubBuilder:
     </spine>
 </package>'''
 
-    def create_toc_ncx(self, chapters):
+    def create_toc_ncx(self, html_files):
         """Create NCX table of contents for EPUB 2.0"""
         book_id = str(uuid.uuid4())
         nav_points = []
         
-        for i, (chapter_num, section_num, title, _) in enumerate(chapters):
-            chapter_id = f"chapter_{chapter_num}_{section_num}"
-            safe_title = html.escape(f"{chapter_num}.{section_num} {title}")
+        # Group files by chapter for hierarchical navigation
+        current_chapter = None
+        chapter_nav_points = []
+        
+        for i, html_file in enumerate(html_files):
+            chapter_key = (html_file['chapter_num'], html_file['section_num'])
             play_order = i + 1
-            nav_points.append(f'''    <navPoint id="navpoint-{play_order}" playOrder="{play_order}">
+            
+            # If this is a new chapter, add the previous chapter's nav points
+            if current_chapter != chapter_key:
+                if chapter_nav_points:
+                    nav_points.extend(chapter_nav_points)
+                
+                # Start new chapter
+                current_chapter = chapter_key
+                chapter_nav_points = []
+                
+                # Add chapter header
+                chapter_title = html.escape(f"{html_file['chapter_num']}.{html_file['section_num']} {html_file['chapter_title']}")
+                chapter_nav_points.append(f'''    <navPoint id="navpoint-chapter-{html_file['chapter_num']}-{html_file['section_num']}" playOrder="{play_order}">
       <navLabel>
-        <text>{safe_title}</text>
+        <text>{chapter_title}</text>
       </navLabel>
-      <content src="{chapter_id}.xhtml"/>
-    </navPoint>''')
+      <content src="{html_file['id']}.xhtml"/>''')
+            
+            # Add individual file as sub-item if it's not the first file in chapter
+            if len([f for f in html_files if (f['chapter_num'], f['section_num']) == chapter_key]) > 1:
+                file_title = html.escape(html_file['file_title'])
+                chapter_nav_points.append(f'''      <navPoint id="navpoint-{play_order}" playOrder="{play_order}">
+        <navLabel>
+          <text>{file_title}</text>
+        </navLabel>
+        <content src="{html_file['id']}.xhtml"/>
+      </navPoint>''')
+        
+        # Close the last chapter
+        if chapter_nav_points:
+            chapter_nav_points.append('    </navPoint>')
+            nav_points.extend(chapter_nav_points)
         
         return f'''<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
 <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
   <head>
     <meta name="dtb:uid" content="{book_id}"/>
-    <meta name="dtb:depth" content="1"/>
+    <meta name="dtb:depth" content="2"/>
     <meta name="dtb:totalPageCount" content="0"/>
     <meta name="dtb:maxPageNumber" content="0"/>
   </head>
@@ -223,9 +274,13 @@ class FixedEpubBuilder:
         content = re.sub(r'style:[^=]*="[^"]*"', '', content) # Remove style: attributes
         # Replace <p> tags containing heading elements with <div> tags for valid nesting
         content = re.sub(r'<p([^>]*)>\s*(<h[1-6][^>]*>.*?<\/h[1-6]>)\s*<\/p>', r'<div\1>\2</div>', content, flags=re.DOTALL | re.IGNORECASE)
+
+        # Remove specific <h4> tag with external link
+        content = re.sub(r'<h4>\s*<a href="https://www.lboro.ac.uk/departments/mlsc/student-resources/helm-workbooks/">\s*View these resources in original pdf format\s*</a>\s*</h4>', '', content, flags=re.DOTALL | re.IGNORECASE)
+
         # Replace all heading tags with div tags to ensure valid nesting in all cases
         content = re.sub(r'<(h[1-6])([^>]*)>(.*?)<\/\1>', r'<div\2>\3</div>', content, flags=re.DOTALL | re.IGNORECASE)
-        
+
         content = re.sub(r'\s+', ' ', content)
         content = re.sub(r'>\s+<', '><', content)
         return content.strip()
@@ -235,34 +290,35 @@ class FixedEpubBuilder:
         content = re.sub(r'<rdf:RDF>.*?</rdf:RDF>', '', content, flags=re.DOTALL | re.IGNORECASE)
         return content
 
-    def create_chapter_xhtml(self, chapter_num, section_num, title, chapter_dir):
-        # Merge all HTML files in the chapter directory in sorted order
-        html_files = sorted(chapter_dir.glob('*.html'), key=lambda f: f.name)
-        safe_title = html.escape(f"{chapter_num}.{section_num} {title}")
-        content = f"<h1>{safe_title}</h1>"
-
-        if not html_files:
-            content += f"<p>No HTML files found in {html.escape(str(chapter_dir))}</p>"
-        else:
-            for html_file in html_files:
-                try:
-                    with open(html_file, 'r', encoding='utf-8') as f:
-                        html_content = f.read()
-                        # Extract content between <body> tags if present
-                        body_match = re.search(r'<body[^>]*>(.*?)</body>', html_content, re.DOTALL | re.IGNORECASE)
-                        if body_match:
-                            body_content = self.clean_html_content(body_match.group(1), chapter_dir.name)
-                            content += f"\n<!-- Start: {html_file.name} -->\n{body_content}\n<!-- End: {html_file.name} -->\n"
-                        else:
-                            # Try to extract main content
-                            main_match = re.search(r'<main[^>]*>(.*?)</main>', html_content, re.DOTALL | re.IGNORECASE)
-                            if main_match:
-                                main_content = self.clean_html_content(main_match.group(1), chapter_dir.name)
-                                content += f"\n<!-- Start: {html_file.name} -->\n{main_content}\n<!-- End: {html_file.name} -->\n"
-                            else:
-                                content += f"<p>Could not extract content from {html_file.name}</p>"
-                except Exception as e:
-                    content += f"<p>Error reading {html_file.name}: {html.escape(str(e))}</p>"
+    def create_html_file_xhtml(self, html_file_info):
+        """Create XHTML content for a single HTML file"""
+        html_file = html_file_info['path']
+        chapter_dir = html_file_info['chapter_dir']
+        chapter_num = html_file_info['chapter_num']
+        section_num = html_file_info['section_num']
+        chapter_title = html_file_info['chapter_title']
+        file_title = html_file_info['file_title']
+        
+        # Create a title that includes both chapter and file info
+        safe_title = html.escape(f"{chapter_num}.{section_num} {chapter_title} - {file_title}")
+        
+        try:
+            with open(html_file, 'r', encoding='utf-8') as f:
+                html_content = f.read()
+                
+                # Extract content between <body> tags if present
+                body_match = re.search(r'<body[^>]*>(.*?)</body>', html_content, re.DOTALL | re.IGNORECASE)
+                if body_match:
+                    content = self.clean_html_content(body_match.group(1), chapter_dir.name)
+                else:
+                    # Try to extract main content
+                    main_match = re.search(r'<main[^>]*>(.*?)</main>', html_content, re.DOTALL | re.IGNORECASE)
+                    if main_match:
+                        content = self.clean_html_content(main_match.group(1), chapter_dir.name)
+                    else:
+                        content = f"<p>Could not extract content from {html_file.name}</p>"
+        except Exception as e:
+            content = f"<p>Error reading {html_file.name}: {html.escape(str(e))}</p>"
         
         return f'''<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -389,6 +445,10 @@ class FixedEpubBuilder:
             print("No HELM chapters found!")
             return False
         
+        # Get all individual HTML files
+        html_files = self.get_all_html_files(chapter_dirs)
+        print(f"Found {len(html_files)} HTML files")
+        
         with zipfile.ZipFile(self.output_file, 'w', zipfile.ZIP_DEFLATED) as epub_zip:
             # Add mimetype (uncompressed, must be first)
             epub_zip.writestr('mimetype', self.create_mimetype(), compress_type=zipfile.ZIP_STORED)
@@ -396,24 +456,24 @@ class FixedEpubBuilder:
             # Add META-INF/container.xml
             epub_zip.writestr('META-INF/container.xml', self.create_container_xml())
             
-            # Add chapters
-            for i, (chapter_num, section_num, title, chapter_dir) in enumerate(chapter_dirs):
-                print(f"Processing {chapter_num}.{section_num}: {title}")
-                chapter_id = f"chapter_{chapter_num}_{section_num}"
-                chapter_content = self.create_chapter_xhtml(chapter_num, section_num, title, chapter_dir)
-                epub_zip.writestr(f'OEBPS/{chapter_id}.xhtml', chapter_content)
+            # Add individual HTML files as XHTML
+            for html_file_info in html_files:
+                print(f"Processing {html_file_info['path'].name} from chapter {html_file_info['chapter_num']}.{html_file_info['section_num']}")
+                xhtml_content = self.create_html_file_xhtml(html_file_info)
+                epub_zip.writestr(f'OEBPS/{html_file_info["id"]}.xhtml', xhtml_content)
             
             # Add images
             image_files = self.find_and_add_images(epub_zip, chapter_dirs)
             
             # Add content.opf (EPUB 2.0 format)
-            epub_zip.writestr('OEBPS/content.opf', self.create_content_opf(chapter_dirs, image_files))
+            epub_zip.writestr('OEBPS/content.opf', self.create_content_opf(html_files, image_files))
             
             # Add NCX table of contents (EPUB 2.0 format)
-            epub_zip.writestr('OEBPS/toc.ncx', self.create_toc_ncx(chapter_dirs))
+            epub_zip.writestr('OEBPS/toc.ncx', self.create_toc_ncx(html_files))
         
         print(f"EPUB 2.0 created: {self.output_file}")
         print(f"Total chapters: {len(chapter_dirs)}")
+        print(f"Total HTML files: {len(html_files)}")
         return True
 
 def main():
