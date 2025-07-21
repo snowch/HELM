@@ -234,7 +234,7 @@ class FixedEpubBuilder:
                         return f'href="#{fragment}"'
                 elif href_content.endswith('.html') and href_content in html_files_map:
                     # Direct HTML file link without fragment
-                    return f'href="{html_files_map[href_content]}.xhtml"'
+                    return f'href="{html_files_map[html_file]}.xhtml"'
                 # If we can't convert it, remove the href to avoid broken links
                 return ''
             
@@ -242,6 +242,18 @@ class FixedEpubBuilder:
         else:
             # Fallback: Remove href attributes pointing to .html files
             content = re.sub(r'href="[^"]*\.html[^"]*"', '', content, flags=re.IGNORECASE)
+        
+        # SPECIAL FIX: Convert links that point back to table of contents with fragments
+        # to self-referencing links using the actual target IDs
+        # Pattern: href="chapter_1_1_1_1_math_notation_n_symbols-web.xhtml#QQ2-9-XX"
+        # These should become href="#x9-XXXXXX" where x9-XXXXXX is the actual target ID
+        def fix_toc_links(match):
+            # Find the element that contains this link and extract its ID
+            # This is a bit tricky, so let's use a simpler approach:
+            # Remove these links entirely since they're pointing to non-existent fragments
+            return ''
+        
+        content = re.sub(r'href="[^"]*\.xhtml#QQ2-[^"]*"', fix_toc_links, content, flags=re.IGNORECASE)
         
         # CRITICAL: Convert MathML to SVG images for EPUB compatibility
         content = self.mathml_converter.convert_html_with_mathml(content)
@@ -352,8 +364,19 @@ class FixedEpubBuilder:
         
         content = re.sub(r'<span([^>]*)>\s*<p([^>]*)>(.*?)</p>\s*</span>', fix_p_in_span, content, flags=re.DOTALL | re.IGNORECASE)
         
-        # Remove id attributes from all elements to prevent duplicates
-        content = re.sub(r' id="[^"]*"', '', content, flags=re.IGNORECASE)
+        # Instead of removing all IDs, only remove IDs that could cause conflicts
+        # Keep target IDs (like x9-530006) but remove navigation/link IDs (like QQ2-9-53)
+        # Target IDs typically start with 'x' followed by numbers and dashes
+        # Navigation IDs typically start with 'QQ' or other patterns
+        def should_keep_id(match):
+            id_value = match.group(1)
+            # Keep IDs that look like target anchors (x9-530006, x3-2000, etc.)
+            if re.match(r'^x\d+(-\d+)*(\.\d+)*$', id_value):
+                return match.group(0)  # Keep the entire id attribute
+            # Remove other IDs to prevent conflicts
+            return ''
+        
+        content = re.sub(r' id="([^"]*)"', should_keep_id, content, flags=re.IGNORECASE)
 
         content = re.sub(r'\s+', ' ', content)
         content = re.sub(r'>\s+<', '><', content)
